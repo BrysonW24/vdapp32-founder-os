@@ -1,0 +1,97 @@
+{
+  "slug": "leadership",
+  "name": "Leadership",
+  "tagline": "Build the team that builds the business",
+  "icon": "Users",
+  "color": "#7C3AED",
+  "coreMetrics": [
+    {
+      "name": "Employee NPS",
+      "description": "How likely team members are to recommend working at the company",
+      "target": ">50",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Time to Hire",
+      "description": "Days from job posting to accepted offer",
+      "target": "<30 days",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Retention Rate",
+      "description": "Percentage of team members retained over a 12-month period",
+      "target": ">85%",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "1:1 Completion Rate",
+      "description": "Percentage of scheduled 1:1s that actually happen",
+      "target": ">90%",
+      "frequency": "weekly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Varies",
+      "activity": "1:1s with direct reports — coaching, blockers, career development",
+      "duration": "30min each"
+    },
+    {
+      "day": "Friday",
+      "activity": "Team pulse — quick check on morale, energy, and wins",
+      "duration": "15min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Hiring pipeline review",
+      "deliverable": "Open roles status and candidate pipeline health"
+    },
+    {
+      "week": 2,
+      "focus": "Performance check-ins",
+      "deliverable": "Progress notes on team member goals and development"
+    },
+    {
+      "week": 3,
+      "focus": "Culture and morale review",
+      "deliverable": "Team health assessment and action items"
+    },
+    {
+      "week": 4,
+      "focus": "Team planning",
+      "deliverable": "Next month's team priorities and resource allocation"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Job posting",
+      "when": "Once role requirements are defined",
+      "toWhom": "HR or recruiter"
+    },
+    {
+      "task": "Interview scheduling",
+      "when": "Immediately",
+      "toWhom": "VA or recruiting coordinator"
+    },
+    {
+      "task": "Onboarding admin",
+      "when": "Once onboarding checklist is created",
+      "toWhom": "Ops lead or HR"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Applicant tracking",
+      "tool": "Ashby or Lever",
+      "savesHoursPerWeek": 3
+    },
+    {
+      "task": "Onboarding checklists",
+      "tool": "Process.st",
+      "savesHoursPerWeek": 2
+    }
+  ],
+  "order": 8
+}

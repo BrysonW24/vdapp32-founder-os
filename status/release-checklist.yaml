@@ -1,0 +1,33 @@
+app_id: vdapp32-founder-os
+last_updated: 2026-04-03
+target_stage: internal-beta
+
+gates:
+  docs:
+    readme_current: true
+    local_doctrine_current: true
+    handoff_written: false
+  product:
+    core_routes_exist: true
+    primary_user_path_verified: true
+    empty_states_reviewed: true
+  quality:
+    build_passes: true
+    lint_passes: true
+    typecheck_passes: true
+    automated_tests_pass: false
+    manual_smoke_complete: true
+  operations:
+    env_requirements_documented: true
+    deployment_target_confirmed: true
+    rollback_or_recovery_note_present: false
+  launch_os:
+    manifest_current: true
+    feature_map_current: true
+    risk_register_current: true
+
+blockers: []
+notes:
+  - Wave 1 content thresholds remain complete, and the current deepening wave adds AI Engineering plus manifest-driven deep dives.
+  - Manual verification includes the new AI Engineering routes and a full manifest-linked deep-dive route pass.
+  - No automated test suite is configured yet, so verification currently relies on type-check, lint, build, and route smoke tests.

@@ -1,0 +1,15 @@
+{
+  "slug": "leadership",
+  "name": "Leadership / People",
+  "shortName": "Lead",
+  "group": "growth",
+  "icon": "Users",
+  "color": "#dc2626",
+  "tagline": "Hiring, delegation, culture, management, and communication",
+  "blueprintSlug": "leadership-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 12
+}

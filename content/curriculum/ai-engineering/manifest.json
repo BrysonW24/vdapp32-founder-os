@@ -1,0 +1,28 @@
+{
+  "slug": "ai-engineering",
+  "name": "AI Engineering",
+  "shortName": "AI Eng",
+  "group": "growth",
+  "icon": "Cpu",
+  "color": "#f97316",
+  "tagline": "LLM products, evals, retrieval, agents, platform systems, and production AI engineering",
+  "blueprintSlug": "ai-engineering-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "day-in-the-life", "label": "Day in Life", "icon": "Briefcase" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" },
+    { "slug": "simulation", "label": "Simulation", "icon": "Zap" },
+    { "slug": "rag-deep-dive", "label": "RAG", "icon": "Database" },
+    { "slug": "agentic-systems", "label": "Agents", "icon": "Bot" },
+    { "slug": "building-models", "label": "Models", "icon": "BrainCircuit" },
+    { "slug": "cloud-infrastructure", "label": "Cloud Infra", "icon": "Cloud" },
+    { "slug": "platform-ops", "label": "Platform Ops", "icon": "Workflow" },
+    { "slug": "ai-workflows", "label": "AI Workflows", "icon": "Sparkles" },
+    { "slug": "experimentation", "label": "Experimentation", "icon": "FlaskConical" },
+    { "slug": "privacy-ethics", "label": "Privacy & Ethics", "icon": "Shield" },
+    { "slug": "careers", "label": "Careers", "icon": "Users" },
+    { "slug": "resources", "label": "Resources", "icon": "Library" },
+    { "slug": "future", "label": "Future", "icon": "TrendingUp" }
+  ],
+  "order": 11
+}

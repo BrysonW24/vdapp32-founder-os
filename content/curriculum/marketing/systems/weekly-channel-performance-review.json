@@ -1,0 +1,53 @@
+{
+  "slug": "weekly-channel-performance-review",
+  "title": "Weekly Channel Performance Review",
+  "domain": "marketing",
+  "summary": "A lightweight weekly system for checking channel health, spotting drop-offs early, and assigning immediate marketing follow-up work.",
+  "frequency": "weekly",
+  "owner": "founder",
+  "inputs": [
+    "Weekly channel scorecard",
+    "Campaign spend and pacing data",
+    "Traffic, lead, and conversion snapshots",
+    "Notes on launches or experiments currently running"
+  ],
+  "outputs": [
+    "Updated channel health view",
+    "Priority fixes for the next seven days",
+    "Escalations for channels that need budget or creative changes",
+    "Weekly owner list for experiments and follow-ups"
+  ],
+  "steps": [
+    {
+      "title": "Scan the channel dashboard",
+      "description": "Review each active channel for spend, volume, and conversion changes versus the prior week.",
+      "responsible": "Founder",
+      "tool": "Analytics dashboard"
+    },
+    {
+      "title": "Flag anomalies and bottlenecks",
+      "description": "Identify any sudden drops, spikes, pacing issues, broken links, or conversion bottlenecks that need action before the week ends.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Choose corrective actions",
+      "description": "Assign one immediate action per problem channel, such as creative refresh, landing page fix, audience change, or spend cap adjustment.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Capture learning",
+      "description": "Write down the main pattern from the week so the monthly review is built from evidence rather than memory.",
+      "responsible": "Founder"
+    }
+  ],
+  "kpis": [
+    { "metric": "Channel pacing variance", "target": "No critical channel more than 10% off planned pacing without owner action" },
+    { "metric": "Time to resolve major marketing issue", "target": "Within 5 business days" },
+    { "metric": "Weekly review completion", "target": "Completed every week" }
+  ],
+  "whenToImplement": "As soon as more than one marketing channel is live and spend is material enough that missed issues have a real cost.",
+  "delegationNotes": "Once a marketing lead or channel owner exists, they can prepare the review, but the founder should stay close to the patterns until channel economics are stable.",
+  "automationNotes": "Automate channel dashboards, spend alerts, broken-form checks, and pacing notifications so the meeting focuses on decisions rather than data collection.",
+  "relatedSystems": ["monthly-content-and-campaign-planning"],
+  "order": 1
+}

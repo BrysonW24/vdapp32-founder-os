@@ -1,0 +1,56 @@
+{
+  "slug": "monthly-financial-review",
+  "title": "Monthly Financial Review",
+  "domain": "finance",
+  "summary": "A 60-minute monthly review to understand your numbers, catch problems early, and make informed decisions. Stop guessing and start knowing.",
+  "whenToUseIt": "The first week of every month. Non-negotiable. If you skip this, you are flying blind.",
+  "timeToComplete": "60 minutes",
+  "difficulty": "beginner",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Check your cash position",
+      "description": "Log in to your bank accounts. Write down: total cash across all accounts, accounts receivable (money owed to you), accounts payable (money you owe). Calculate: net cash position = cash + receivables - payables.",
+      "tips": "This is the single most important number. If cash is declining month over month, everything else is secondary.",
+      "timeEstimate": "10 minutes"
+    },
+    {
+      "title": "Review your P&L",
+      "description": "Pull your profit and loss statement for the month. Check: total revenue (is it growing?), cost of goods sold (are margins stable?), operating expenses (any surprises?), net profit or loss. Compare to last month and to your budget.",
+      "tips": "Focus on trends, not single months. A one-month dip is noise. Three months of decline is a pattern.",
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Calculate burn rate and runway",
+      "description": "Monthly burn rate = total expenses - total revenue (if negative, you are burning cash). Runway = total cash / monthly burn rate. If runway is less than 6 months, this is urgent.",
+      "tips": "Always calculate runway with zero revenue growth. Hope is not a financial strategy.",
+      "timeEstimate": "5 minutes",
+      "aiPrompt": "My monthly expenses are $[X], monthly revenue is $[Y], and I have $[Z] in the bank. Calculate my burn rate, runway in months, and tell me what actions I should consider at this runway level."
+    },
+    {
+      "title": "Review unit economics",
+      "description": "Check your key unit metrics: Customer Acquisition Cost (total sales+marketing spend / new customers), Lifetime Value (average revenue per customer × average lifespan), LTV:CAC ratio. Healthy = 3:1 or better.",
+      "timeEstimate": "10 minutes"
+    },
+    {
+      "title": "Check collections and receivables",
+      "description": "Review outstanding invoices. Flag anything overdue by 30+ days. Send reminders for 15+ day invoices. Calculate your average days to collect.",
+      "timeEstimate": "10 minutes"
+    },
+    {
+      "title": "Decide 1-2 financial actions",
+      "description": "Based on your review, choose 1-2 actions for the next month. Examples: cut a specific expense, chase overdue invoices, raise prices, renegotiate a vendor contract. Write them down with a deadline.",
+      "timeEstimate": "10 minutes"
+    }
+  ],
+  "expectedOutcome": "A clear understanding of your financial position, burn rate, runway, and unit economics — plus 1-2 specific actions to improve your financial health.",
+  "commonMistakes": [
+    "Skipping the review because you are busy — this is how founders get surprised by running out of cash",
+    "Looking only at revenue and ignoring expenses — revenue is vanity, profit is sanity, cash is reality",
+    "Not tracking unit economics — you can grow fast and still lose money on every customer",
+    "Making the review too complicated — 60 minutes with 6 steps is enough"
+  ],
+  "relatedPlaybooks": ["pricing-strategy-workshop", "runway-calculator"],
+  "relatedModules": ["financial-literacy-for-founders", "unit-economics"],
+  "order": 1
+}

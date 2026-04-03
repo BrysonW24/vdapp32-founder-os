@@ -1,0 +1,57 @@
+{
+  "slug": "90-day-strategic-plan",
+  "title": "90-Day Strategic Plan",
+  "domain": "strategy",
+  "summary": "Build a focused 90-day plan with 3 priorities, measurable outcomes, and weekly check-ins. Stop running without direction.",
+  "whenToUseIt": "At the start of each quarter, after a pivot, or when you realise you have been busy without being strategic.",
+  "timeToComplete": "3-4 hours",
+  "difficulty": "beginner",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Audit your current position",
+      "description": "Write down your revenue, burn rate, team size, top 3 customers, biggest risk, and biggest opportunity. Do not optimise — just describe reality honestly.",
+      "tips": "If you cannot state your position in 5 sentences, you do not understand it yet.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Choose 3 priorities — no more",
+      "description": "List everything you could work on. Now eliminate. You get 3 priorities for the next 90 days. Everything else is a distraction. A priority must be specific enough to measure and important enough to change the business.",
+      "tips": "If a priority does not scare you slightly, it is probably not ambitious enough.",
+      "timeEstimate": "45 minutes",
+      "aiPrompt": "I run [describe business]. My current revenue is [X], burn rate is [Y], team size is [Z]. Here are 10 things I could focus on: [list]. Help me narrow to the 3 highest-leverage priorities for the next 90 days. For each, explain why it matters more than the others."
+    },
+    {
+      "title": "Define measurable outcomes for each priority",
+      "description": "For each priority, write 1-2 measurable outcomes. Not activities ('launch marketing campaign') but results ('acquire 50 paying customers'). Include a number and a deadline.",
+      "tips": "Use the format: [Verb] [number] [thing] by [date].",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Break into 30-day milestones",
+      "description": "Split each 90-day outcome into 3 monthly milestones. Month 1 should be the foundation. Month 2 should be execution. Month 3 should be acceleration and measurement.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Set up weekly check-ins",
+      "description": "Block 30 minutes every Friday to review: What did I commit to this week? What actually happened? What do I commit to next week? What is blocking me? This is non-negotiable.",
+      "tips": "Do this alone first. Add your team later.",
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Write the plan on one page",
+      "description": "Put all 3 priorities, their 90-day outcomes, and their monthly milestones on a single page. If it does not fit on one page, it is too complicated. Print it. Put it where you can see it every day.",
+      "timeEstimate": "30 minutes"
+    }
+  ],
+  "expectedOutcome": "A single-page 90-day plan with 3 clear priorities, measurable outcomes, monthly milestones, and a weekly review habit in place.",
+  "commonMistakes": [
+    "Picking more than 3 priorities — if everything is a priority, nothing is",
+    "Writing activity-based goals instead of outcome-based goals",
+    "Not reviewing weekly — the plan dies within 2 weeks without check-ins",
+    "Making the plan too detailed — complexity kills execution"
+  ],
+  "relatedPlaybooks": ["competitive-landscape-audit", "pivot-or-persevere-decision"],
+  "relatedModules": ["what-strategy-is"],
+  "order": 1
+}

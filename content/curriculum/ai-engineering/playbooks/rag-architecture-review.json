@@ -1,0 +1,53 @@
+{
+  "slug": "rag-architecture-review",
+  "title": "RAG Architecture Review",
+  "domain": "ai-engineering",
+  "summary": "Pressure-test retrieval, chunking, citation, and eval decisions before a knowledge feature ships wider.",
+  "whenToUseIt": "Use this before launching or materially changing a retrieval-backed AI workflow.",
+  "timeToComplete": "90 minutes",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "A working prototype or architecture draft",
+    "Access to sample queries and source documents"
+  ],
+  "steps": [
+    {
+      "title": "Define the product promise",
+      "description": "State what the retrieval flow must do, what it must not do, and what evidence the user should see in the UI.",
+      "tips": "Write the promise in user language first, then translate it into system constraints."
+    },
+    {
+      "title": "Inspect ingestion and chunking",
+      "description": "Review how documents enter the system, how they are split, what metadata survives, and where stale content can leak through.",
+      "tools": ["llamaindex", "langchain"],
+      "timeEstimate": "20 min"
+    },
+    {
+      "title": "Check retrieval observability",
+      "description": "Confirm you can see the retrieved chunks, similarity scores, citations, and failure cases for each representative query.",
+      "tools": ["pinecone", "weaviate"],
+      "timeEstimate": "20 min",
+      "aiPrompt": "Review this retrieval design and identify the most likely trust failures if citations or chunk selection drift."
+    },
+    {
+      "title": "Run eval cases",
+      "description": "Use representative prompts to test correctness, groundedness, stale-content risk, and abstention behavior.",
+      "tools": ["openai-api", "anthropic-api"],
+      "timeEstimate": "30 min"
+    },
+    {
+      "title": "Decide release conditions",
+      "description": "Document the quality threshold, rollback trigger, and the next instrumentation gap to close before launch.",
+      "timeEstimate": "10 min"
+    }
+  ],
+  "expectedOutcome": "A retrieval-backed feature with a visible quality bar, known failure modes, and clear release gates.",
+  "commonMistakes": [
+    "Treating prompt quality as a substitute for retrieval quality",
+    "Launching without citations or retrieved-chunk visibility",
+    "Using stale or unversioned knowledge sources"
+  ],
+  "relatedPlaybooks": ["eval-harness-setup", "agent-approval-boundary-design"],
+  "relatedModules": ["vector-databases-retrieval", "model-evaluation"],
+  "order": 1
+}

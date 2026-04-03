@@ -1,0 +1,97 @@
+{
+  "slug": "operations",
+  "name": "Operations",
+  "tagline": "Make it run without you",
+  "icon": "Settings",
+  "color": "#64748B",
+  "coreMetrics": [
+    {
+      "name": "Process Completion Rate",
+      "description": "Percentage of defined processes completed on time each cycle",
+      "target": ">90%",
+      "frequency": "weekly"
+    },
+    {
+      "name": "SOP Coverage",
+      "description": "Percentage of recurring tasks that have a documented SOP",
+      "target": ">80%",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Bottleneck Resolution Time",
+      "description": "Average time to identify and resolve operational bottlenecks",
+      "target": "<48 hours",
+      "frequency": "weekly"
+    },
+    {
+      "name": "Operational Cost Ratio",
+      "description": "Operational costs as a percentage of revenue",
+      "target": "Decreasing trend",
+      "frequency": "monthly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Monday",
+      "activity": "Standup and priorities — align team on weekly deliverables and blockers",
+      "duration": "20min"
+    },
+    {
+      "day": "Friday",
+      "activity": "Process review — identify what broke or slowed down this week",
+      "duration": "15min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "SOP audit",
+      "deliverable": "List of outdated or missing SOPs with update assignments"
+    },
+    {
+      "week": 2,
+      "focus": "Bottleneck analysis",
+      "deliverable": "Top 3 bottlenecks identified with resolution plans"
+    },
+    {
+      "week": 3,
+      "focus": "Tool stack review",
+      "deliverable": "Tool usage and cost audit with consolidation recommendations"
+    },
+    {
+      "week": 4,
+      "focus": "Capacity planning",
+      "deliverable": "Resource allocation review and next month hiring or contractor needs"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "SOP documentation",
+      "when": "Once processes are proven and stable",
+      "toWhom": "Ops lead or VA"
+    },
+    {
+      "task": "Vendor management",
+      "when": "When vendor count exceeds 5",
+      "toWhom": "Ops lead"
+    },
+    {
+      "task": "Scheduling",
+      "when": "Immediately",
+      "toWhom": "VA or scheduling tool"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Task assignment",
+      "tool": "Asana or Monday",
+      "savesHoursPerWeek": 3
+    },
+    {
+      "task": "Reporting",
+      "tool": "Zapier",
+      "savesHoursPerWeek": 2
+    }
+  ],
+  "order": 7
+}

@@ -1,0 +1,92 @@
+{
+  "slug": "accounting",
+  "name": "Accounting",
+  "tagline": "Clean books, clear decisions",
+  "icon": "Calculator",
+  "color": "#0D9488",
+  "coreMetrics": [
+    {
+      "name": "Days to Close",
+      "description": "Business days from month-end to finalised books",
+      "target": "<5 business days",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Reconciliation Accuracy",
+      "description": "Percentage of accounts reconciled without discrepancies",
+      "target": "100%",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Tax Compliance Status",
+      "description": "Whether GST/BAS and tax obligations are lodged on time",
+      "target": "100% on-time lodgement",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Accounts Receivable Days",
+      "description": "Average days to collect payment from invoice date",
+      "target": "<30 days",
+      "frequency": "monthly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Friday",
+      "activity": "Reconciliation check — verify bank feeds are categorised and flag anomalies",
+      "duration": "20min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Bank reconciliation",
+      "deliverable": "All accounts reconciled for prior month"
+    },
+    {
+      "week": 2,
+      "focus": "GST/BAS prep",
+      "deliverable": "GST figures reviewed and BAS draft prepared"
+    },
+    {
+      "week": 3,
+      "focus": "Payroll review",
+      "deliverable": "Payroll accuracy check and super compliance confirmation"
+    },
+    {
+      "week": 4,
+      "focus": "Reporting",
+      "deliverable": "Management reports generated and distributed"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Data entry",
+      "when": "Immediately",
+      "toWhom": "Bookkeeper"
+    },
+    {
+      "task": "Bank reconciliation",
+      "when": "Once chart of accounts and rules are set up",
+      "toWhom": "Bookkeeper"
+    },
+    {
+      "task": "Payroll processing",
+      "when": "From first hire",
+      "toWhom": "Payroll provider or accountant"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Receipt scanning",
+      "tool": "Dext or Hubdoc",
+      "savesHoursPerWeek": 3
+    },
+    {
+      "task": "Payroll",
+      "tool": "Gusto or Employment Hero",
+      "savesHoursPerWeek": 2
+    }
+  ],
+  "order": 6
+}

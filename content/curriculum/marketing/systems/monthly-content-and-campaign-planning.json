@@ -1,0 +1,53 @@
+{
+  "slug": "monthly-content-and-campaign-planning",
+  "title": "Monthly Content and Campaign Planning",
+  "domain": "marketing",
+  "summary": "A monthly planning system that turns strategy into a realistic content calendar and launch sequence for the next operating cycle.",
+  "frequency": "monthly",
+  "owner": "founder",
+  "inputs": [
+    "Monthly marketing review outputs",
+    "Business priorities for the next month",
+    "Product, sales, and customer feedback inputs",
+    "Available creative and execution capacity"
+  ],
+  "outputs": [
+    "Next-month content calendar",
+    "Campaign launch sequence",
+    "Owner assignments and deadlines",
+    "Asset dependency list"
+  ],
+  "steps": [
+    {
+      "title": "Translate business priorities into marketing themes",
+      "description": "Start from the commercial priorities for the month and decide which topics, offers, or launches marketing must support.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Map the calendar",
+      "description": "Lay out the month by week, including campaign dates, supporting content, channel distribution, and review points.",
+      "responsible": "Founder",
+      "tool": "Planning board"
+    },
+    {
+      "title": "Assign owners and dependencies",
+      "description": "Document who owns copy, creative, approvals, landing pages, and measurement setup for each planned item.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Stress-test capacity",
+      "description": "Remove or simplify work that the team is unlikely to ship well. Keep the calendar realistic enough to execute cleanly.",
+      "responsible": "Founder"
+    }
+  ],
+  "kpis": [
+    { "metric": "Planned campaign on-time launch rate", "target": "90%+" },
+    { "metric": "Planned content shipped", "target": "80%+ of committed monthly plan" },
+    { "metric": "Unplanned marketing work", "target": "Less than 20% of total output" }
+  ],
+  "whenToImplement": "Use this once marketing activity is frequent enough that ad hoc planning is causing missed launches, inconsistent output, or internal confusion.",
+  "delegationNotes": "A marketing manager can run the planning cadence once clear commercial priorities and approval rules exist, but founders should still set the top monthly themes.",
+  "automationNotes": "Use shared planning tools, template briefs, and recurring meeting cadences to reduce planning friction and keep asset creation visible.",
+  "relatedSystems": ["weekly-channel-performance-review"],
+  "order": 2
+}

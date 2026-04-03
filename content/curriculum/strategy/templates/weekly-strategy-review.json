@@ -1,0 +1,32 @@
+{
+  "slug": "weekly-strategy-review",
+  "title": "Weekly Strategy Review Checklist",
+  "domain": "strategy",
+  "description": "A 15-minute Friday checklist for reviewing strategic priority progress, flagging blockers, and setting next week's focus.",
+  "format": "checklist",
+  "sections": [
+    {
+      "title": "Priority Status",
+      "description": "Rate each quarterly priority's progress this week",
+      "fields": ["Priority 1: [name] — On Track / At Risk / Blocked", "Priority 1 progress note (1 sentence)", "Priority 2: [name] — On Track / At Risk / Blocked", "Priority 2 progress note (1 sentence)", "Priority 3: [name] — On Track / At Risk / Blocked", "Priority 3 progress note (1 sentence)"]
+    },
+    {
+      "title": "Blockers",
+      "description": "Anything preventing progress on strategic priorities",
+      "fields": ["Blocker 1: What is it? Who can unblock it? Cost of leaving it?", "Blocker 2: What is it? Who can unblock it? Cost of leaving it?", "Any blocker from last week that is still unresolved?"]
+    },
+    {
+      "title": "Strategic Signals",
+      "description": "Anything you heard or observed that could affect strategy",
+      "fields": ["Customer insight or feedback", "Competitor move or market shift", "Internal constraint or opportunity", "Action needed? (yes/no — if yes, add to next week)"]
+    },
+    {
+      "title": "Next Week Focus",
+      "description": "The single most important strategic move for next week",
+      "fields": ["Needle mover: What is the one thing I will advance?", "How will I protect this from daily noise?", "What will I say NO to this week to make room?"]
+    }
+  ],
+  "howToUse": "Complete every Friday in 15 minutes. Do not overthink it — the value is in the consistency, not the depth. Over time, the weekly signals section becomes a powerful pattern-recognition tool. Review 4 weeks of checklists during your quarterly planning session.",
+  "relatedPlaybooks": ["90-day-strategic-plan"],
+  "order": 3
+}

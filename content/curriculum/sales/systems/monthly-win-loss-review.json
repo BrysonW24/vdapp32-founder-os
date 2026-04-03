@@ -1,0 +1,53 @@
+{
+  "slug": "monthly-win-loss-review",
+  "title": "Monthly Win-Loss Review",
+  "domain": "sales",
+  "summary": "A monthly system for reviewing closed-won and closed-lost deals so the sales motion improves from evidence instead of anecdotes.",
+  "frequency": "monthly",
+  "owner": "founder",
+  "inputs": [
+    "Closed-won and closed-lost deals from the month",
+    "Call notes and recordings from material deals",
+    "Proposal and pricing history",
+    "Competitor mentions and objection notes"
+  ],
+  "outputs": [
+    "Monthly win-loss summary",
+    "Pattern list for objections, pricing, ICP fit, and deal control",
+    "Sales messaging or qualification adjustments",
+    "Coaching actions for the next month"
+  ],
+  "steps": [
+    {
+      "title": "Review the deal outcomes",
+      "description": "List every meaningful closed-won and closed-lost deal from the month with size, segment, source, and stage progression.",
+      "responsible": "Founder",
+      "tool": "CRM"
+    },
+    {
+      "title": "Identify the real reasons",
+      "description": "Separate stated reasons from likely true reasons. Check for recurring patterns such as pricing, poor qualification, weak urgency, competitor fit, or process breakdown.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Group the patterns",
+      "description": "Cluster findings into themes like ICP mismatch, discovery quality, proposal quality, negotiation weakness, or procurement friction.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Turn the patterns into changes",
+      "description": "Choose the one to three changes that should affect qualification, messaging, enablement, or pipeline process next month.",
+      "responsible": "Founder"
+    }
+  ],
+  "kpis": [
+    { "metric": "Closed-lost reason capture", "target": "90%+ of meaningful losses tagged with a credible primary reason" },
+    { "metric": "Monthly review completion", "target": "Completed every month" },
+    { "metric": "Action adoption", "target": "At least one concrete messaging, qualification, or process change applied each cycle" }
+  ],
+  "whenToImplement": "As soon as there is enough monthly deal volume that the team can learn from patterns rather than isolated stories.",
+  "delegationNotes": "A sales leader or revenue operator can prepare the analysis later, but the founder should stay close while founder-led sales is still shaping the motion.",
+  "automationNotes": "Use CRM stage hygiene, loss reason fields, call recording summaries, and simple tagging workflows to reduce manual analysis time.",
+  "relatedSystems": ["weekly-pipeline-review"],
+  "order": 2
+}

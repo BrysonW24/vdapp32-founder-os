@@ -1,0 +1,33 @@
+app_id: vdapp32-founder-os
+last_updated: 2026-04-03
+
+risks:
+  - id: R1
+    title: Doctrine can drift behind the actual 15-subject shell and deep-dive state
+    severity: medium
+    likelihood: medium
+    area: operations
+    status: open
+    mitigation: Update app and ecosystem docs immediately after verification whenever subject counts, route surfaces, or release posture change.
+    owner: unassigned
+
+  - id: R2
+    title: Operator surfaces can still feel uneven outside the parity and AI Engineering subjects
+    severity: medium
+    likelihood: low
+    area: product
+    status: mitigated
+    mitigation: Marketing, Sales, Strategy, Finance, and AI Engineering now have the strongest depth; continue to review unevenness only as new subjects enter future waves.
+    owner: unassigned
+
+  - id: R3
+    title: Static content QA regressions may slip in as subject content volume grows
+    severity: medium
+    likelihood: medium
+    area: quality
+    status: open
+    mitigation: Keep type-check, lint, build, and manual route smoke checks as mandatory for each Wave 1 tranche.
+    owner: unassigned
+
+notes:
+  - Source academies remain unarchived until archive gates are fully met.

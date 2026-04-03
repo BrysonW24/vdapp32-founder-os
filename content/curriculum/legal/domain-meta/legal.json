@@ -1,0 +1,87 @@
+{
+  "slug": "legal",
+  "name": "Legal",
+  "tagline": "Protect what you're building",
+  "icon": "Shield",
+  "color": "#475569",
+  "coreMetrics": [
+    {
+      "name": "Contract Turnaround Time",
+      "description": "Average days from contract draft to fully executed agreement",
+      "target": "<5 business days",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Compliance Checklist Completion",
+      "description": "Percentage of regulatory compliance items completed on time",
+      "target": "100%",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "IP Registration Status",
+      "description": "Status of trademarks, patents, and domain registrations",
+      "target": "All critical IP registered",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Outstanding Legal Items",
+      "description": "Number of unresolved legal tasks or issues",
+      "target": "<3 at any time",
+      "frequency": "monthly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "As needed",
+      "activity": "Review any contracts or legal items requiring attention",
+      "duration": "Varies"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Contract review",
+      "deliverable": "All pending contracts reviewed and actioned"
+    },
+    {
+      "week": 2,
+      "focus": "Compliance check",
+      "deliverable": "Compliance checklist reviewed and updated"
+    },
+    {
+      "week": 3,
+      "focus": "IP and trademark review",
+      "deliverable": "IP register updated with renewal dates and new filings"
+    },
+    {
+      "week": 4,
+      "focus": "Risk register update",
+      "deliverable": "Legal risk register reviewed with mitigation actions"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Contract drafting",
+      "when": "For any non-trivial agreement",
+      "toWhom": "Lawyer"
+    },
+    {
+      "task": "Compliance checklists",
+      "when": "Once compliance framework is defined",
+      "toWhom": "Ops lead"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Contract signing",
+      "tool": "DocuSign or PandaDoc",
+      "savesHoursPerWeek": 2
+    },
+    {
+      "task": "Compliance reminders",
+      "tool": "Notion",
+      "savesHoursPerWeek": 1
+    }
+  ],
+  "order": 10
+}

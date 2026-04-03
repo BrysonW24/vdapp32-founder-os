@@ -1,0 +1,97 @@
+{
+  "slug": "founder-performance",
+  "name": "Founder Performance",
+  "tagline": "Your performance is the company's ceiling",
+  "icon": "Brain",
+  "color": "#E11D48",
+  "coreMetrics": [
+    {
+      "name": "Deep Work Hours Per Week",
+      "description": "Hours spent in focused, uninterrupted work on high-leverage tasks",
+      "target": ">15 hours per week",
+      "frequency": "weekly"
+    },
+    {
+      "name": "Decision Quality",
+      "description": "Self-rated quality of key decisions made (1-10 scale, reviewed monthly)",
+      "target": ">7 average",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Energy Level",
+      "description": "Self-rated energy and sustainability (1-10 scale)",
+      "target": ">7 average",
+      "frequency": "weekly"
+    },
+    {
+      "name": "Top 3 Priorities Completed",
+      "description": "Whether the 3 most important tasks for the week were completed",
+      "target": "3/3 weekly",
+      "frequency": "weekly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Sunday",
+      "activity": "Weekly review — reflect on wins, losses, lessons, and energy patterns from the past week",
+      "duration": "30min"
+    },
+    {
+      "day": "Monday",
+      "activity": "Priority setting — define the top 3 priorities for the week and block deep work time",
+      "duration": "15min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Monthly reflection",
+      "deliverable": "Written reflection on biggest wins, failures, and lessons learned"
+    },
+    {
+      "week": 2,
+      "focus": "Energy and health check",
+      "deliverable": "Honest assessment of physical and mental energy with adjustments"
+    },
+    {
+      "week": 3,
+      "focus": "Learning review",
+      "deliverable": "Key learnings from books, podcasts, conversations, and experiments"
+    },
+    {
+      "week": 4,
+      "focus": "Next month planning",
+      "deliverable": "Top 3 goals for next month with success criteria"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Calendar management",
+      "when": "When meetings exceed 15 per week",
+      "toWhom": "EA or VA"
+    },
+    {
+      "task": "Email triage",
+      "when": "When inbox volume exceeds 50 per day",
+      "toWhom": "EA or VA"
+    },
+    {
+      "task": "Meeting scheduling",
+      "when": "Immediately",
+      "toWhom": "EA, VA, or scheduling tool"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Time tracking",
+      "tool": "Toggl",
+      "savesHoursPerWeek": 1
+    },
+    {
+      "task": "Calendar blocking",
+      "tool": "Reclaim.ai",
+      "savesHoursPerWeek": 2
+    }
+  ],
+  "order": 14
+}

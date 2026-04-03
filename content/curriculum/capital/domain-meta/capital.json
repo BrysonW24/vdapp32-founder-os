@@ -1,0 +1,92 @@
+{
+  "slug": "capital",
+  "name": "Capital",
+  "tagline": "Fuel the mission",
+  "icon": "Landmark",
+  "color": "#D97706",
+  "coreMetrics": [
+    {
+      "name": "Runway",
+      "description": "Months of cash remaining at current burn rate",
+      "target": ">12 months",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Burn Multiple",
+      "description": "Net burn divided by net new ARR — measures capital efficiency",
+      "target": "<2x",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Revenue Growth Rate",
+      "description": "Month-over-month or year-over-year revenue growth",
+      "target": ">10% MoM in early stage",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Investor Pipeline",
+      "description": "Number of active investor conversations during fundraising",
+      "target": ">20 during active raise",
+      "frequency": "weekly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "As needed",
+      "activity": "Review investor pipeline and follow-ups during active raise",
+      "duration": "Varies"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Investor update draft",
+      "deliverable": "Monthly investor update email with key metrics and narrative"
+    },
+    {
+      "week": 2,
+      "focus": "Financial model update",
+      "deliverable": "Updated financial model with actual data and revised projections"
+    },
+    {
+      "week": 3,
+      "focus": "Pipeline review",
+      "deliverable": "Investor pipeline status and next steps for active conversations"
+    },
+    {
+      "week": 4,
+      "focus": "Board prep",
+      "deliverable": "Board deck or advisory update prepared"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Deck formatting",
+      "when": "Once content and narrative are finalised",
+      "toWhom": "Designer or VA"
+    },
+    {
+      "task": "Data room management",
+      "when": "Once data room structure is set up",
+      "toWhom": "Ops lead or finance"
+    },
+    {
+      "task": "Investor CRM",
+      "when": "When investor pipeline exceeds 10 contacts",
+      "toWhom": "Chief of Staff or ops"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Investor updates",
+      "tool": "Visible.vc",
+      "savesHoursPerWeek": 2
+    },
+    {
+      "task": "Data room",
+      "tool": "DocSend",
+      "savesHoursPerWeek": 1
+    }
+  ],
+  "order": 13
+}

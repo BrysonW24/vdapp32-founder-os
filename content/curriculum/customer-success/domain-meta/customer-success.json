@@ -1,0 +1,103 @@
+{
+  "slug": "customer-success",
+  "name": "Customer Success",
+  "tagline": "Retention is the real growth engine",
+  "icon": "Heart",
+  "color": "#EC4899",
+  "coreMetrics": [
+    {
+      "name": "Churn Rate",
+      "description": "Percentage of customers lost per month",
+      "target": "<3% monthly",
+      "frequency": "monthly"
+    },
+    {
+      "name": "NPS",
+      "description": "Net Promoter Score from customer surveys",
+      "target": ">50",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Time to First Value",
+      "description": "Days from signup to first measurable outcome for the customer",
+      "target": "<7 days",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Expansion Revenue",
+      "description": "Revenue from upsells and cross-sells to existing customers",
+      "target": ">20% of total revenue",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Support Response Time",
+      "description": "Median time to first response on support tickets",
+      "target": "<4 hours",
+      "frequency": "weekly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Monday",
+      "activity": "Churn risk review — check at-risk accounts and plan interventions",
+      "duration": "20min"
+    },
+    {
+      "day": "Thursday",
+      "activity": "NPS review — scan recent scores and comments for action items",
+      "duration": "15min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Churn analysis",
+      "deliverable": "Churn report with reasons and prevention patterns"
+    },
+    {
+      "week": 2,
+      "focus": "Onboarding funnel review",
+      "deliverable": "Onboarding completion rates and drop-off points"
+    },
+    {
+      "week": 3,
+      "focus": "Customer health scoring",
+      "deliverable": "Updated health scores across customer base"
+    },
+    {
+      "week": 4,
+      "focus": "Expansion opportunities",
+      "deliverable": "List of customers ready for upsell or cross-sell conversations"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Support ticket triage",
+      "when": "Once severity framework is defined",
+      "toWhom": "Support team or CS associate"
+    },
+    {
+      "task": "Onboarding walkthroughs",
+      "when": "Once onboarding playbook is documented",
+      "toWhom": "CS associate"
+    },
+    {
+      "task": "Renewal reminders",
+      "when": "Once renewal process is defined",
+      "toWhom": "CS ops or automate"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Onboarding sequences",
+      "tool": "Customer.io",
+      "savesHoursPerWeek": 4
+    },
+    {
+      "task": "Health scoring",
+      "tool": "Vitally",
+      "savesHoursPerWeek": 2
+    }
+  ],
+  "order": 9
+}

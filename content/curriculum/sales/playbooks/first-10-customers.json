@@ -1,0 +1,60 @@
+{
+  "slug": "first-10-customers",
+  "title": "Get Your First 10 Customers",
+  "domain": "sales",
+  "summary": "Outbound tactics for getting your first 10 paying customers with zero budget and no sales team. Founder-led selling from scratch.",
+  "whenToUseIt": "When you have a product or service ready but no customers yet. Or when you have a few but need to build early momentum.",
+  "timeToComplete": "2-3 weeks of execution",
+  "difficulty": "beginner",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Define your ideal first customer",
+      "description": "Write a one-paragraph description of the person most likely to buy from you right now. Not your dream customer in 3 years — the person who has the problem today and is ready to pay for a solution. Include their role, company size, industry, and the specific pain you solve.",
+      "tips": "Your first 10 customers will probably not look like your long-term ICP. That is fine. You need revenue and learning, not perfection.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Build a list of 50 prospects",
+      "description": "Find 50 people who match your ideal first customer profile. Use LinkedIn, industry directories, your personal network, communities, and competitor reviews. For each, get their name, company, role, email, and one specific reason they might need your product.",
+      "tips": "Start with your network — warm leads convert 10x better than cold ones. Ask: who do I know that has this problem?",
+      "timeEstimate": "2-3 hours",
+      "tools": ["LinkedIn", "Apollo.io", "Hunter.io"],
+      "aiPrompt": "I sell [product/service] to [target persona]. Help me identify 10 specific types of companies and roles I should target for my first 10 customers. For each, explain why they would be a good early customer and suggest where to find them."
+    },
+    {
+      "title": "Craft your outreach message",
+      "description": "Write a short, personal outreach message. Structure: 1 sentence about them (shows you did research), 1 sentence about the problem you solve, 1 sentence about your offer, 1 question. Total: 4-5 sentences. No fluff, no 'I hope this email finds you well.'",
+      "tips": "The subject line matters more than the body. Keep it short and specific: 'Quick question about [their specific situation]'.",
+      "timeEstimate": "1 hour",
+      "aiPrompt": "I am reaching out to [persona] at [company type] about [problem I solve]. Write 3 variants of a short outreach email (4-5 sentences each). Each should reference a specific pain point, explain what I offer in one line, and end with a low-commitment question. No fluff."
+    },
+    {
+      "title": "Send 10 messages per day for 5 days",
+      "description": "Send personalised outreach to 10 prospects per day. Track who you contacted, when, and any response. Do not batch-and-blast — personalise each message. 50 messages in a week is enough to start generating conversations.",
+      "tips": "Follow up after 3 days if no response. 80% of sales happen after the follow-up, not the first message.",
+      "timeEstimate": "1 hour per day for 5 days"
+    },
+    {
+      "title": "Convert conversations to demos or calls",
+      "description": "When someone replies positively, book a 20-minute call within 48 hours. On the call: ask about their problem (5 min), show how you solve it (10 min), propose next steps (5 min). Do not pitch — have a conversation.",
+      "timeEstimate": "20-30 minutes per call"
+    },
+    {
+      "title": "Close with a clear offer",
+      "description": "After the demo, send a clear proposal: what they get, what it costs, when it starts. Include a deadline ('valid for 7 days') to create urgency. Make it easy to say yes — reduce friction in payment, onboarding, and commitment.",
+      "tips": "For your first 10, consider offering a discount or extended trial in exchange for a testimonial and feedback.",
+      "timeEstimate": "15 minutes per proposal"
+    }
+  ],
+  "expectedOutcome": "10 paying customers acquired through founder-led outbound. Plus: a tested outreach message, a working sales process, and real customer feedback.",
+  "commonMistakes": [
+    "Waiting for inbound instead of doing outbound — your first customers will not find you",
+    "Sending generic mass emails — personalisation is the only edge you have at this stage",
+    "Not following up — most founders give up after one message",
+    "Over-qualifying — your first 10 customers teach you who your real ICP is"
+  ],
+  "relatedPlaybooks": ["discovery-call-script", "sales-handoff-playbook"],
+  "relatedModules": ["founder-led-sales"],
+  "order": 1
+}

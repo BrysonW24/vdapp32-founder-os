@@ -1,0 +1,50 @@
+{
+  "slug": "monthly-marketing-review",
+  "title": "Monthly Marketing Review",
+  "domain": "marketing",
+  "summary": "A monthly operating review to decide what is working, what is wasting budget, and what the team should double down on next month.",
+  "whenToUseIt": "Use this in the first week of every month after your core channel data and spend are finalised.",
+  "timeToComplete": "60-75 minutes",
+  "difficulty": "beginner",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Pull the monthly scorecard",
+      "description": "Gather channel spend, traffic, leads, conversion rates, CAC, and pipeline or revenue contribution in one place. Use the same metrics every month so trend lines are obvious.",
+      "tools": ["google-analytics", "hubspot", "google-ads"],
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Review channel efficiency",
+      "description": "Compare each channel by spend, volume, and outcome quality. Flag channels that are generating activity without meaningful business impact.",
+      "tips": "Do not reward volume that does not translate into pipeline, retention, or revenue.",
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Check campaign quality",
+      "description": "Look at launch performance, messaging resonance, landing page conversion, and audience fit across your major campaigns from the month.",
+      "timeEstimate": "10 minutes"
+    },
+    {
+      "title": "Decide what to stop, scale, and fix",
+      "description": "Write down one thing to stop, one thing to scale, and one thing to repair in the next cycle. Tie each decision to a clear owner.",
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Set the next-month operating priorities",
+      "description": "Choose the 2-3 marketing priorities for the upcoming month and translate them into budget, content, and campaign actions.",
+      "timeEstimate": "10 minutes",
+      "aiPrompt": "Here is my monthly marketing scorecard: [paste metrics]. Identify the strongest channel, the weakest channel, one likely bottleneck, and the top three priorities for next month."
+    }
+  ],
+  "expectedOutcome": "A clear monthly view of marketing performance, three concrete operating decisions, and a tighter plan for the next cycle.",
+  "commonMistakes": [
+    "Reviewing vanity metrics without connecting them to business impact",
+    "Letting every channel continue because no one wants to kill work in progress",
+    "Skipping the review when results are bad and losing the chance to learn quickly",
+    "Changing the scorecard every month so trends cannot be trusted"
+  ],
+  "relatedPlaybooks": ["campaign-launch-brief", "channel-budget-reallocation"],
+  "relatedModules": ["analytics-attribution-kpis", "budgeting-channel-allocation", "campaign-planning"],
+  "order": 1
+}

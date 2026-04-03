@@ -1,0 +1,52 @@
+{
+  "slug": "eval-harness-setup",
+  "title": "Eval Harness Setup",
+  "domain": "ai-engineering",
+  "summary": "Create the minimum evidence loop for prompts, routing, and retrieval changes before they reach production.",
+  "whenToUseIt": "Use this when a team has prototypes or fragile manual QA but no stable release gate.",
+  "timeToComplete": "2 hours",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "Representative tasks or prompts",
+    "A draft quality bar for success vs failure"
+  ],
+  "steps": [
+    {
+      "title": "Choose the critical user flows",
+      "description": "Select the narrow set of flows where regressions would actually damage trust, cost, or user value.",
+      "timeEstimate": "20 min"
+    },
+    {
+      "title": "Write the eval set",
+      "description": "Assemble real prompts, edge cases, and bad-case examples with expected outcomes and notes on failure modes.",
+      "tools": ["notion", "google-sheets"],
+      "timeEstimate": "30 min"
+    },
+    {
+      "title": "Define scoring",
+      "description": "Choose what counts as pass, warning, or failure for correctness, groundedness, format adherence, latency, and cost.",
+      "timeEstimate": "25 min",
+      "aiPrompt": "Turn this product quality bar into an eval scorecard with pass, warning, and fail thresholds."
+    },
+    {
+      "title": "Automate execution",
+      "description": "Wire the eval set into CI or a repeatable local command so every significant change can be run the same way.",
+      "tools": ["python", "openai-api", "anthropic-api"],
+      "timeEstimate": "30 min"
+    },
+    {
+      "title": "Document release policy",
+      "description": "Record which metrics block release, which trigger manual review, and who approves exceptions.",
+      "timeEstimate": "15 min"
+    }
+  ],
+  "expectedOutcome": "A repeatable eval harness that catches regressions before users do.",
+  "commonMistakes": [
+    "Writing synthetic evals that do not reflect real user behavior",
+    "Measuring only quality while ignoring latency or cost movement",
+    "Keeping eval logic in one engineer's head"
+  ],
+  "relatedPlaybooks": ["rag-architecture-review", "agent-approval-boundary-design"],
+  "relatedModules": ["model-evaluation", "llm-engineering"],
+  "order": 2
+}

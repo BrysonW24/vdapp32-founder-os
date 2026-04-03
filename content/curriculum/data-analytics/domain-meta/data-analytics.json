@@ -1,0 +1,92 @@
+{
+  "slug": "data-analytics",
+  "name": "Data & Analytics",
+  "tagline": "Measure what matters, ignore the rest",
+  "icon": "BarChart3",
+  "color": "#0EA5E9",
+  "coreMetrics": [
+    {
+      "name": "Dashboard Accuracy",
+      "description": "Percentage of dashboard metrics that are verified correct",
+      "target": "100%",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Data Freshness",
+      "description": "Maximum age of data in key dashboards",
+      "target": "<24 hours",
+      "frequency": "weekly"
+    },
+    {
+      "name": "Decision Turnaround",
+      "description": "Time from data request to actionable insight delivered",
+      "target": "<48 hours",
+      "frequency": "monthly"
+    },
+    {
+      "name": "KPI Coverage",
+      "description": "Percentage of business-critical KPIs with automated tracking",
+      "target": ">90%",
+      "frequency": "quarterly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Monday",
+      "activity": "KPI review — check key dashboards and flag anomalies",
+      "duration": "20min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Dashboard audit",
+      "deliverable": "Dashboard accuracy and relevance check"
+    },
+    {
+      "week": 2,
+      "focus": "Data quality check",
+      "deliverable": "Data quality report with issues flagged"
+    },
+    {
+      "week": 3,
+      "focus": "Reporting automation",
+      "deliverable": "One new report automated or improved"
+    },
+    {
+      "week": 4,
+      "focus": "Insight synthesis",
+      "deliverable": "Monthly data insights brief for leadership"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Dashboard building",
+      "when": "Once KPI definitions are locked",
+      "toWhom": "Data analyst"
+    },
+    {
+      "task": "Data cleaning",
+      "when": "When data quality issues are identified",
+      "toWhom": "Data analyst or engineer"
+    },
+    {
+      "task": "Report generation",
+      "when": "Once report templates exist",
+      "toWhom": "Analyst or automate"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Data pipelines",
+      "tool": "Fivetran or Airbyte",
+      "savesHoursPerWeek": 5
+    },
+    {
+      "task": "Reporting",
+      "tool": "Metabase or Looker",
+      "savesHoursPerWeek": 3
+    }
+  ],
+  "order": 11
+}

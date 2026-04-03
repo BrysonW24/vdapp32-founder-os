@@ -1,0 +1,102 @@
+{
+  "slug": "strategy",
+  "name": "Strategy",
+  "tagline": "Where to play, how to win",
+  "icon": "Compass",
+  "color": "#6366F1",
+  "coreMetrics": [
+    {
+      "name": "Market Share",
+      "description": "Percentage of addressable market captured in target segments",
+      "target": "Increase 2% quarter-over-quarter",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Competitive Win Rate",
+      "description": "Percentage of competitive deals won when head-to-head with known competitors",
+      "target": ">60%",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Strategic Initiative Completion Rate",
+      "description": "Percentage of quarterly strategic initiatives completed on time and within scope",
+      "target": ">80%",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Customer Concentration Risk",
+      "description": "Revenue percentage from top 3 customers — high concentration signals fragility",
+      "target": "<30% from top 3",
+      "frequency": "monthly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Monday",
+      "activity": "Strategy pulse — review strategic initiative status, flag blockers, confirm weekly priorities align with quarterly goals",
+      "duration": "30min"
+    },
+    {
+      "day": "Friday",
+      "activity": "Competitive scan — review competitor moves, pricing changes, product launches, hiring signals, and market news",
+      "duration": "20min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Competitive review",
+      "deliverable": "Updated competitive landscape map with new entrants, positioning shifts, and pricing changes"
+    },
+    {
+      "week": 2,
+      "focus": "Strategic initiative check",
+      "deliverable": "Initiative progress report with RAG status, blockers, and resource needs"
+    },
+    {
+      "week": 3,
+      "focus": "Market signal synthesis",
+      "deliverable": "One-page market signal brief synthesising customer feedback, competitor moves, and macro trends"
+    },
+    {
+      "week": 4,
+      "focus": "Quarterly prep",
+      "deliverable": "Draft quarterly strategy update with key decisions, pivots, and next quarter priorities"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Competitive monitoring",
+      "when": "Once you have a repeatable framework for what to track and how to score competitors",
+      "toWhom": "VA or junior analyst"
+    },
+    {
+      "task": "Market research compilation",
+      "when": "When you need regular industry reports, trend summaries, or TAM analysis refreshed",
+      "toWhom": "Analyst or research contractor"
+    },
+    {
+      "task": "Strategic initiative status collection",
+      "when": "When you have 3+ initiatives running and status chasing eats your time",
+      "toWhom": "Chief of Staff or ops lead"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Competitor price tracking",
+      "tool": "Crayon or Klue",
+      "savesHoursPerWeek": 3
+    },
+    {
+      "task": "News and market monitoring",
+      "tool": "Google Alerts + Feedly",
+      "savesHoursPerWeek": 2
+    },
+    {
+      "task": "Strategic initiative status dashboards",
+      "tool": "Notion or Linear project tracking",
+      "savesHoursPerWeek": 1
+    }
+  ],
+  "order": 1
+}

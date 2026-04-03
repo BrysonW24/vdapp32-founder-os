@@ -1,0 +1,32 @@
+{
+  "slug": "pipeline-tracker",
+  "title": "Pipeline Tracker Spreadsheet",
+  "domain": "sales",
+  "description": "A simple pipeline tracker for founders who do not have a CRM yet. Track deals, stages, values, and next actions.",
+  "format": "spreadsheet",
+  "sections": [
+    {
+      "title": "Deal Information",
+      "description": "Basic deal details",
+      "fields": ["Company name", "Contact name", "Contact email", "Deal value", "Source (how they found you)"]
+    },
+    {
+      "title": "Pipeline Stage",
+      "description": "Where the deal is in your process",
+      "fields": ["Stage (Lead / Qualified / Proposal / Negotiation / Won / Lost)", "Date entered stage", "Days in stage", "Expected close date"]
+    },
+    {
+      "title": "Activity Tracking",
+      "description": "What has happened and what is next",
+      "fields": ["Last activity", "Last activity date", "Next action", "Next action date", "Notes"]
+    },
+    {
+      "title": "Pipeline Summary",
+      "description": "Aggregate view for weekly review",
+      "fields": ["Total pipeline value", "Weighted pipeline (value × probability)", "Deals by stage count", "Average deal age", "Win rate (won / total closed)"]
+    }
+  ],
+  "howToUse": "Add a new row for every qualified lead. Update the stage and next action after every interaction. Review the Pipeline Summary section during your weekly pipeline review.",
+  "relatedPlaybooks": ["first-10-customers"],
+  "order": 2
+}

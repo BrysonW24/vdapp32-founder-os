@@ -1,0 +1,15 @@
+{
+  "slug": "founder-performance",
+  "name": "Founder Performance",
+  "shortName": "Perf",
+  "group": "founder-only",
+  "icon": "Brain",
+  "color": "#e11d48",
+  "tagline": "Decision-making, time allocation, energy management, and resilience",
+  "blueprintSlug": "founder-performance-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 15
+}

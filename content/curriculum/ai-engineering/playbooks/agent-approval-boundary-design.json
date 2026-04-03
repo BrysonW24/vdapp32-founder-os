@@ -1,0 +1,51 @@
+{
+  "slug": "agent-approval-boundary-design",
+  "title": "Agent Approval Boundary Design",
+  "domain": "ai-engineering",
+  "summary": "Decide where an agent can act alone, where it must ask, and how traces make autonomy debuggable.",
+  "whenToUseIt": "Use this before exposing tool-using or action-taking agents to real users or production systems.",
+  "timeToComplete": "75 minutes",
+  "difficulty": "advanced",
+  "prerequisites": [
+    "A candidate agent workflow",
+    "A list of tools or systems the agent could touch"
+  ],
+  "steps": [
+    {
+      "title": "Map possible actions",
+      "description": "List every read, write, message, API call, and state change the agent could perform.",
+      "timeEstimate": "15 min"
+    },
+    {
+      "title": "Classify risk",
+      "description": "Mark each action as safe autonomous, supervised, or forbidden based on user trust, reversibility, and business impact.",
+      "timeEstimate": "20 min"
+    },
+    {
+      "title": "Define approval checkpoints",
+      "description": "Choose the exact moments where the system pauses for a human, requests confirmation, or shows the proposed action.",
+      "tools": ["langchain", "cursor-ai"],
+      "timeEstimate": "20 min"
+    },
+    {
+      "title": "Require trace visibility",
+      "description": "Ensure every tool call, intermediate decision, and failure path is logged with enough context to debug after the fact.",
+      "timeEstimate": "10 min",
+      "aiPrompt": "Identify which of these agent actions need approval, rollback support, or a hard deny based on risk."
+    },
+    {
+      "title": "Write the fallback path",
+      "description": "Document what happens when the agent is uncertain, blocked, or unable to complete the task safely.",
+      "timeEstimate": "10 min"
+    }
+  ],
+  "expectedOutcome": "An agent workflow with explicit autonomy boundaries, approval gates, and traceable failure modes.",
+  "commonMistakes": [
+    "Granting write access before the team has evidence loops",
+    "Hiding the agent's reasoning and tool activity from reviewers",
+    "Assuming a user-facing disclaimer is a sufficient safety control"
+  ],
+  "relatedPlaybooks": ["eval-harness-setup", "rag-architecture-review"],
+  "relatedModules": ["ai-agents", "ai-safety-alignment"],
+  "order": 3
+}

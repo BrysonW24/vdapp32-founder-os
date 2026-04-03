@@ -1,0 +1,37 @@
+{
+  "slug": "monthly-pl-review",
+  "title": "Monthly P&L Review Checklist",
+  "domain": "finance",
+  "description": "A structured checklist for reviewing your profit and loss statement each month.",
+  "format": "checklist",
+  "sections": [
+    {
+      "title": "Revenue Check",
+      "description": "Verify and analyse revenue",
+      "fields": ["Total revenue this month", "Revenue vs last month (% change)", "Revenue vs budget (% variance)", "Revenue by source/product", "Any one-off revenue that should not recur?"]
+    },
+    {
+      "title": "Cost of Goods Sold",
+      "description": "Direct costs of delivering your product/service",
+      "fields": ["Total COGS", "Gross margin %", "Gross margin vs last month", "Any COGS items growing faster than revenue?"]
+    },
+    {
+      "title": "Operating Expenses",
+      "description": "Review each expense category",
+      "fields": ["Salaries and wages", "Software and tools", "Marketing spend", "Rent and facilities", "Professional services", "Any new expenses this month?", "Any expense that jumped more than 20%?"]
+    },
+    {
+      "title": "Bottom Line",
+      "description": "Net result and cash impact",
+      "fields": ["Net profit/loss", "Net margin %", "Cash generated/burned", "Updated runway calculation"]
+    },
+    {
+      "title": "Actions",
+      "description": "What to do based on this review",
+      "fields": ["Action 1 (what, who, by when)", "Action 2 (what, who, by when)", "Anything to flag for next month"]
+    }
+  ],
+  "howToUse": "Complete this checklist within the first week of each month, after your books are closed. Compare each number to last month and to your budget. Flag anything that changed by more than 20%.",
+  "relatedPlaybooks": ["monthly-financial-review"],
+  "order": 1
+}

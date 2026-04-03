@@ -1,0 +1,118 @@
+{
+  "slug": "finance",
+  "name": "Finance",
+  "tagline": "Cash is oxygen",
+  "icon": "DollarSign",
+  "color": "#059669",
+  "coreMetrics": [
+    {
+      "name": "Monthly Burn Rate",
+      "description": "Total cash outflow per month including salaries, tools, rent, and variable costs — the number you must know cold",
+      "target": "Decreasing as revenue scales, or stable during growth investment",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Runway Months",
+      "description": "Cash in bank divided by monthly burn rate — how many months you can survive at current spend",
+      "target": ">12 months (or >6 months if revenue-funded)",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Gross Margin",
+      "description": "Revenue minus cost of goods sold, divided by revenue — measures the efficiency of your core business",
+      "target": ">60% for SaaS, >40% for services",
+      "frequency": "monthly"
+    },
+    {
+      "name": "MRR/ARR",
+      "description": "Monthly or Annual Recurring Revenue — the heartbeat of any subscription or retainer business",
+      "target": "10% month-over-month growth in early stage",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Collections Ratio",
+      "description": "Percentage of invoiced revenue actually collected within payment terms — cash in hand, not on paper",
+      "target": ">95% within terms",
+      "frequency": "weekly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Monday",
+      "activity": "Cash position check — review bank balances, incoming payments, and upcoming outflows for the week. Know your exact cash number.",
+      "duration": "15min"
+    },
+    {
+      "day": "Friday",
+      "activity": "Invoice review — check outstanding invoices, follow up on overdue payments, confirm next week's billing",
+      "duration": "20min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Close books and review P&L",
+      "deliverable": "Month-end P&L statement reviewed and annotated with variance explanations for any line item >10% off budget"
+    },
+    {
+      "week": 2,
+      "focus": "Cash flow forecast update",
+      "deliverable": "Rolling 13-week cash flow forecast updated with actual data, upcoming contracts, and known expenses"
+    },
+    {
+      "week": 3,
+      "focus": "Unit economics review",
+      "deliverable": "Updated CAC, LTV, LTV:CAC ratio, and payback period calculations by customer segment"
+    },
+    {
+      "week": 4,
+      "focus": "Budget vs actual",
+      "deliverable": "Variance analysis comparing budgeted vs actual spend by category, with action items for overruns"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Bookkeeping",
+      "when": "Immediately — daily transaction categorisation is not founder work",
+      "toWhom": "Bookkeeper (contractor or part-time)"
+    },
+    {
+      "task": "Invoice chasing",
+      "when": "Once you have payment terms and follow-up templates established",
+      "toWhom": "Office manager, VA, or accounts receivable contractor"
+    },
+    {
+      "task": "Expense categorisation",
+      "when": "Once your chart of accounts is set up and rules are documented",
+      "toWhom": "Bookkeeper"
+    },
+    {
+      "task": "Payroll processing",
+      "when": "As soon as you have your first employee or contractor",
+      "toWhom": "Payroll provider or accountant"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Invoice generation",
+      "tool": "Xero or QuickBooks",
+      "savesHoursPerWeek": 3
+    },
+    {
+      "task": "Expense tracking and receipt capture",
+      "tool": "Dext",
+      "savesHoursPerWeek": 2
+    },
+    {
+      "task": "Bank reconciliation",
+      "tool": "Xero",
+      "savesHoursPerWeek": 2
+    },
+    {
+      "task": "Recurring invoice scheduling",
+      "tool": "Xero or Stripe Billing",
+      "savesHoursPerWeek": 1
+    }
+  ],
+  "order": 5
+}

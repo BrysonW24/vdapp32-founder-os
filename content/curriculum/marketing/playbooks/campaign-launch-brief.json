@@ -1,0 +1,48 @@
+{
+  "slug": "campaign-launch-brief",
+  "title": "Campaign Launch Brief",
+  "domain": "marketing",
+  "summary": "A structured briefing workflow that forces clarity before a campaign goes live across channels, content, and stakeholders.",
+  "whenToUseIt": "Use this before any meaningful campaign launch, product push, seasonal promotion, or paid media burst.",
+  "timeToComplete": "2-3 hours",
+  "difficulty": "intermediate",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Define the business objective",
+      "description": "Write the exact result the campaign must produce: pipeline, signups, trials, bookings, retention, or revenue. Choose one primary objective.",
+      "timeEstimate": "20 minutes"
+    },
+    {
+      "title": "Clarify the audience and offer",
+      "description": "Document who the campaign is for, what pain or desire it speaks to, and what offer or next step the audience should take.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Choose the channel mix and assets",
+      "description": "List the channels, assets, landing pages, emails, ads, and owners required for launch. Identify any dependency that could delay the campaign.",
+      "tools": ["figma", "canva", "klaviyo"],
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Set the measurement plan",
+      "description": "Decide which KPIs matter, where they will be tracked, and what success and failure thresholds look like in the first 7-14 days.",
+      "timeEstimate": "20 minutes"
+    },
+    {
+      "title": "Run a pre-launch check",
+      "description": "Review messaging, links, tracking, forms, budget settings, and approvals. Do a dry run before the launch date.",
+      "timeEstimate": "20 minutes"
+    }
+  ],
+  "expectedOutcome": "A campaign everyone understands before launch, with clear ownership, required assets, and measurement discipline already locked in.",
+  "commonMistakes": [
+    "Launching with no single business objective",
+    "Assuming creative readiness without checking landing pages, forms, and tracking",
+    "Using different messages across channels and weakening the campaign story",
+    "Waiting until after launch to decide how success will be measured"
+  ],
+  "relatedPlaybooks": ["monthly-marketing-review", "channel-budget-reallocation"],
+  "relatedModules": ["campaign-planning", "messaging-brand-basics", "gtm-strategy"],
+  "order": 2
+}

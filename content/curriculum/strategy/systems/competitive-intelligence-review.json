@@ -1,0 +1,50 @@
+{
+  "slug": "competitive-intelligence-review",
+  "title": "Competitive Intelligence Review",
+  "domain": "strategy",
+  "summary": "A monthly cadence for monitoring competitor moves, market shifts, and emerging threats. Stay informed without becoming obsessed.",
+  "frequency": "monthly",
+  "owner": "founder",
+  "inputs": ["Competitor websites and pricing pages", "Industry news and newsletters", "Customer win/loss feedback", "Product review sites (G2, Capterra)", "Social media and community chatter", "Google Alerts for competitor names"],
+  "outputs": ["Updated competitive matrix", "Key competitive moves summary", "Strategic implications and recommended responses", "Updated positioning notes if needed"],
+  "steps": [
+    {
+      "title": "Scan competitor updates",
+      "description": "Visit the websites and social channels of your top 5 competitors. Check for: pricing changes, new features or products launched, new positioning or messaging, new partnerships or integrations, new content themes (signals their strategy).",
+      "responsible": "Founder or VA",
+      "tool": "Browser, Google Alerts, Crayon or Klue if available"
+    },
+    {
+      "title": "Review win/loss intelligence",
+      "description": "Check your last month's sales data: which deals did you win against a specific competitor? Which did you lose? Ask lost-deal prospects: why did you choose the alternative? This is the most valuable competitive intelligence you can get.",
+      "responsible": "Founder",
+      "tool": "CRM notes, direct prospect conversations"
+    },
+    {
+      "title": "Update competitive matrix",
+      "description": "Update your competitive analysis spreadsheet with any changes from the scan. Note: new pricing, new features, new positioning. Highlight anything that changes the competitive landscape meaningfully.",
+      "responsible": "Founder or analyst",
+      "tool": "Competitive Analysis Spreadsheet template"
+    },
+    {
+      "title": "Assess strategic implications",
+      "description": "For each significant competitive move, ask: Does this threaten our position? Does it create an opportunity? Do we need to respond? If yes, what is the minimum effective response? Most competitive moves require no response — do not overreact.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Decide on responses (if any)",
+      "description": "If a competitive move requires a response, define: what will we do, by when, and who is responsible? Add it to your quarterly priority check. Most months, the answer is 'no response needed — stay the course.'",
+      "responsible": "Founder"
+    }
+  ],
+  "kpis": [
+    { "metric": "Review completion", "target": "Completed within first week of each month" },
+    { "metric": "Competitive events captured", "target": "All significant moves logged within 2 weeks of occurrence" },
+    { "metric": "Win/loss feedback collected", "target": "Feedback from at least 3 lost deals per quarter" }
+  ],
+  "whenToImplement": "Once you have identified your top 5 competitors and are actively selling against them. Not necessary in the pre-product phase.",
+  "delegationNotes": "The scanning and matrix updates are the first things to delegate — to a VA, analyst, or ops person. The strategic interpretation and response decisions remain with the founder. Set up Google Alerts as a low-effort starting point.",
+  "automationNotes": "Google Alerts for competitor names and key industry terms. Social monitoring tools (Mention, Brand24) for real-time competitive chatter. Some CRM platforms have competitive intelligence features built in. The goal is to automate data gathering so the monthly review focuses on thinking, not searching.",
+  "relatedSystems": ["quarterly-strategy-review", "weekly-strategic-priority-check"],
+  "order": 3
+}

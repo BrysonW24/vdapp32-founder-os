@@ -1,0 +1,32 @@
+{
+  "slug": "discovery-call-prep",
+  "title": "Discovery Call Prep Sheet",
+  "domain": "sales",
+  "description": "A one-page preparation sheet to fill in before every discovery call. Ensures you never go into a call unprepared.",
+  "format": "document",
+  "sections": [
+    {
+      "title": "Prospect Research",
+      "description": "What you know before the call",
+      "fields": ["Company name", "Industry", "Company size", "Prospect name and role", "How they found you", "What you know about their situation"]
+    },
+    {
+      "title": "Questions to Ask",
+      "description": "Your prepared discovery questions",
+      "fields": ["Situation question (what does their world look like?)", "Problem question (what is not working?)", "Impact question (what does this cost them?)", "Timeline question (how urgent is this?)", "Decision question (who else is involved?)"]
+    },
+    {
+      "title": "Your Positioning",
+      "description": "How to position your solution for this specific prospect",
+      "fields": ["Their likely pain point", "Your relevant capability", "Proof point or case study to share", "Potential objection to prepare for"]
+    },
+    {
+      "title": "Call Outcome",
+      "description": "Fill in after the call",
+      "fields": ["Pain identified", "Budget discussed?", "Timeline discussed?", "Decision maker confirmed?", "Next step agreed", "Follow-up action and date"]
+    }
+  ],
+  "howToUse": "Fill in the first 3 sections before every call (10-15 minutes of prep). Fill in the Call Outcome section immediately after. Store in your CRM or a shared folder.",
+  "relatedPlaybooks": ["discovery-call-script"],
+  "order": 1
+}

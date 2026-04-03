@@ -1,0 +1,58 @@
+id: vdapp32-founder-os
+name: Founder OS
+summary: Multi-subject founder operating system with playbooks, systems, tools, and structured learning across 15 business domains.
+owner: unassigned
+phase: delivery
+release_stage: internal-beta
+last_audited: 2026-04-03
+
+audience:
+  primary: Founders building and operating a business.
+  secondary: Operators and advisors working with founder-led teams.
+
+product:
+  category: operating-system
+  deployment_target: web
+  business_model: internal-product
+  status_truth: "Active shell shipped. Wave 1 depth is complete across Marketing, Sales, Strategy, and Finance. The current deepening wave adds manifest-driven deep dives and AI Engineering."
+
+surfaces:
+  primary_routes:
+    - /
+    - /[subject]
+    - /[subject]/playbooks
+    - /[subject]/systems
+    - /[subject]/tools
+    - /[subject]/learn/modules
+    - /[subject]/projects
+  secondary_routes:
+    - /[subject]/[deepDiveSlug]
+    - /[subject]/playbooks/[slug]
+    - /[subject]/systems/[slug]
+    - /[subject]/tools/[slug]
+    - /[subject]/learn/modules/[slug]
+    - /[subject]/learn/modules/[slug]/[lessonSlug]
+    - /[subject]/projects/[slug]
+
+tech:
+  framework: Next.js 15
+  package_manager: npm
+  runtime: node
+  repo_shape: single-package
+
+operations:
+  local_doctrine: CLAUDE.md
+  readme: README.md
+  docs_dir: docs
+  status_dir: status
+
+dependencies:
+  external_services: []
+  env_files:
+    - .env.example
+
+notes:
+  - Content is loaded from subject-scoped JSON files under content/curriculum.
+  - Canonical founder-only slugs in the implementation are capital and legal.
+  - AI Engineering is a distinct Growth subject; AI / Automation remains the founder-facing automation domain.
+  - Subject deep dives are registered through manifest.json and resolved through a shared route registry.

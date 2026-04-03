@@ -1,0 +1,37 @@
+{
+  "slug": "competitive-analysis-spreadsheet",
+  "title": "Competitive Analysis Spreadsheet",
+  "domain": "strategy",
+  "description": "A structured comparison of your top competitors across positioning, pricing, features, and differentiation.",
+  "format": "spreadsheet",
+  "sections": [
+    {
+      "title": "Company Overview",
+      "description": "Basic information about each competitor",
+      "fields": ["Company name", "Website", "Founded", "Funding/Stage", "Team size", "Target market"]
+    },
+    {
+      "title": "Positioning",
+      "description": "How each competitor positions themselves",
+      "fields": ["Homepage headline", "Key promise", "Target persona", "Category they claim", "Key differentiator"]
+    },
+    {
+      "title": "Pricing",
+      "description": "Pricing model and tiers",
+      "fields": ["Pricing model (subscription/usage/one-time)", "Entry price", "Mid-tier price", "Enterprise price", "Free tier?", "Published pricing?"]
+    },
+    {
+      "title": "Feature Comparison",
+      "description": "Score each competitor on the features that matter to your ICP",
+      "fields": ["Feature 1 (define)", "Feature 2 (define)", "Feature 3 (define)", "Feature 4 (define)", "Feature 5 (define)", "Score: Strong / Adequate / Weak / Missing"]
+    },
+    {
+      "title": "Your Advantage",
+      "description": "Summary of where you win",
+      "fields": ["Your competitive advantage (1 sentence)", "Where you are stronger", "Where you are weaker", "Strategic implications"]
+    }
+  ],
+  "howToUse": "Create one row per competitor (including yourself). Fill in each section. Use the Feature Comparison to identify where you genuinely differentiate. Update quarterly.",
+  "relatedPlaybooks": ["competitive-landscape-audit"],
+  "order": 2
+}

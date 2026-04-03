@@ -1,0 +1,34 @@
+{
+  "slug": "strategy-prompts",
+  "title": "Strategy Prompt Pack",
+  "domain": "strategy",
+  "description": "AI prompts for strategic analysis, competitive positioning, and planning. Use these with Claude, ChatGPT, or any LLM.",
+  "prompts": [
+    {
+      "title": "Market Opportunity Analyser",
+      "prompt": "I am building [product/service description] for [target market]. Help me analyse the market opportunity. Consider: market size (TAM, SAM, SOM), growth trends, key players, underserved segments, and timing factors. Be specific and cite reasoning, not just numbers.",
+      "context": "Use when evaluating a new market or validating your current market choice."
+    },
+    {
+      "title": "Competitive Positioning Statement",
+      "prompt": "Help me write a competitive positioning statement. My product is [description]. My target customer is [ICP]. My main competitors are [list 3-5]. My key differentiator is [what you think]. Draft a positioning statement using the format: For [target customer] who [need], [product] is a [category] that [key benefit]. Unlike [competitors], we [differentiator].",
+      "context": "Use when you need to articulate why customers should choose you over alternatives."
+    },
+    {
+      "title": "Strategic Options Generator",
+      "prompt": "I run [business description]. Currently at [revenue/stage]. My 3 biggest challenges are: [list]. Generate 5 strategic options I should consider for the next 12 months. For each option, explain: what it involves, why it could work, what the main risk is, and what resources it requires.",
+      "context": "Use when you feel stuck or want to explore strategic directions beyond your current thinking."
+    },
+    {
+      "title": "Quarterly Priorities Facilitator",
+      "prompt": "Help me set priorities for next quarter. Here is my current situation: Revenue: [X]. Team: [Y people]. Biggest win last quarter: [Z]. Biggest miss last quarter: [A]. Top 10 things I could focus on: [list]. Narrow these to 3 priorities. For each, suggest a measurable 90-day outcome.",
+      "context": "Use at the start of each quarter alongside the 90-Day Strategic Plan playbook."
+    },
+    {
+      "title": "SWOT Analysis Facilitator",
+      "prompt": "Run a SWOT analysis for my business. Company: [description]. Market: [market]. Stage: [stage]. For each quadrant (Strengths, Weaknesses, Opportunities, Threats), give me 5 specific items with brief explanations. Then identify the 2 most important strategic implications.",
+      "context": "Use when you need a structured view of your strategic position."
+    }
+  ],
+  "order": 1
+}

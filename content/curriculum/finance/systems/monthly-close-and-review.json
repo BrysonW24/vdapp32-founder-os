@@ -1,0 +1,50 @@
+{
+  "slug": "monthly-close-and-review",
+  "title": "Monthly Close and Review",
+  "domain": "finance",
+  "summary": "A monthly cadence for closing your books, reviewing the P&L, and updating your financial forecast.",
+  "frequency": "monthly",
+  "owner": "founder",
+  "inputs": ["Bank statements", "Invoice records", "Expense receipts", "Revenue data", "Previous month's forecast"],
+  "outputs": ["Closed monthly books", "Updated P&L", "Cash flow statement", "Updated forecast", "Action items"],
+  "steps": [
+    {
+      "title": "Reconcile bank accounts",
+      "description": "Match every transaction in your accounting software to your bank statements. Flag anything unrecognised.",
+      "responsible": "Bookkeeper (or founder if no bookkeeper)",
+      "tool": "Xero or QuickBooks"
+    },
+    {
+      "title": "Review and categorise expenses",
+      "description": "Check that all expenses are in the correct categories. Look for miscategorised items, duplicate charges, subscriptions you no longer use.",
+      "responsible": "Founder",
+      "tool": "Xero or QuickBooks"
+    },
+    {
+      "title": "Confirm revenue recognition",
+      "description": "Ensure all revenue is recorded in the correct month. For subscriptions, check MRR is accurate. For projects, check milestones are billed.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Generate and review P&L",
+      "description": "Pull the P&L for the month. Compare to last month and to budget. Flag any line item that changed by more than 20%.",
+      "responsible": "Founder",
+      "tool": "Xero or QuickBooks"
+    },
+    {
+      "title": "Update the forecast",
+      "description": "Based on actual results, update your revenue and expense forecast for the next 3 months.",
+      "responsible": "Founder"
+    }
+  ],
+  "kpis": [
+    { "metric": "Close completed by", "target": "5th business day of the month" },
+    { "metric": "Reconciliation accuracy", "target": "100% of transactions matched" },
+    { "metric": "Forecast variance", "target": "Within 10% of actuals" }
+  ],
+  "whenToImplement": "From month 1 of the business. Even if you only have 10 transactions, the habit matters.",
+  "delegationNotes": "Reconciliation and categorisation can be delegated to a bookkeeper (~$500-1000/month). The founder should always review the P&L and update the forecast.",
+  "automationNotes": "Bank feeds automate transaction import. Receipt scanning (Dext, Hubdoc) automates expense capture. Dashboard reporting can be automated in Xero/QuickBooks.",
+  "relatedSystems": ["cash-flow-monitor"],
+  "order": 1
+}

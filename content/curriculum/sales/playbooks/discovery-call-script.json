@@ -1,0 +1,48 @@
+{
+  "slug": "discovery-call-script",
+  "title": "Discovery Call Script",
+  "domain": "sales",
+  "summary": "A structured 25-minute discovery call with qualifying questions, pain identification, and clear next-step setting. Use this every time you get on a sales call.",
+  "whenToUseIt": "Every time a prospect agrees to a call. This is your first real conversation and your chance to understand whether they are a fit.",
+  "timeToComplete": "25 minutes per call",
+  "difficulty": "beginner",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Open with context (2 minutes)",
+      "description": "Thank them for their time. Briefly explain the format: 'I would love to learn about your situation first, then show you how we might help, and we can decide together if it makes sense to keep talking.' This sets expectations and gives you permission to ask questions.",
+      "tips": "Do not start with a pitch. The first 2 minutes set the tone for the entire call."
+    },
+    {
+      "title": "Understand their situation (8 minutes)",
+      "description": "Ask open-ended questions: What does your business look like today? What are you trying to achieve in the next 6-12 months? What is the biggest challenge in [your domain]? How are you handling [the problem you solve] today? What have you tried before?",
+      "tips": "Listen more than you talk. The ratio should be 70% them, 30% you. Take notes on exact phrases they use — you will repeat them back later."
+    },
+    {
+      "title": "Identify the pain (5 minutes)",
+      "description": "Dig deeper on the biggest problem they mentioned. Ask: How long has this been a problem? What is the impact? What happens if you do not solve it? Have you tried to fix it before? What stopped those solutions from working?",
+      "tips": "Pain that has existed for a long time and has a measurable cost is the strongest buying signal.",
+      "aiPrompt": "After a discovery call where the prospect described [their situation], help me identify the 3 strongest pain points and draft follow-up questions that dig deeper into the business impact of each."
+    },
+    {
+      "title": "Position your solution (5 minutes)",
+      "description": "Now — and only now — explain how you solve their specific problem. Use their words. 'You mentioned [pain]. Here is how we address that specifically.' Show the outcome, not the features.",
+      "tips": "Do not demo everything. Show only the 2-3 things that directly address what they told you."
+    },
+    {
+      "title": "Set a clear next step (5 minutes)",
+      "description": "Propose a specific next step: a follow-up call, a proposal, a trial, or a meeting with another stakeholder. Get a commitment on a date and time. If they hesitate, ask: 'What would need to be true for this to be worth exploring further?'",
+      "tips": "Never end a call with 'I will follow up.' That is not a next step. A next step has a date, a deliverable, and a commitment."
+    }
+  ],
+  "expectedOutcome": "A qualified (or disqualified) prospect with a clear understanding of their pain, your fit, and a committed next step with a date.",
+  "commonMistakes": [
+    "Pitching before understanding the problem — you lose credibility instantly",
+    "Talking too much — if you are speaking more than 30% of the time, you are not discovering",
+    "Not asking about budget or timeline — these are qualifying questions, not rude questions",
+    "Ending without a clear next step — 'Let me know' is not a sales process"
+  ],
+  "relatedPlaybooks": ["first-10-customers", "sales-handoff-playbook"],
+  "relatedModules": ["founder-led-sales", "sales-process-design"],
+  "order": 2
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "pricing-strategy-workshop",
+  "title": "Pricing Strategy Workshop",
+  "domain": "finance",
+  "summary": "A step-by-step process for setting, validating, and adjusting your pricing. Most founders underprice — this helps you find the right number.",
+  "whenToUseIt": "When launching a new product, entering a new market, or when you suspect your pricing is wrong.",
+  "timeToComplete": "3-4 hours",
+  "difficulty": "intermediate",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Understand your cost floor",
+      "description": "Calculate the minimum you must charge to break even on each unit/customer. Include: direct costs, indirect costs, and desired margin. This is your floor — never price below this.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Research competitor pricing",
+      "description": "Map pricing for 5 competitors. Note: pricing model, price points, what is included at each tier, and whether they publish pricing.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Quantify the value you deliver",
+      "description": "What is the measurable outcome your product creates? Time saved, revenue generated, cost reduced, risk avoided. Your price should be 10-20% of the value you create.",
+      "tips": "If your product saves a customer $100K/year, charging $10K/year is a 10x ROI for them.",
+      "timeEstimate": "30 minutes",
+      "aiPrompt": "My product [description] helps [customer type] achieve [outcome]. Help me quantify the dollar value of this outcome. Then suggest a pricing range based on delivering 5-10x ROI."
+    },
+    {
+      "title": "Design your pricing tiers",
+      "description": "Create 2-3 tiers. Each tier should serve a distinct customer segment. The middle tier should be where most customers land.",
+      "timeEstimate": "45 minutes"
+    },
+    {
+      "title": "Test with 5 customers or prospects",
+      "description": "Show your pricing to 5 real people. Ask: At this price, would you buy? What would make it a no-brainer? If everyone says yes immediately, you are probably too cheap.",
+      "timeEstimate": "1 week of conversations"
+    },
+    {
+      "title": "Set your price and review date",
+      "description": "Set your price. Commit to it for 90 days. Set a calendar reminder to review.",
+      "tips": "It is almost always better to start higher and discount down than to start low and try to raise.",
+      "timeEstimate": "15 minutes"
+    }
+  ],
+  "expectedOutcome": "A defensible pricing strategy with defined tiers, tested with real customers, grounded in value delivered.",
+  "commonMistakes": [
+    "Pricing based only on cost — cost-plus pricing ignores value",
+    "Copying competitor pricing without understanding your differentiation",
+    "Having one price for everyone — different segments have different willingness to pay",
+    "Never raising prices — if you have not raised prices in 12 months, you are probably underpricing"
+  ],
+  "relatedPlaybooks": ["monthly-financial-review", "runway-calculator"],
+  "relatedModules": ["unit-economics"],
+  "order": 2
+}

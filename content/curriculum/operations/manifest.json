@@ -1,0 +1,15 @@
+{
+  "slug": "operations",
+  "name": "Operations",
+  "shortName": "Ops",
+  "group": "operations",
+  "icon": "Settings",
+  "color": "#0ea5e9",
+  "tagline": "Process design, SOPs, delivery systems, and execution rhythm",
+  "blueprintSlug": "operations-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 7
+}

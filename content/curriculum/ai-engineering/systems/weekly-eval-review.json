@@ -1,0 +1,47 @@
+{
+  "slug": "weekly-eval-review",
+  "title": "Weekly Eval Review",
+  "domain": "ai-engineering",
+  "summary": "A standing review of quality drift, regressions, latency movement, and release readiness for AI workflows.",
+  "frequency": "weekly",
+  "owner": "founder",
+  "inputs": [
+    "Latest eval run results",
+    "Runtime traces and incident notes",
+    "Release candidate changes"
+  ],
+  "outputs": [
+    "Release decision",
+    "Regression backlog",
+    "Instrumentation follow-ups"
+  ],
+  "steps": [
+    {
+      "title": "Review eval deltas",
+      "description": "Compare this week's scores against the prior baseline and identify any meaningful regression or unexplained jump.",
+      "responsible": "AI lead",
+      "tool": "openai-api"
+    },
+    {
+      "title": "Inspect runtime incidents",
+      "description": "Walk through the highest-severity failures and decide whether the issue belongs to prompts, retrieval, routing, tooling, or product scope.",
+      "responsible": "Platform engineer",
+      "tool": "mlflow",
+      "automated": true
+    },
+    {
+      "title": "Set release posture",
+      "description": "Choose ship, hold, or partial rollout and document the evidence behind the choice.",
+      "responsible": "Owner"
+    }
+  ],
+  "kpis": [
+    { "metric": "Eval pass rate", "target": ">= 90%" },
+    { "metric": "Rollback-worthy regressions", "target": "0 open at release time" }
+  ],
+  "whenToImplement": "As soon as an AI workflow can change faster than manual QA can safely track.",
+  "delegationNotes": "An analyst or junior engineer can prepare the pack, but a technical owner should make the release call.",
+  "automationNotes": "Automate report generation and trace collection so the meeting focuses on judgment, not data gathering.",
+  "relatedSystems": ["model-platform-change-log"],
+  "order": 1
+}

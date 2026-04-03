@@ -1,0 +1,50 @@
+{
+  "slug": "competitive-landscape-audit",
+  "title": "Competitive Landscape Audit",
+  "domain": "strategy",
+  "summary": "Map your top 5 competitors across positioning, pricing, features, and messaging. Know what you are up against before you decide how to win.",
+  "whenToUseIt": "Before a major product decision, pricing change, or GTM shift. Also useful when a new competitor appears or an existing one changes strategy.",
+  "timeToComplete": "2-3 hours",
+  "difficulty": "beginner",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Identify your top 5 competitors",
+      "description": "List the 5 companies your prospects are most likely to compare you to. Include direct competitors (same solution, same market), adjacent competitors (different solution, same problem), and aspirational competitors (where your market is heading).",
+      "tips": "Ask your last 5 lost deals who they chose instead. That is your real competitive set.",
+      "timeEstimate": "20 minutes"
+    },
+    {
+      "title": "Map their positioning",
+      "description": "For each competitor, write: Who they serve. What they promise. How they describe themselves. What their homepage headline says. What their key differentiator is.",
+      "timeEstimate": "30 minutes",
+      "aiPrompt": "Analyse the positioning of [competitor name] based on their website [URL]. Summarise: who they serve, what they promise, their key differentiator, and their homepage headline. Compare this to my positioning: [your positioning]."
+    },
+    {
+      "title": "Compare pricing and packaging",
+      "description": "Document each competitor's pricing model, tiers, and what is included at each level. Note whether they publish pricing or hide it behind sales. Identify where you are cheaper, more expensive, or differently packaged.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Assess feature strengths and gaps",
+      "description": "Create a simple feature matrix. List the 10-15 features that matter most to your ICP. Score each competitor (and yourself) as Strong, Adequate, Weak, or Missing.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Identify your competitive advantage",
+      "description": "Based on the audit, write one sentence answering: What can we do that they cannot, or what do we do meaningfully better? If you cannot answer this clearly, that is your biggest strategic problem.",
+      "tips": "Speed, focus, price, experience, technology, and service are all valid advantages — but only if they are real and defensible.",
+      "timeEstimate": "20 minutes"
+    }
+  ],
+  "expectedOutcome": "A competitive matrix with positioning, pricing, and feature comparisons across 5 competitors, plus a clear statement of your competitive advantage.",
+  "commonMistakes": [
+    "Only looking at direct competitors — adjacent and aspirational competitors matter too",
+    "Spending too long on this — 2-3 hours is enough for a useful audit",
+    "Assuming your advantage is obvious — if you cannot write it in one sentence, customers cannot see it either",
+    "Not updating it — competitive landscapes shift every quarter"
+  ],
+  "relatedPlaybooks": ["90-day-strategic-plan"],
+  "relatedModules": ["competitive-positioning"],
+  "order": 2
+}

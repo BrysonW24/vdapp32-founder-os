@@ -1,0 +1,43 @@
+{
+  "slug": "weekly-strategic-priority-check",
+  "title": "Weekly Strategic Priority Check-In",
+  "domain": "strategy",
+  "summary": "A 15-minute Friday check-in to review progress against your quarterly strategic priorities, flag blockers, and set focus for next week.",
+  "frequency": "weekly",
+  "owner": "founder",
+  "inputs": ["Current quarter's 3 priorities and key results", "This week's completed work", "Open blockers and dependencies", "Incoming strategic signals (customer feedback, competitive moves, market changes)"],
+  "outputs": ["Priority progress update", "Blocker escalation list", "Next week's strategic focus", "Signals worth investigating"],
+  "steps": [
+    {
+      "title": "Score each priority's progress",
+      "description": "For each of your 3 quarterly priorities, rate progress this week: On Track, At Risk, or Blocked. If At Risk or Blocked, write one sentence explaining why.",
+      "responsible": "Founder",
+      "tool": "Notion, Google Doc, or the 90-Day Plan Canvas"
+    },
+    {
+      "title": "Identify and escalate blockers",
+      "description": "List anything blocking progress on a strategic priority. For each blocker: what is it, who can unblock it, what is the cost of leaving it unresolved for another week?",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Set next week's strategic focus",
+      "description": "Choose the single most important thing you will advance next week toward your strategic priorities. Write it down. This becomes your 'needle mover' for the week — the thing you protect from daily noise.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Note any strategic signals",
+      "description": "Briefly capture anything you heard or observed this week that could affect your strategy: a competitor move, a customer insight, a market shift, a team constraint. Do not analyse — just capture. Review these signals monthly.",
+      "responsible": "Founder"
+    }
+  ],
+  "kpis": [
+    { "metric": "Check-in completion rate", "target": "48 out of 52 weeks per year (92%)" },
+    { "metric": "Priorities on track", "target": "At least 2 of 3 priorities rated 'On Track' each week" },
+    { "metric": "Blocker resolution time", "target": "No blocker unresolved for more than 2 consecutive weeks" }
+  ],
+  "whenToImplement": "Immediately, even if you are a solo founder. The habit of weekly strategic reflection prevents drift. Takes 15 minutes every Friday.",
+  "delegationNotes": "This is a founder ritual that should not be delegated. However, once you have a leadership team, each leader can run their own version for their domain and roll up to a joint weekly review.",
+  "automationNotes": "Set a recurring calendar block every Friday at 4:00 PM. Use a template (Weekly Strategy Review template) to make it consistent. Over time, consider a dashboard that auto-populates KR progress so the check-in focuses on interpretation, not data gathering.",
+  "relatedSystems": ["quarterly-strategy-review"],
+  "order": 2
+}

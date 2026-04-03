@@ -1,0 +1,15 @@
+{
+  "slug": "capital",
+  "name": "Capital / Fundraising",
+  "shortName": "Cap",
+  "group": "founder-only",
+  "icon": "Landmark",
+  "color": "#059669",
+  "tagline": "Fundraising, capital allocation, investor relations, and financial strategy",
+  "blueprintSlug": "capital-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 13
+}

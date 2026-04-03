@@ -1,0 +1,47 @@
+{
+  "slug": "model-platform-change-log",
+  "title": "Model Platform Change Log",
+  "domain": "ai-engineering",
+  "summary": "A durable record of prompt, routing, model, retrieval, and infra changes that affect user-facing AI behavior.",
+  "frequency": "as-needed",
+  "owner": "automated",
+  "inputs": [
+    "Merged PRs",
+    "Model version updates",
+    "Infra and retrieval configuration changes"
+  ],
+  "outputs": [
+    "Chronological change log",
+    "Rollback context",
+    "Operator-facing release notes"
+  ],
+  "steps": [
+    {
+      "title": "Capture the change",
+      "description": "Record what changed, why it changed, and which workflows it touches.",
+      "responsible": "CI pipeline",
+      "tool": "github-copilot",
+      "automated": true
+    },
+    {
+      "title": "Attach evidence",
+      "description": "Link the relevant eval run, latency movement, cost impact, and any manual approval notes.",
+      "responsible": "Platform engineer",
+      "tool": "weights-and-biases"
+    },
+    {
+      "title": "Publish the release note",
+      "description": "Share the operator-facing summary so product, support, and leadership know what actually changed.",
+      "responsible": "Owner"
+    }
+  ],
+  "kpis": [
+    { "metric": "Change entries with evidence attached", "target": "100%" },
+    { "metric": "Time to reconstruct a regression source", "target": "< 15 minutes" }
+  ],
+  "whenToImplement": "Once more than one engineer or workflow can change prompt, routing, or retrieval behavior.",
+  "delegationNotes": "Keep ownership with the platform side of the team so release notes stay technically accurate.",
+  "automationNotes": "Most fields should be created automatically from CI, release pipelines, and eval runs.",
+  "relatedSystems": ["weekly-eval-review"],
+  "order": 2
+}

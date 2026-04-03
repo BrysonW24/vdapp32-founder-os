@@ -1,0 +1,49 @@
+{
+  "slug": "pivot-or-persevere-decision",
+  "title": "Pivot or Persevere Decision",
+  "domain": "strategy",
+  "summary": "A structured decision framework for when things are not working and you need to decide: change direction or double down.",
+  "whenToUseIt": "When growth has stalled, a major assumption has been invalidated, or you are questioning whether the current path is right.",
+  "timeToComplete": "2-3 hours",
+  "difficulty": "advanced",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "State the situation honestly",
+      "description": "Write down: What is not working? How long has it not been working? What have you already tried to fix it? What data supports the conclusion that it is not working?",
+      "tips": "Distinguish between 'not working yet' and 'fundamentally broken'. Traction that is slow but accelerating is different from traction that is flat or declining.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Test your core assumptions",
+      "description": "List the 3-5 core assumptions your business depends on. For each, rate whether it has been validated (strong evidence), partially validated (some evidence), or invalidated (evidence against). Examples: 'Customers will pay $X for this', 'This problem is painful enough to switch', 'We can acquire customers at $Y CAC'.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Assess what a pivot would look like",
+      "description": "If you were to change direction, what would you change? Options: pivot the customer (same product, different market), pivot the problem (same market, different pain), pivot the solution (same problem, different approach), pivot the channel (same everything, different GTM). Write out 2-3 concrete pivot options.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Run the regret test",
+      "description": "Imagine it is 12 months from now. Scenario A: you persevered and it worked. Scenario B: you persevered and it did not work. Scenario C: you pivoted and it worked. Scenario D: you pivoted and it did not work. Which scenario do you regret most? This reveals your risk tolerance.",
+      "timeEstimate": "20 minutes"
+    },
+    {
+      "title": "Make the call and commit",
+      "description": "Based on the evidence and your analysis, choose: persevere with specific changes, or pivot to a specific new direction. Write down what you are committing to, what success looks like in 90 days, and what signal would trigger a re-evaluation.",
+      "tips": "The worst outcome is not a wrong decision — it is no decision. Half-pivoting kills companies faster than a clear wrong choice.",
+      "timeEstimate": "20 minutes"
+    }
+  ],
+  "expectedOutcome": "A clear, evidence-based decision to either persevere with specific changes or pivot to a defined new direction, with a 90-day success criteria and re-evaluation trigger.",
+  "commonMistakes": [
+    "Making the decision based on emotion rather than evidence",
+    "Half-pivoting — changing direction without fully committing",
+    "Confusing a distribution problem with a product problem",
+    "Not setting a re-evaluation date — you need a checkpoint"
+  ],
+  "relatedPlaybooks": ["90-day-strategic-plan"],
+  "relatedModules": ["what-strategy-is", "business-model-design"],
+  "order": 3
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "product",
+  "name": "Product",
+  "shortName": "Prod",
+  "group": "growth",
+  "icon": "Package",
+  "color": "#6d28d9",
+  "tagline": "What to build, what not to build, and how to ship it",
+  "blueprintSlug": "product-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 2
+}

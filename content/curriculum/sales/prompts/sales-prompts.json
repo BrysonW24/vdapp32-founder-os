@@ -1,0 +1,34 @@
+{
+  "slug": "sales-prompts",
+  "title": "Sales Prompt Pack",
+  "domain": "sales",
+  "description": "AI prompts for discovery calls, objection handling, pipeline analysis, and sales process documentation.",
+  "prompts": [
+    {
+      "title": "Discovery Call Prep",
+      "prompt": "I have a discovery call with [name] at [company]. They are a [role] at a [company size] company in [industry]. Their company does [what they do]. Help me prepare: 1) 5 research-backed questions to ask about their challenges with [your domain], 2) 3 potential pain points they likely face, 3) How to position my product ([description]) for their specific situation.",
+      "context": "Use 15 minutes before every discovery call to prepare personalised questions."
+    },
+    {
+      "title": "Objection Response Generator",
+      "prompt": "A prospect just told me: '[exact objection]'. My product is [description] and it costs [price]. Help me respond using this framework: 1) Acknowledge their concern, 2) Reframe the objection, 3) Provide evidence or a case study, 4) Ask a follow-up question. Give me 2 response options — one direct and one consultative.",
+      "context": "Use immediately after hearing an objection you have not handled before."
+    },
+    {
+      "title": "Follow-Up Email Drafter",
+      "prompt": "I just had a [discovery call / demo / meeting] with [name] at [company]. Key points discussed: [list 3-5 points]. Their main pain was [pain]. Next step we agreed on: [next step]. Write a follow-up email that: summarises what we discussed, reinforces the value proposition for their specific situation, confirms the next step, and is under 150 words.",
+      "context": "Use within 1 hour of every sales call to send a prompt follow-up."
+    },
+    {
+      "title": "Pipeline Analysis",
+      "prompt": "Here is my current sales pipeline: [list deals with stage, value, and age in days]. Help me analyse: 1) Which deals are at risk (stuck too long or no clear next step)? 2) What is my realistic close rate based on the stages? 3) What actions should I prioritise this week? 4) Is my pipeline coverage sufficient for my [quarterly target]?",
+      "context": "Use during your weekly pipeline review to get an outside perspective."
+    },
+    {
+      "title": "Sales Process Documenter",
+      "prompt": "I need to document my sales process so I can train a new hire. Here is how I sell: [describe your process from first contact to close in 5-10 sentences]. Help me turn this into a structured playbook with: 1) Clear stages with entry/exit criteria, 2) Key activities at each stage, 3) Templates for each touchpoint, 4) Qualification criteria, 5) Common objections and responses.",
+      "context": "Use when preparing to hire your first sales rep."
+    }
+  ],
+  "order": 1
+}

@@ -1,0 +1,64 @@
+app_id: vdapp32-founder-os
+last_updated: 2026-04-03
+
+surfaces:
+  - route: /
+    feature: Founder dashboard
+    status: live
+    notes: Subject overview across the full Founder OS taxonomy with progress and readiness states.
+
+  - route: /[subject]
+    feature: Subject overview
+    status: live
+    notes: Operator-first landing page showing domain meta, playbooks, systems, frameworks, tools, and learn entry points.
+
+  - route: /[subject]/playbooks
+    feature: Playbook library
+    status: live
+    notes: Operational playbooks for immediate founder actions.
+
+  - route: /[subject]/systems
+    feature: Systems library
+    status: live
+    notes: Repeatable operating cadences and business systems.
+
+  - route: /[subject]/tools
+    feature: Tool explorer
+    status: live
+    notes: Subject-specific tools grouped by category with detail pages.
+
+  - route: /[subject]/learn/modules
+    feature: Learning modules
+    status: live
+    notes: Structured module and lesson flows inside each subject.
+
+  - route: /[subject]/projects
+    feature: Projects
+    status: live
+    notes: Hands-on application layer for subjects that include project content.
+
+  - route: /[subject]/[deepDiveSlug]
+    feature: Manifest-driven deep dives
+    status: live
+    notes: Shared deep dives like toolkit, blueprint, and day-in-the-life plus subject-specific deep pages such as ops, automations, and RAG.
+
+supporting_capabilities:
+  - name: Manifest-driven subject discovery
+    status: live
+    notes: Subjects are registered by manifest.json and rendered without hardcoded lists.
+
+  - name: Subject-scoped progress store
+    status: live
+    notes: Completion state is namespaced per subject in a single local persistence key.
+
+  - name: Manifest-driven deep-dive registry
+    status: live
+    notes: Navigation and route generation are both driven by manifest.json deepDivePages with a shared renderer registry.
+
+  - name: Operator content model
+    status: partial
+    notes: Playbooks, systems, templates, prompts, and domain meta exist across the shell; depth is strongest in Marketing, Sales, Strategy, Finance, and AI Engineering.
+
+  - name: Wave 1 content depth
+    status: live
+    notes: Wave 1 thresholds are complete across Marketing, Sales, Strategy, and Finance; current deepening work extends parity-plus for Marketing and Sales and adds AI Engineering.

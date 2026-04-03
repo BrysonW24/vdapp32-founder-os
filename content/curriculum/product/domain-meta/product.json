@@ -1,0 +1,92 @@
+{
+  "slug": "product",
+  "name": "Product",
+  "tagline": "What to build, what to skip",
+  "icon": "Package",
+  "color": "#8B5CF6",
+  "coreMetrics": [
+    {
+      "name": "Feature Adoption Rate",
+      "description": "Percentage of users actively using a feature within 30 days of release",
+      "target": ">40% for major features",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Time to Value",
+      "description": "Time from user signup to first meaningful action or outcome",
+      "target": "<24 hours",
+      "frequency": "weekly"
+    },
+    {
+      "name": "NPS/CSAT",
+      "description": "Net Promoter Score or Customer Satisfaction Score from in-app surveys",
+      "target": "NPS >40",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Sprint Velocity",
+      "description": "Story points or tasks completed per sprint cycle",
+      "target": "Stable or improving trend",
+      "frequency": "weekly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Tuesday",
+      "activity": "User feedback review — scan support tickets, NPS comments, and feature requests",
+      "duration": "30min"
+    },
+    {
+      "day": "Thursday",
+      "activity": "Roadmap check — confirm sprint progress, flag scope creep, adjust priorities",
+      "duration": "20min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "User research synthesis",
+      "deliverable": "Top themes from user feedback and research sessions"
+    },
+    {
+      "week": 2,
+      "focus": "Roadmap review",
+      "deliverable": "Updated roadmap with prioritised backlog"
+    },
+    {
+      "week": 3,
+      "focus": "Feature usage audit",
+      "deliverable": "Usage report identifying underperforming features"
+    },
+    {
+      "week": 4,
+      "focus": "Release planning",
+      "deliverable": "Next month's release plan with scope and owners"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Bug triage",
+      "when": "When bug volume exceeds 10 per week",
+      "toWhom": "QA lead or senior engineer"
+    },
+    {
+      "task": "User feedback categorisation",
+      "when": "When you have a tagging framework established",
+      "toWhom": "Product analyst or support team"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Feature usage tracking",
+      "tool": "Amplitude or Mixpanel",
+      "savesHoursPerWeek": 4
+    },
+    {
+      "task": "Bug report routing",
+      "tool": "Linear",
+      "savesHoursPerWeek": 2
+    }
+  ],
+  "order": 2
+}

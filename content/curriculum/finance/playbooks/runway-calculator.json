@@ -1,0 +1,48 @@
+{
+  "slug": "runway-calculator",
+  "title": "Runway Calculator",
+  "domain": "finance",
+  "summary": "Calculate your runway, understand what drives it, and build a plan to extend it before you run out of time.",
+  "whenToUseIt": "Monthly as part of your financial review, before major spending decisions, and whenever revenue or costs change significantly.",
+  "timeToComplete": "30-45 minutes",
+  "difficulty": "beginner",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Calculate your current monthly burn",
+      "description": "Total all monthly expenses: salaries, contractors, rent, software, hosting, marketing, insurance, everything. Then subtract monthly revenue. Net burn = total expenses - total revenue.",
+      "timeEstimate": "10 minutes"
+    },
+    {
+      "title": "Count your total cash",
+      "description": "Add up all available cash: bank accounts, savings, available credit lines you would actually draw on, committed receivables within 30 days. Do not count: investment commitments not yet received, projected revenue.",
+      "timeEstimate": "5 minutes"
+    },
+    {
+      "title": "Calculate runway",
+      "description": "Runway (months) = Total cash / Monthly net burn. Under 3 months = emergency. 3-6 months = urgent. 6-12 months = manageable. 12+ months = comfortable.",
+      "timeEstimate": "5 minutes"
+    },
+    {
+      "title": "Model three scenarios",
+      "description": "Calculate runway under: Worst case (revenue drops 20%), Base case (current trajectory), Best case (revenue grows 20%).",
+      "timeEstimate": "10 minutes",
+      "aiPrompt": "My monthly revenue is $[X], monthly expenses are $[Y], and I have $[Z] cash. Calculate my runway under 3 scenarios: 1) Revenue drops 20%, 2) Current trajectory, 3) Revenue grows 20%. For each, show monthly burn, runway in months, and recommended actions."
+    },
+    {
+      "title": "Identify runway extension levers",
+      "description": "List every option: reduce headcount, cut discretionary spending, renegotiate contracts, accelerate revenue, raise prices, raise capital, defer hires. Prioritise by impact and reversibility.",
+      "timeEstimate": "15 minutes"
+    }
+  ],
+  "expectedOutcome": "A clear runway number, three scenarios modelled, and a prioritised list of levers for extending runway if needed.",
+  "commonMistakes": [
+    "Using revenue projections instead of actual revenue",
+    "Forgetting one-off expenses (tax bills, annual subscriptions) that spike certain months",
+    "Not modelling scenarios — a single runway number gives false precision",
+    "Waiting until runway is under 3 months to act — that is too late"
+  ],
+  "relatedPlaybooks": ["monthly-financial-review", "pricing-strategy-workshop"],
+  "relatedModules": ["cash-flow-management"],
+  "order": 3
+}

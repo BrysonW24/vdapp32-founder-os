@@ -1,0 +1,49 @@
+{
+  "slug": "channel-budget-reallocation",
+  "title": "Channel Budget Reallocation",
+  "domain": "marketing",
+  "summary": "A decision workflow for moving budget between channels without reacting blindly to short-term noise.",
+  "whenToUseIt": "Use this when one channel is underperforming, one channel is saturating, or you need to defend marketing spend with better allocation logic.",
+  "timeToComplete": "90 minutes",
+  "difficulty": "intermediate",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Review current allocation",
+      "description": "List current spend by channel and compare it to output quality, not just raw lead volume.",
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Check data quality and context",
+      "description": "Make sure the poor or strong result is real. Look for seasonality, campaign timing, tracking issues, or a short data window before changing budget.",
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Rank channels by marginal return",
+      "description": "Estimate where the next dollar is most likely to generate a useful outcome and where additional spend is unlikely to help.",
+      "tips": "The best historical channel is not always where the next dollar should go.",
+      "timeEstimate": "20 minutes"
+    },
+    {
+      "title": "Reallocate in deliberate chunks",
+      "description": "Move budget in increments large enough to matter but small enough to reverse quickly if the assumption is wrong.",
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Set the review checkpoint",
+      "description": "Decide when the reallocation will be reviewed and what metrics would confirm the move was correct.",
+      "timeEstimate": "10 minutes",
+      "aiPrompt": "Here is my channel spend and performance table: [paste data]. Recommend where to cut, where to hold, and where to increase spend, with reasoning tied to marginal return."
+    }
+  ],
+  "expectedOutcome": "A budget change grounded in evidence, with a review window and explicit reasoning instead of reactive channel bias.",
+  "commonMistakes": [
+    "Shifting budget based on one week's noise",
+    "Protecting legacy channels because they feel familiar",
+    "Moving spend without a review date or success threshold",
+    "Ignoring the quality of downstream pipeline or revenue"
+  ],
+  "relatedPlaybooks": ["monthly-marketing-review", "campaign-launch-brief"],
+  "relatedModules": ["budgeting-channel-allocation", "analytics-attribution-kpis", "paid-advertising"],
+  "order": 3
+}

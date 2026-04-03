@@ -1,0 +1,44 @@
+{
+  "slug": "cash-flow-monitor",
+  "title": "Weekly Cash Flow Monitor",
+  "domain": "finance",
+  "summary": "A weekly check on your cash position, receivables, and upcoming payments. Catch cash flow problems before they become crises.",
+  "frequency": "weekly",
+  "owner": "founder",
+  "inputs": ["Bank account balances", "Outstanding invoices", "Upcoming bills and payroll", "Expected incoming payments"],
+  "outputs": ["Cash position summary", "Receivables status", "Cash flow alerts", "Collection actions"],
+  "steps": [
+    {
+      "title": "Check all bank balances",
+      "description": "Log in and note: current balance in each account, any large unexpected debits, pending transactions.",
+      "responsible": "Founder",
+      "tool": "Banking app"
+    },
+    {
+      "title": "Review outstanding receivables",
+      "description": "Check all unpaid invoices. Flag: overdue invoices (send reminder), invoices due this week (confirm payment), large invoices coming due (verify no issues).",
+      "responsible": "Founder",
+      "tool": "Xero or QuickBooks"
+    },
+    {
+      "title": "Preview upcoming expenses",
+      "description": "Check what large payments are due in the next 2 weeks: payroll, rent, annual subscriptions, tax payments, vendor invoices.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Calculate net cash position",
+      "description": "Net position = current cash + expected inflows this week - expected outflows this week. If this goes below your comfort threshold, take action.",
+      "responsible": "Founder"
+    }
+  ],
+  "kpis": [
+    { "metric": "Cash position check", "target": "Completed every Monday" },
+    { "metric": "Overdue receivables", "target": "No invoice overdue by more than 14 days without follow-up" },
+    { "metric": "Cash surprise rate", "target": "Zero unexpected cash shortfalls" }
+  ],
+  "whenToImplement": "Immediately. Even if you have plenty of cash, the habit prevents surprises.",
+  "delegationNotes": "Can be delegated to a bookkeeper or EA once the format is established. Founder should still review the summary weekly.",
+  "automationNotes": "Set up automatic balance alerts for low thresholds. Use accounting software reports for receivables ageing.",
+  "relatedSystems": ["monthly-close-and-review"],
+  "order": 2
+}

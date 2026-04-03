@@ -1,0 +1,92 @@
+{
+  "slug": "ai-automation",
+  "name": "AI & Automation",
+  "tagline": "Leverage through intelligence",
+  "icon": "Bot",
+  "color": "#A855F7",
+  "coreMetrics": [
+    {
+      "name": "Hours Saved Per Week",
+      "description": "Total hours saved across the business through automation and AI",
+      "target": ">20 hours per week",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Automation Coverage",
+      "description": "Percentage of repetitive tasks that are automated",
+      "target": ">60%",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "AI Adoption Rate",
+      "description": "Percentage of team members actively using AI tools",
+      "target": ">80%",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Error Rate",
+      "description": "Error rate in automated workflows compared to manual processes",
+      "target": "<2%",
+      "frequency": "monthly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Friday",
+      "activity": "Automation review — check workflow health and identify new automation candidates",
+      "duration": "15min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Automation audit",
+      "deliverable": "Health check on all active automations"
+    },
+    {
+      "week": 2,
+      "focus": "New use case identification",
+      "deliverable": "Top 3 new automation opportunities ranked by ROI"
+    },
+    {
+      "week": 3,
+      "focus": "Tool evaluation",
+      "deliverable": "Assessment of new AI/automation tools worth adopting"
+    },
+    {
+      "week": 4,
+      "focus": "ROI review",
+      "deliverable": "Monthly ROI report on automation investments"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Prompt engineering",
+      "when": "Once use cases and quality standards are defined",
+      "toWhom": "AI-savvy team member"
+    },
+    {
+      "task": "Workflow setup",
+      "when": "Once the logic is mapped out",
+      "toWhom": "Ops lead or automation specialist"
+    },
+    {
+      "task": "Testing",
+      "when": "Before any automation goes live",
+      "toWhom": "QA or ops team"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Repetitive workflows",
+      "tool": "Make or Zapier",
+      "savesHoursPerWeek": 5
+    },
+    {
+      "task": "Content generation",
+      "tool": "Claude",
+      "savesHoursPerWeek": 4
+    }
+  ],
+  "order": 12
+}

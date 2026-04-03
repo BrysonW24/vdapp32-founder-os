@@ -1,0 +1,28 @@
+{
+  "slug": "sales",
+  "name": "Sales",
+  "shortName": "Sales",
+  "group": "go-to-market",
+  "icon": "Handshake",
+  "color": "#2f4f79",
+  "tagline": "Outbound, inbound, discovery, closing, and pipeline management",
+  "blueprintSlug": "sales-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "day-in-the-life", "label": "Day in Life", "icon": "Briefcase" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" },
+    { "slug": "simulation", "label": "Simulation", "icon": "Zap" },
+    { "slug": "automations", "label": "Automations", "icon": "Workflow" },
+    { "slug": "ai-workflows", "label": "AI Workflows", "icon": "Sparkles" },
+    { "slug": "experimentation", "label": "Experimentation", "icon": "FlaskConical" },
+    { "slug": "measurement-architecture", "label": "Measurement", "icon": "BarChart3" },
+    { "slug": "attribution", "label": "Attribution", "icon": "Orbit" },
+    { "slug": "executive-communication", "label": "Executive Comms", "icon": "MessageSquare" },
+    { "slug": "privacy-ethics", "label": "Privacy & Ethics", "icon": "Shield" },
+    { "slug": "careers", "label": "Careers", "icon": "Users" },
+    { "slug": "resources", "label": "Resources", "icon": "Library" },
+    { "slug": "future", "label": "Future", "icon": "TrendingUp" },
+    { "slug": "ops", "label": "Ops", "icon": "Settings" }
+  ],
+  "order": 3
+}

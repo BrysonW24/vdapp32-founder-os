@@ -1,0 +1,37 @@
+{
+  "slug": "90-day-plan-canvas",
+  "title": "90-Day Strategic Plan Canvas",
+  "domain": "strategy",
+  "description": "A single-page canvas for capturing your 3 quarterly priorities, measurable outcomes, and monthly milestones.",
+  "format": "canvas",
+  "sections": [
+    {
+      "title": "Current Position",
+      "description": "Where you are right now — key numbers and honest assessment",
+      "fields": ["Revenue", "Burn rate", "Team size", "Biggest risk", "Biggest opportunity"]
+    },
+    {
+      "title": "Priority 1",
+      "description": "Your most important focus area for the next 90 days",
+      "fields": ["Priority name", "90-day outcome (measurable)", "Month 1 milestone", "Month 2 milestone", "Month 3 milestone", "Owner"]
+    },
+    {
+      "title": "Priority 2",
+      "description": "Your second most important focus area",
+      "fields": ["Priority name", "90-day outcome (measurable)", "Month 1 milestone", "Month 2 milestone", "Month 3 milestone", "Owner"]
+    },
+    {
+      "title": "Priority 3",
+      "description": "Your third focus area",
+      "fields": ["Priority name", "90-day outcome (measurable)", "Month 1 milestone", "Month 2 milestone", "Month 3 milestone", "Owner"]
+    },
+    {
+      "title": "Weekly Review",
+      "description": "Questions to answer every Friday",
+      "fields": ["What did I commit to this week?", "What actually happened?", "What do I commit to next week?", "What is blocking me?"]
+    }
+  ],
+  "howToUse": "Fill in the Current Position section first. Then define each priority with a measurable 90-day outcome and monthly milestones. Print this page and review it every Friday.",
+  "relatedPlaybooks": ["90-day-strategic-plan"],
+  "order": 1
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "accounting",
+  "name": "Accounting",
+  "shortName": "Acct",
+  "group": "operations",
+  "icon": "Calculator",
+  "color": "#78716c",
+  "tagline": "P&L, balance sheet, tax basics, and bookkeeping hygiene",
+  "blueprintSlug": "accounting-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 6
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "ai-engineering",
+  "name": "AI Engineering",
+  "tagline": "Ship reliable AI products and platform systems with evals, guardrails, and cost awareness",
+  "icon": "Cpu",
+  "color": "#f97316",
+  "coreMetrics": [
+    {
+      "name": "Eval pass rate",
+      "description": "Share of release-candidate prompts, retrieval paths, and flows that clear the current quality bar.",
+      "target": ">= 90% on the active eval set",
+      "frequency": "weekly"
+    },
+    {
+      "name": "p95 latency",
+      "description": "How long the slowest normal requests take end-to-end in production.",
+      "target": "< 6 seconds for user-facing flows",
+      "frequency": "daily"
+    },
+    {
+      "name": "Cost per successful run",
+      "description": "Unit cost of a completed workflow after model, infra, and retrieval spend.",
+      "target": "Tracked weekly and trending down quarter over quarter",
+      "frequency": "weekly"
+    },
+    {
+      "name": "Runtime incident rate",
+      "description": "Frequency of broken tool calls, hallucination escapes, and rollback-worthy regressions.",
+      "target": "Zero sev-1 incidents and a shrinking backlog of recurring failures",
+      "frequency": "weekly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Mon",
+      "activity": "Review last week's eval regressions, launch blockers, and rollback notes.",
+      "duration": "45 min"
+    },
+    {
+      "day": "Wed",
+      "activity": "Inspect latency, routing, cost, and tool-failure traces for the highest-volume workflows.",
+      "duration": "30 min"
+    },
+    {
+      "day": "Fri",
+      "activity": "Ship quality changes behind evidence: evals, approval boundaries, and observability updates.",
+      "duration": "60 min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Platform reliability",
+      "deliverable": "Update release gates, incident learnings, and rollback playbooks."
+    },
+    {
+      "week": 2,
+      "focus": "Retrieval and data quality",
+      "deliverable": "Refresh ingestion assumptions, stale-index checks, and citation quality."
+    },
+    {
+      "week": 3,
+      "focus": "Cost and routing discipline",
+      "deliverable": "Review model mix, caching strategy, and unit economics."
+    },
+    {
+      "week": 4,
+      "focus": "Roadmap leverage",
+      "deliverable": "Choose the next high-confidence AI capability to build or harden."
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Routine labeling, dataset cleanup, and documentation packaging",
+      "when": "Once the workflow is defined and quality bars are explicit",
+      "toWhom": "Contractor or junior engineer"
+    },
+    {
+      "task": "Dashboard assembly and weekly metric snapshots",
+      "when": "After instrumentation is stable",
+      "toWhom": "Ops-minded engineer or analyst"
+    },
+    {
+      "task": "Integration scaffolding and internal tooling polish",
+      "when": "When the product shape is already proven",
+      "toWhom": "Platform engineer"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Eval execution on each release candidate",
+      "tool": "CI + eval harness",
+      "savesHoursPerWeek": 4
+    },
+    {
+      "task": "Trace capture and incident tagging",
+      "tool": "Observability pipeline",
+      "savesHoursPerWeek": 3
+    },
+    {
+      "task": "Model routing and fallback selection",
+      "tool": "Serving layer",
+      "savesHoursPerWeek": 5
+    }
+  ],
+  "order": 1
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "unit-economics-calculator",
+  "title": "Unit Economics Calculator",
+  "domain": "finance",
+  "description": "A spreadsheet for calculating and tracking your core unit economics: CAC, LTV, LTV:CAC ratio, and payback period.",
+  "format": "spreadsheet",
+  "sections": [
+    {
+      "title": "Customer Acquisition Cost (CAC)",
+      "description": "How much it costs to acquire one customer",
+      "fields": ["Total sales spend this month", "Total marketing spend this month", "Total S&M spend", "New customers acquired", "CAC = Total S&M / New customers"]
+    },
+    {
+      "title": "Lifetime Value (LTV)",
+      "description": "How much revenue one customer generates over their lifetime",
+      "fields": ["Average monthly revenue per customer (ARPU)", "Average customer lifespan (months)", "Gross margin %", "LTV = ARPU × Lifespan × Gross margin"]
+    },
+    {
+      "title": "Key Ratios",
+      "description": "The ratios that tell you if your model works",
+      "fields": ["LTV:CAC ratio (target: 3:1 or higher)", "CAC payback period = CAC / (ARPU × Gross margin)", "Monthly churn rate = Customers lost / Starting customers"]
+    },
+    {
+      "title": "Trend Tracking",
+      "description": "Track these monthly to spot problems early",
+      "fields": ["Month", "CAC", "LTV", "LTV:CAC", "Payback period", "Churn rate", "Notes"]
+    }
+  ],
+  "howToUse": "Calculate these numbers monthly. If LTV:CAC drops below 3:1, investigate whether acquisition is too expensive or retention is too low.",
+  "relatedPlaybooks": ["monthly-financial-review", "pricing-strategy-workshop"],
+  "order": 2
+}

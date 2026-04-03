@@ -1,0 +1,43 @@
+{
+  "slug": "weekly-pipeline-review",
+  "title": "Weekly Pipeline Review",
+  "domain": "sales",
+  "summary": "A weekly cadence for reviewing your sales pipeline, identifying stuck deals, and planning outreach for the coming week.",
+  "frequency": "weekly",
+  "owner": "founder",
+  "inputs": ["CRM data (deal stages, values, ages)", "Last week's outreach results", "New leads and inquiries", "Lost deal reasons"],
+  "outputs": ["Updated pipeline forecast", "Priority deals for the week", "Follow-up actions assigned", "Outreach targets for new leads"],
+  "steps": [
+    {
+      "title": "Review pipeline by stage",
+      "description": "Open your CRM. For each stage (Lead → Qualified → Proposal → Negotiation → Closed), count deals and total value. Compare to last week.",
+      "responsible": "Founder",
+      "tool": "CRM (HubSpot, Pipedrive, or spreadsheet)"
+    },
+    {
+      "title": "Identify stuck deals",
+      "description": "Flag any deal that has not moved stages in 2+ weeks. For each: what is blocking it? What is the next action? If no action exists, it is not a real deal — move it to lost or archive.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Plan the week's outreach",
+      "description": "Choose 3-5 priority deals to advance this week. For each, define the specific action: send proposal, schedule demo, follow up on contract, etc. Also plan new outreach: how many new prospects will you contact?",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Update the forecast",
+      "description": "Based on your pipeline review, update your revenue forecast for the month and quarter. Be honest — count only deals with real next steps and engaged prospects.",
+      "responsible": "Founder"
+    }
+  ],
+  "kpis": [
+    { "metric": "Pipeline coverage ratio", "target": "3x pipeline vs quarterly target" },
+    { "metric": "Deal velocity", "target": "No deal stuck in one stage for more than 2 weeks" },
+    { "metric": "Weekly new leads added", "target": "10+ new prospects contacted per week" }
+  ],
+  "whenToImplement": "As soon as you have more than 5 active deals. Before that, a simple spreadsheet check is fine.",
+  "delegationNotes": "Once you hire a sales rep, they should run this review with you weekly. Eventually they run it independently and you attend monthly.",
+  "automationNotes": "Set up CRM dashboards that show pipeline by stage, deal age, and forecast automatically. Automate follow-up reminders for deals going stale.",
+  "relatedSystems": [],
+  "order": 1
+}

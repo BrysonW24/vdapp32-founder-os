@@ -1,0 +1,49 @@
+{
+  "slug": "sales-handoff-playbook",
+  "title": "Sales Handoff Playbook",
+  "domain": "sales",
+  "summary": "Document your founder-led sales process so a hire can replicate it. Stop being the bottleneck.",
+  "whenToUseIt": "When you are ready to hire your first sales rep, or when you realise you cannot personally handle all sales calls anymore.",
+  "timeToComplete": "4-6 hours",
+  "difficulty": "intermediate",
+  "prerequisites": ["At least 10 closed deals using a consistent process"],
+  "steps": [
+    {
+      "title": "Record your next 5 sales calls",
+      "description": "Use Zoom, Loom, or any recording tool. Get permission from the prospect. These recordings become your training material. You cannot document what you do not capture.",
+      "tips": "You will be surprised how different your actual calls are from what you think you do.",
+      "timeEstimate": "5 calls over 1-2 weeks",
+      "tools": ["Zoom", "Loom", "Fathom"]
+    },
+    {
+      "title": "Write down your sales process",
+      "description": "Document every step from first contact to closed deal: How do you find leads? How do you qualify them? What do you say on the first call? What do you send after? How do you handle objections? How do you close? Include exact scripts, email templates, and proposal formats.",
+      "timeEstimate": "2-3 hours"
+    },
+    {
+      "title": "Document your objection responses",
+      "description": "List the top 10 objections you hear and write the exact response that works. Format: Objection → Acknowledge → Reframe → Evidence → Question. Example: 'Too expensive' → 'I understand budget is important' → 'Let me show you the ROI' → '[case study]' → 'What would the impact be if this saved you X hours/week?'",
+      "timeEstimate": "1 hour"
+    },
+    {
+      "title": "Define your qualification criteria",
+      "description": "Write the criteria that separate a qualified lead from a time-waster. Include: budget range, decision-making authority, timeline, problem severity, and fit with your solution. A sales rep needs to know when to pursue and when to walk away.",
+      "timeEstimate": "30 minutes"
+    },
+    {
+      "title": "Create an onboarding checklist for your first rep",
+      "description": "List everything a new sales hire needs to know in their first 2 weeks: product knowledge, ICP, competitive landscape, CRM setup, call recordings to review, practice calls to do, and metrics they will be measured on.",
+      "timeEstimate": "1 hour"
+    }
+  ],
+  "expectedOutcome": "A documented sales process, objection playbook, qualification criteria, and onboarding checklist — everything your first sales hire needs to start selling in week 2.",
+  "commonMistakes": [
+    "Hiring a rep before documenting your process — they cannot replicate what is not written down",
+    "Assuming a rep will figure it out — founder-led selling has implicit knowledge that must be made explicit",
+    "Not including real call recordings — scripts without context are useless",
+    "Over-documenting — a 50-page manual will not be read. Keep it to 5-10 pages max"
+  ],
+  "relatedPlaybooks": ["first-10-customers", "discovery-call-script"],
+  "relatedModules": ["sales-process-design"],
+  "order": 3
+}

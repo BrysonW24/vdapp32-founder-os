@@ -1,0 +1,48 @@
+{
+  "slug": "quarterly-strategy-review",
+  "title": "Quarterly Strategy Review",
+  "domain": "strategy",
+  "summary": "A quarterly cadence for reviewing outcomes, reassessing priorities, and setting the next quarter's direction.",
+  "frequency": "quarterly",
+  "owner": "founder",
+  "inputs": ["Previous quarter's 90-day plan", "Revenue and growth metrics", "Pipeline data", "Customer feedback themes", "Competitive landscape changes"],
+  "outputs": ["Quarter-in-review summary", "Updated competitive position", "Next quarter's 90-day plan", "Resource allocation decisions"],
+  "steps": [
+    {
+      "title": "Review last quarter's outcomes",
+      "description": "For each of the 3 priorities from last quarter: did you hit, miss, or exceed the measurable outcome? Why?",
+      "responsible": "Founder",
+      "tool": "Notion or Google Docs"
+    },
+    {
+      "title": "Update your competitive landscape",
+      "description": "Run a quick competitive scan. What changed? New entrants? Pricing moves? Feature launches?",
+      "responsible": "Founder",
+      "tool": "Competitor websites + Crayon/Klue if available"
+    },
+    {
+      "title": "Review customer and market signals",
+      "description": "What are customers asking for? What are you hearing in sales calls? What trends are emerging in your market?",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Set next quarter's 3 priorities",
+      "description": "Based on what you learned, choose 3 priorities for the next 90 days. Use the 90-Day Strategic Plan playbook.",
+      "responsible": "Founder"
+    },
+    {
+      "title": "Allocate resources",
+      "description": "Decide how to distribute time, money, and people across the 3 priorities. If a priority does not have resources, it is not a real priority.",
+      "responsible": "Founder"
+    }
+  ],
+  "kpis": [
+    { "metric": "Priorities hit rate", "target": "2 out of 3 priorities achieved per quarter" },
+    { "metric": "Review completion", "target": "Review completed within first week of new quarter" }
+  ],
+  "whenToImplement": "Start from your first quarter in business. Even solo founders benefit from structured quarterly reflection.",
+  "delegationNotes": "The review itself should always involve the founder. Data collection and preparation can be delegated to an EA or ops person.",
+  "automationNotes": "Automate data collection: set up dashboards that pull revenue, pipeline, and usage metrics automatically so the review starts with facts, not data gathering.",
+  "relatedSystems": [],
+  "order": 1
+}

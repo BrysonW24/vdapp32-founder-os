@@ -1,0 +1,15 @@
+{
+  "slug": "data-analytics",
+  "name": "Data / Analytics",
+  "shortName": "Data",
+  "group": "operations",
+  "icon": "BarChart3",
+  "color": "#8b5cf6",
+  "tagline": "KPIs, dashboards, instrumentation, and interpreting signals",
+  "blueprintSlug": "data-analytics-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 8
+}

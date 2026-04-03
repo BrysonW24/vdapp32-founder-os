@@ -1,0 +1,15 @@
+{
+  "slug": "finance",
+  "name": "Finance",
+  "shortName": "Fin",
+  "group": "operations",
+  "icon": "DollarSign",
+  "color": "#a16a1f",
+  "tagline": "Cash flow, runway, margins, pricing, and unit economics",
+  "blueprintSlug": "finance-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 5
+}

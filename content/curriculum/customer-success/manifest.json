@@ -1,0 +1,15 @@
+{
+  "slug": "customer-success",
+  "name": "Customer Success",
+  "shortName": "CS",
+  "group": "go-to-market",
+  "icon": "HeartHandshake",
+  "color": "#22c55e",
+  "tagline": "Retention, onboarding, support, and churn prevention",
+  "blueprintSlug": "customer-success-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 9
+}

@@ -1,0 +1,123 @@
+{
+  "slug": "sales",
+  "name": "Sales",
+  "tagline": "Pipeline in, revenue out",
+  "icon": "TrendingUp",
+  "color": "#10B981",
+  "coreMetrics": [
+    {
+      "name": "Pipeline Value",
+      "description": "Total weighted value of all active deals across pipeline stages — your leading indicator of future revenue",
+      "target": "3x monthly revenue target",
+      "frequency": "weekly"
+    },
+    {
+      "name": "Close Rate",
+      "description": "Percentage of qualified opportunities that convert to closed-won deals",
+      "target": ">25%",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Average Deal Size",
+      "description": "Mean revenue per closed deal — track to ensure you're not drifting downmarket",
+      "target": "Stable or increasing trend",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Sales Cycle Length",
+      "description": "Average days from first qualified meeting to closed-won — shorter is better but not at the cost of quality",
+      "target": "<45 days",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Customer Acquisition Cost",
+      "description": "Fully loaded cost to acquire one customer including marketing, sales salaries, tools, and commissions",
+      "target": "CAC payback <12 months",
+      "frequency": "monthly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Monday",
+      "activity": "Pipeline review — walk every active deal, update stages, identify stuck deals, confirm next actions for top 5 opportunities",
+      "duration": "45min"
+    },
+    {
+      "day": "Wednesday",
+      "activity": "Deal coaching — review call recordings or prep for upcoming high-value meetings, refine objection handling, sharpen positioning",
+      "duration": "30min"
+    },
+    {
+      "day": "Friday",
+      "activity": "Forecast update — update weekly forecast numbers, flag deals at risk, confirm commit vs best-case pipeline",
+      "duration": "15min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Pipeline deep dive",
+      "deliverable": "Full pipeline health report with stage-by-stage conversion rates, aging analysis, and velocity metrics"
+    },
+    {
+      "week": 2,
+      "focus": "Lost deal analysis",
+      "deliverable": "Win/loss analysis for all closed-lost deals with root causes, competitor mentions, and pattern identification"
+    },
+    {
+      "week": 3,
+      "focus": "ICP refinement",
+      "deliverable": "Updated ideal customer profile based on recent wins, losses, and market feedback — adjust targeting criteria"
+    },
+    {
+      "week": 4,
+      "focus": "Forecast and targets",
+      "deliverable": "Next month's revenue forecast, updated quotas, and target account list with outreach plan"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "CRM data entry",
+      "when": "Immediately — this should never be founder work beyond initial setup",
+      "toWhom": "Sales ops, VA, or automate entirely"
+    },
+    {
+      "task": "Lead qualification",
+      "when": "Once you have a clear ICP and qualification criteria documented (BANT or MEDDIC framework)",
+      "toWhom": "SDR or inside sales rep"
+    },
+    {
+      "task": "Proposal formatting",
+      "when": "Once you have 3+ proposal templates that cover your common deal types",
+      "toWhom": "Sales ops or VA"
+    },
+    {
+      "task": "Contract and legal review",
+      "when": "When deal volume exceeds 5 contracts per month",
+      "toWhom": "Legal counsel or ops lead with legal training"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Follow-up sequences",
+      "tool": "Apollo.io or Instantly",
+      "savesHoursPerWeek": 5
+    },
+    {
+      "task": "CRM updates and activity logging",
+      "tool": "Zapier or native CRM automation",
+      "savesHoursPerWeek": 3
+    },
+    {
+      "task": "Meeting scheduling",
+      "tool": "Calendly or Cal.com",
+      "savesHoursPerWeek": 2
+    },
+    {
+      "task": "Proposal generation",
+      "tool": "PandaDoc or Qwilr",
+      "savesHoursPerWeek": 2
+    }
+  ],
+  "order": 3
+}

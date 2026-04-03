@@ -1,0 +1,15 @@
+{
+  "slug": "ai-automation",
+  "name": "AI / Automation",
+  "shortName": "AI",
+  "group": "growth",
+  "icon": "Bot",
+  "color": "#f59e0b",
+  "tagline": "Workflow automation, copilots, agentic systems, and leverage through tooling",
+  "blueprintSlug": "ai-automation-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 10
+}

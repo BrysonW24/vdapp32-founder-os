@@ -1,0 +1,15 @@
+{
+  "slug": "legal",
+  "name": "Legal / Risk",
+  "shortName": "Legal",
+  "group": "founder-only",
+  "icon": "Shield",
+  "color": "#64748b",
+  "tagline": "Contracts, IP, privacy, liabilities, and regulatory awareness",
+  "blueprintSlug": "legal-blueprint",
+  "deepDivePages": [
+    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
+    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+  ],
+  "order": 14
+}

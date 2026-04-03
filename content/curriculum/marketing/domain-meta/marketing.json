@@ -1,0 +1,97 @@
+{
+  "slug": "marketing",
+  "name": "Marketing",
+  "tagline": "Attention to action",
+  "icon": "Megaphone",
+  "color": "#F59E0B",
+  "coreMetrics": [
+    {
+      "name": "MQLs Generated",
+      "description": "Marketing qualified leads generated per month across all channels",
+      "target": "20% month-over-month growth",
+      "frequency": "weekly"
+    },
+    {
+      "name": "CAC by Channel",
+      "description": "Customer acquisition cost broken down by marketing channel",
+      "target": "Identify top 2 channels with lowest CAC",
+      "frequency": "monthly"
+    },
+    {
+      "name": "Content Engagement Rate",
+      "description": "Average engagement across content assets (clicks, shares, time on page)",
+      "target": ">3% engagement rate",
+      "frequency": "weekly"
+    },
+    {
+      "name": "Brand Awareness",
+      "description": "Branded search volume, social mentions, and direct traffic trends",
+      "target": "Increasing trend quarter-over-quarter",
+      "frequency": "monthly"
+    }
+  ],
+  "weeklyRhythm": [
+    {
+      "day": "Monday",
+      "activity": "Content planning — review upcoming content calendar, assign tasks, align with campaigns",
+      "duration": "30min"
+    },
+    {
+      "day": "Thursday",
+      "activity": "Performance review — check channel metrics, ad spend, and conversion funnels",
+      "duration": "20min"
+    }
+  ],
+  "monthlyRhythm": [
+    {
+      "week": 1,
+      "focus": "Channel performance review",
+      "deliverable": "Channel-by-channel ROI report with spend and conversion data"
+    },
+    {
+      "week": 2,
+      "focus": "Content calendar",
+      "deliverable": "Next month's content calendar with topics, formats, and owners"
+    },
+    {
+      "week": 3,
+      "focus": "Campaign planning",
+      "deliverable": "Campaign brief for upcoming launches or promotions"
+    },
+    {
+      "week": 4,
+      "focus": "Budget review",
+      "deliverable": "Marketing budget vs actual with reallocation recommendations"
+    }
+  ],
+  "whatToDelegate": [
+    {
+      "task": "Social media posting",
+      "when": "Once brand voice and content guidelines are established",
+      "toWhom": "Social media manager or VA"
+    },
+    {
+      "task": "Graphic design",
+      "when": "When you have brand templates and style guide ready",
+      "toWhom": "Designer or Canva-savvy VA"
+    },
+    {
+      "task": "Email scheduling",
+      "when": "Once sequences and templates are built",
+      "toWhom": "Marketing ops or VA"
+    }
+  ],
+  "whatToAutomate": [
+    {
+      "task": "Social scheduling",
+      "tool": "Buffer or Later",
+      "savesHoursPerWeek": 4
+    },
+    {
+      "task": "Email sequences",
+      "tool": "Klaviyo",
+      "savesHoursPerWeek": 3
+    }
+  ],
+  "order": 4
+}

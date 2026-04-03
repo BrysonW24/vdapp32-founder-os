@@ -1,0 +1,34 @@
+{
+  "slug": "finance-prompts",
+  "title": "Finance Prompt Pack",
+  "domain": "finance",
+  "description": "AI prompts for cash flow analysis, unit economics, pricing, and financial planning.",
+  "prompts": [
+    {
+      "title": "Cash Flow Scenario Modeller",
+      "prompt": "My business has: Monthly revenue: $[X] (growing [Y]% per month). Monthly expenses: $[Z] (broken down as: salaries $[A], software $[B], marketing $[C], other $[D]). Cash in bank: $[E]. Model my cash flow for the next 12 months under 3 scenarios: conservative (revenue grows at half current rate), base (current growth continues), optimistic (revenue growth doubles). For each, show monthly cash balance and when (if ever) I run out of cash.",
+      "context": "Use during your monthly financial review or when planning major spending decisions."
+    },
+    {
+      "title": "Unit Economics Calculator",
+      "prompt": "Help me calculate my unit economics. Customer Acquisition Cost: I spent $[X] on sales and marketing last month and acquired [Y] new customers. Average Revenue Per Customer: my average customer pays $[Z] per month. Average Customer Lifespan: customers stay for approximately [W] months. Calculate: CAC, LTV, LTV:CAC ratio, and payback period. Tell me if these are healthy and what to improve.",
+      "context": "Use monthly to track whether your business model is sustainable."
+    },
+    {
+      "title": "Pricing Analysis",
+      "prompt": "I sell [product/service] to [customer type]. Current price: $[X] per [unit/month/year]. Competitors charge: [list prices]. My cost to deliver: $[Y] per customer. The value I create: [describe outcome]. Help me evaluate: Am I underpricing? What price would maximise revenue? Should I use tiered pricing?",
+      "context": "Use when you suspect your pricing needs adjustment."
+    },
+    {
+      "title": "Investor Update Drafter",
+      "prompt": "Help me write a monthly investor update. Revenue: $[X] (vs $[Y] last month). MRR growth: [Z]%. Cash: $[A]. Runway: [B] months. Customers: [C] (net new: [D]). Key wins: [list]. Key challenges: [list]. Needs: [list]. Draft a concise, honest update under 300 words.",
+      "context": "Use monthly if you have investors or advisors to update."
+    },
+    {
+      "title": "Financial Health Check",
+      "prompt": "Here are my financials: Monthly revenue: $[X]. Monthly expenses: $[Y]. Gross margin: [Z]%. Cash: $[A]. Burn rate: $[B]. Customers: [C]. ARPU: $[D]. Churn: [E]% per month. Assess my financial health. What is strong? What is concerning? What 3 actions would have the biggest impact?",
+      "context": "Use quarterly for a big-picture financial health assessment."
+    }
+  ],
+  "order": 1
+}
