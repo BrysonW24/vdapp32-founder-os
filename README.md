@@ -14,7 +14,7 @@ The product is designed to feel like a founder cockpit: what matters now, what t
 ## Core Routes
 
 - `/` — Founder dashboard across all subjects
-- `/{subject}` — Classic subject front by default, including restored academy-style experiences for Marketing, Sales, and AI Engineering
+- `/{subject}` — Academy-style subject front by default across all 15 subjects, with preserved bespoke originals for Marketing, Sales, and AI Engineering
 - `/{subject}/v2` — Newer generic Founder OS subject overview retained as a secondary variant
 - `/{subject}/playbooks` — Action-oriented operational playbooks
 - `/{subject}/systems` — Repeatable business systems and operating cadences
@@ -45,9 +45,10 @@ Founder OS has completed its Wave 1 threshold across four core subjects:
 - Strategy
 - Finance
 
-Since then, the deepening wave has expanded the rest of the business-native subjects to a real baseline and restored the classic academy fronts for Marketing, Sales, and AI Engineering.
+Since then, the deepening wave has expanded the rest of the business-native subjects to a real baseline and restored academy-style subject home pages across the whole app.
 
-- Marketing, Sales, and AI Engineering now default to their classic academy-style front-end, SVGs, and legacy route rhythm
+- All 15 subject root routes now render academy-style home pages with narrative structure, SVG-led section visuals, and subject-specific branch exploration
+- Marketing, Sales, and AI Engineering keep their preserved bespoke academy home pages
 - The newer generic subject experience is preserved at `/{subject}/v2`
 - Founder Performance, Capital, Legal, Accounting, Operations, Product, Leadership, Data & Analytics, Customer Success, AI & Automation, Finance, and Strategy now all have structured baseline content depth
 
@@ -82,7 +83,7 @@ npm run build
 
 - Architecture is shipped and stable
 - Wave 1 thresholds are complete across Marketing, Sales, Strategy, and Finance
-- Classic restored fronts now lead `marketing`, `sales`, and `ai-engineering`, with `v2` kept as the secondary Founder OS variant
+- Academy-style subject home pages now lead all 15 subject roots, with `v2` kept as the secondary Founder OS variant
 - All 15 subjects now have operator-first content baselines, and the flagship subjects retain the deepest bespoke pages
 - Deep-dive routes are live under `/{subject}/{deepDiveSlug}`, including classic aliases like `learning-map`, `timeline`, `ae-blueprint`, and `frontier-blueprint`
-- Current verified build output is 1370 static pages
+- Current verified build output is 1499 static pages

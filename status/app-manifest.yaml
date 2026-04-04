@@ -4,7 +4,7 @@ summary: Multi-subject founder operating system with playbooks, systems, tools, 
 owner: unassigned
 phase: delivery
 release_stage: internal-beta
-last_audited: 2026-04-03
+last_audited: 2026-04-04
 
 audience:
   primary: Founders building and operating a business.
@@ -14,7 +14,7 @@ product:
   category: operating-system
   deployment_target: web
   business_model: internal-product
-  status_truth: "Active shell shipped. Wave 1 depth is complete across Marketing, Sales, Strategy, and Finance, and the deepening wave now extends baseline depth across the remaining business-native subjects while restoring classic fronts for Marketing, Sales, and AI Engineering."
+  status_truth: "Active shell shipped. Wave 1 depth is complete across Marketing, Sales, Strategy, and Finance, and the deepening wave now extends baseline depth across the remaining business-native subjects while restoring academy-style subject home pages across all 15 subject roots."
 
 surfaces:
   primary_routes:

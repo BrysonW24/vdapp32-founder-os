@@ -1,5 +1,5 @@
 app_id: vdapp32-founder-os
-last_updated: 2026-04-03
+last_updated: 2026-04-04
 
 surfaces:
   - route: /
@@ -10,7 +10,7 @@ surfaces:
   - route: /[subject]
     feature: Subject overview
     status: live
-    notes: Classic subject front by default, with restored academy-style experiences for Marketing, Sales, and AI Engineering and a shared classic presentation for the remaining subjects.
+    notes: Academy-style subject home page by default across all 15 subjects, with preserved bespoke originals for Marketing, Sales, and AI Engineering and shared academy rendering for the remaining subjects.
 
   - route: /[subject]/v2
     feature: Secondary generic subject overview
@@ -66,4 +66,4 @@ supporting_capabilities:
 
   - name: Wave 1 content depth
     status: live
-    notes: Wave 1 thresholds remain complete across Marketing, Sales, Strategy, and Finance; the deepening wave now extends structured baseline depth across the rest of the business-native subjects and restores flagship classic fronts.
+    notes: Wave 1 thresholds remain complete across Marketing, Sales, Strategy, and Finance; the deepening wave now extends structured baseline depth across the rest of the business-native subjects and restores academy-style subject roots across the full app.

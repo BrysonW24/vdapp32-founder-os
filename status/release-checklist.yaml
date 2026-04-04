@@ -1,5 +1,5 @@
 app_id: vdapp32-founder-os
-last_updated: 2026-04-03
+last_updated: 2026-04-04
 target_stage: internal-beta
 
 gates:
@@ -28,6 +28,6 @@ gates:
 
 blockers: []
 notes:
-  - Wave 1 content thresholds remain complete, and the current deepening wave now restores flagship classic fronts while extending baseline content depth across the remaining business-native subjects.
-  - Manual verification includes the restored Marketing, Sales, and AI Engineering alias routes plus representative deep-dive route checks on the local app.
+  - Wave 1 content thresholds remain complete, and the current deepening wave now restores academy-style subject roots across all 15 subjects while preserving bespoke flagship pages for Marketing, Sales, and AI Engineering.
+  - Manual verification includes all 15 subject roots returning 200 locally after clearing a stale `.next` dev cache, plus preserved flagship-route checks and representative `/v2` verification.
   - No automated test suite is configured yet, so verification currently relies on type-check, lint, build, and route smoke tests.

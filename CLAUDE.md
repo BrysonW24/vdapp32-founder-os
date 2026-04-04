@@ -47,18 +47,18 @@ content/curriculum/
 
 ### 15 subjects, 4 groups
 
-| Group | Subjects |
-|-------|----------|
-| Go-to-Market | Marketing, Sales, Customer Success |
-| Operations | Finance, Accounting, Operations, Data & Analytics |
-| Growth | Strategy, Product, AI & Automation, AI Engineering, Leadership |
-| Founder | Capital / Fundraising, Legal / Risk, Founder Performance |
+| Group        | Subjects                                                       |
+| ------------ | -------------------------------------------------------------- |
+| Go-to-Market | Marketing, Sales, Customer Success                             |
+| Operations   | Finance, Accounting, Operations, Data & Analytics              |
+| Growth       | Strategy, Product, AI & Automation, AI Engineering, Leadership |
+| Founder      | Capital / Fundraising, Legal / Risk, Founder Performance       |
 
 ### Route architecture (subject-prefixed, operator-first)
 
 ```
 /                                    → Founder Dashboard (all subjects, grouped)
-/{subject}                           → Default subject front (classic by default, restored for flagship subjects)
+/{subject}                           → Default academy-style subject front across all 15 subjects
 /{subject}/v2                        → Secondary generic Founder OS subject overview
 /{subject}/playbooks                 → Operational playbooks
 /{subject}/playbooks/{slug}          → Playbook detail
@@ -84,17 +84,17 @@ Navigation reads subjects from `getSubjects()` at build time. Subject deep dives
 
 ### Key files
 
-| File | Purpose |
-|------|---------|
-| `src/types/curriculum.ts` | All Zod schemas: SubjectManifest, Module, Lesson, Framework, Project, Tool, DayInLife, Playbook, BusinessSystem, Simulation, PromptPack, Template |
-| `src/lib/content.ts` | Content loader — every function takes `subject` as first param |
-| `src/lib/progress.ts` | Zustand progress store — subject-scoped with backward compat |
-| `src/components/academy/layout/Navigation.tsx` | 3-tier nav with subject switcher |
-| `src/components/founder/SubjectOverview.tsx` | Generic Founder OS subject landing page used by `/{subject}/v2` |
-| `src/lib/subject-presentation.ts` | Classic-vs-v2 presentation registry, nav labels, and route aliases |
-| `src/lib/deep-dives.tsx` | Shared and subject-specific deep-dive registry |
-| `src/app/page.tsx` | Founder Dashboard |
-| `src/app/[subject]/` | All subject-scoped routes |
+| File                                           | Purpose                                                                                                                                           |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/types/curriculum.ts`                      | All Zod schemas: SubjectManifest, Module, Lesson, Framework, Project, Tool, DayInLife, Playbook, BusinessSystem, Simulation, PromptPack, Template |
+| `src/lib/content.ts`                           | Content loader — every function takes `subject` as first param                                                                                    |
+| `src/lib/progress.ts`                          | Zustand progress store — subject-scoped with backward compat                                                                                      |
+| `src/components/academy/layout/Navigation.tsx` | 3-tier nav with subject switcher                                                                                                                  |
+| `src/components/founder/SubjectOverview.tsx`   | Generic Founder OS subject landing page used by `/{subject}/v2`                                                                                   |
+| `src/lib/subject-presentation.ts`              | Classic-vs-v2 presentation registry, nav labels, and route aliases                                                                                |
+| `src/lib/deep-dives.tsx`                       | Shared and subject-specific deep-dive registry                                                                                                    |
+| `src/app/page.tsx`                             | Founder Dashboard                                                                                                                                 |
+| `src/app/[subject]/`                           | All subject-scoped routes                                                                                                                         |
 
 ### Content model
 
@@ -118,6 +118,7 @@ npm run type-check   # TypeScript strict mode
 ### Common build issue
 
 The `.next` cache can become stale. Fix with:
+
 ```bash
 rm -rf .next && npm run build
 ```
@@ -176,7 +177,7 @@ The full architecture plan is at `~/.claude/plans/tranquil-percolating-flask.md`
 - 15 subjects registered with manifests
 - Founder OS is active as a unified multi-subject app
 - Wave 1 thresholds are complete across Marketing, Sales, Strategy, and Finance
-- Classic restored fronts now lead Marketing, Sales, and AI Engineering, with the newer Founder OS shell preserved at `/{subject}/v2`
+- Academy-style subject home pages now lead all 15 subjects, with bespoke originals preserved for Marketing, Sales, and AI Engineering and the newer Founder OS shell preserved at `/{subject}/v2`
 - Marketing and Sales include source-style deep dives under `/{subject}/{deepDiveSlug}` plus compatibility aliases
 - Marketing: 26 modules, 26 lessons, 3 playbooks, 2 systems, 17 frameworks, 30 tools
 - Sales: 23 modules, 47 lessons, 3 playbooks, 2 systems, 81 frameworks, 30 tools
@@ -184,4 +185,4 @@ The full architecture plan is at `~/.claude/plans/tranquil-percolating-flask.md`
 - Founder Performance, Capital, Legal, Accounting, Operations, Product, Leadership, Data & Analytics, Customer Success, AI & Automation, Finance, and Strategy now carry baseline depth at roughly 20 modules, 10 lessons, 10 frameworks, 10 projects, 15 tools, 4 day-in-the-life scenarios, 3 playbooks, and 2 systems each
 - Strategy currently carries 3 systems in the current baseline set
 - Progress is subject-scoped and stored in a single local state container
-- Current verification baseline: `type-check`, `lint`, and `build` pass; build generates 1370 static pages
+- Current verification baseline: `type-check`, `lint`, and `build` pass; build generates 1499 static pages
