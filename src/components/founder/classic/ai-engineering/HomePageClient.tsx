@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   BookOpen,
@@ -13,11 +13,22 @@ import {
   Radar,
   ShieldCheck,
   Workflow,
-} from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import HeroScene from "@/components/academy/hero/HeroScene"
-import { RolePressureDashboard } from "@/components/academy/home/RolePressureDashboard"
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import HeroScene from "@/components/academy/hero/HeroScene";
+import { SubjectRoleMapSection } from "@/components/founder/classic/shared/SubjectRoleMapSection";
+import type {
+  DayInLife,
+  DomainMeta,
+  SubjectManifest,
+} from "@/types/curriculum";
 
 const ROLE_BLEND = [
   {
@@ -38,7 +49,7 @@ const ROLE_BLEND = [
     description:
       "Translate promising capabilities into real systems with ingestion pipelines, retrieval, tool use, and reliability discipline.",
   },
-]
+];
 
 const CORE_MODULES = [
   {
@@ -50,19 +61,22 @@ const CORE_MODULES = [
   {
     icon: Layers3,
     title: "LLM Application Foundations",
-    description: "Understand the modern product stack: models, prompts, retrieval, guardrails, and UX.",
+    description:
+      "Understand the modern product stack: models, prompts, retrieval, guardrails, and UX.",
     href: "/ai-engineering/learn/modules/llm-engineering",
   },
   {
     icon: ShieldCheck,
     title: "Evals and Reliability",
-    description: "Build release discipline with golden sets, rubrics, and regression checks.",
+    description:
+      "Build release discipline with golden sets, rubrics, and regression checks.",
     href: "/ai-engineering/learn/modules/model-evaluation",
   },
   {
     icon: Database,
     title: "RAG and Knowledge Systems",
-    description: "Go beyond vector demos and design inspectable retrieval systems.",
+    description:
+      "Go beyond vector demos and design inspectable retrieval systems.",
     href: "/ai-engineering/learn/modules/vector-databases-retrieval",
   },
   {
@@ -74,10 +88,11 @@ const CORE_MODULES = [
   {
     icon: Cpu,
     title: "Platform Engineering for AI",
-    description: "Ship prompts, models, and services with stronger deployment rails.",
+    description:
+      "Ship prompts, models, and services with stronger deployment rails.",
     href: "/ai-engineering/learn/modules/mlops-deployment",
   },
-]
+];
 
 const SECONDARY_TRACKS = [
   {
@@ -92,22 +107,32 @@ const SECONDARY_TRACKS = [
     description:
       "A compact secondary lane for builders who want stronger grounding in training data, baselines, and production MLOps for trained models.",
   },
-]
+];
 
 const FRONTIER_SIGNALS = [
   "Frontier labs and high-velocity startups",
   "Eval-first product and platform systems",
   "Portfolio capstones instead of generic tutorials",
-]
+];
 
 const fadeInUp = {
   initial: { opacity: 0, y: 16 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true as const },
   transition: { duration: 0.5 },
+};
+
+interface HomePageClientProps {
+  subject: SubjectManifest;
+  scenarios: DayInLife[];
+  domainMeta: DomainMeta | null;
 }
 
-export function HomePageClient() {
+export function HomePageClient({
+  subject,
+  scenarios,
+  domainMeta,
+}: HomePageClientProps) {
   return (
     <div className="flex flex-col">
       <section className="relative min-h-[72vh] flex items-center overflow-hidden">
@@ -133,7 +158,9 @@ export function HomePageClient() {
               transition={{ duration: 0.7 }}
             >
               Frontier AI engineering{" "}
-              <span className="text-editorial-green">for already-technical builders</span>
+              <span className="text-editorial-green">
+                for already-technical builders
+              </span>
             </motion.h1>
             <motion.p
               className="mt-5 text-base sm:text-lg text-editorial-muted leading-relaxed max-w-xl"
@@ -141,9 +168,10 @@ export function HomePageClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
             >
-              This academy is built for engineers who already know how to ship software
-              and want the frontier stack: LLM systems, evals, retrieval, agents,
-              platform rails, inference tradeoffs, and portfolio-grade capstones.
+              This academy is built for engineers who already know how to ship
+              software and want the frontier stack: LLM systems, evals,
+              retrieval, agents, platform rails, inference tradeoffs, and
+              portfolio-grade capstones.
             </motion.p>
             <motion.div
               className="mt-6 flex flex-col sm:flex-row gap-3"
@@ -157,7 +185,9 @@ export function HomePageClient() {
                 </Link>
               </Button>
               <Button asChild variant="secondary" size="lg">
-                <Link href="/ai-engineering/learn/modules">Explore Core Modules</Link>
+                <Link href="/ai-engineering/learn/modules">
+                  Explore Core Modules
+                </Link>
               </Button>
               <Button asChild variant="ghost" size="lg">
                 <Link href="/ai-engineering/projects">See Capstones</Link>
@@ -192,15 +222,20 @@ export function HomePageClient() {
               This is not a generic “learn AI from scratch” course
             </h2>
             <p className="text-sm sm:text-base text-editorial-muted leading-relaxed">
-              The primary promise is a blended frontier role: product judgment plus
-              platform discipline. You learn how modern AI features are designed,
-              evaluated, shipped, observed, and improved inside high-velocity teams.
+              The primary promise is a blended frontier role: product judgment
+              plus platform discipline. You learn how modern AI features are
+              designed, evaluated, shipped, observed, and improved inside
+              high-velocity teams.
             </p>
           </motion.div>
         </div>
       </section>
 
-      <RolePressureDashboard />
+      <SubjectRoleMapSection
+        subject={subject}
+        scenarios={scenarios}
+        domainMeta={domainMeta}
+      />
 
       <section className="py-10 sm:py-14 relative overflow-hidden">
         <div className="absolute inset-0 bg-[rgba(241,236,225,0.4)]" />
@@ -210,14 +245,15 @@ export function HomePageClient() {
               The blended role this academy is training for
             </h2>
             <p className="text-sm sm:text-base text-editorial-muted max-w-2xl mx-auto">
-              Product, platform, and research-to-production work feed into each other.
-              That blend is what makes the strongest frontier AI engineers unusually useful.
+              Product, platform, and research-to-production work feed into each
+              other. That blend is what makes the strongest frontier AI
+              engineers unusually useful.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
             {ROLE_BLEND.map((item, index) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={item.title}
@@ -240,7 +276,7 @@ export function HomePageClient() {
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </div>
@@ -258,7 +294,7 @@ export function HomePageClient() {
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 max-w-5xl mx-auto">
             {CORE_MODULES.map((item, i) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={item.title}
@@ -273,7 +309,9 @@ export function HomePageClient() {
                         <div className="flex h-8 w-8 items-center justify-center rounded-[10px] bg-editorial-green-soft">
                           <Icon className="h-4 w-4 text-editorial-green" />
                         </div>
-                        <span className="text-[10px] font-mono text-editorial-muted">Core {i + 1}</span>
+                        <span className="text-[10px] font-mono text-editorial-muted">
+                          Core {i + 1}
+                        </span>
                       </div>
                       <CardTitle className="text-base">{item.title}</CardTitle>
                     </CardHeader>
@@ -290,7 +328,7 @@ export function HomePageClient() {
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </div>
@@ -304,12 +342,13 @@ export function HomePageClient() {
               Secondary Tracks
             </h2>
             <p className="text-sm text-editorial-muted max-w-md mx-auto">
-              Robotics/autonomy and classical ML stay in the academy, but as optional depth rather than the main promise.
+              Robotics/autonomy and classical ML stay in the academy, but as
+              optional depth rather than the main promise.
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {SECONDARY_TRACKS.map((item, i) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={item.title}
@@ -332,7 +371,7 @@ export function HomePageClient() {
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </div>
@@ -346,9 +385,9 @@ export function HomePageClient() {
                 Start with the blueprint, then ship your way into the role
               </h2>
               <p className="text-sm text-editorial-muted max-w-md mx-auto">
-                The fastest path through the academy is simple: understand the role,
-                work the core frontier modules, and build capstones that feel like real
-                product and platform work.
+                The fastest path through the academy is simple: understand the
+                role, work the core frontier modules, and build capstones that
+                feel like real product and platform work.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button asChild size="lg" className="gap-2">
@@ -365,5 +404,5 @@ export function HomePageClient() {
         </div>
       </section>
     </div>
-  )
+  );
 }

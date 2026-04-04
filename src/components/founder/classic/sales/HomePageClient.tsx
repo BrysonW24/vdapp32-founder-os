@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   BookOpen,
@@ -18,29 +18,107 @@ import {
   Shield,
   Target,
   Briefcase,
-} from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import HeroScene from "@/components/academy/hero/HeroScene"
-import { RoleSignalDashboard } from "@/components/academy/home/RoleSignalDashboard"
-import { SalesPipeline } from "@/components/academy/svg/SalesPipeline"
-import { RevenueFlywheel } from "@/components/academy/svg/RevenueFlywheel"
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
+import HeroScene from "@/components/academy/hero/HeroScene";
+import { SalesPipeline } from "@/components/academy/svg/SalesPipeline";
+import { RevenueFlywheel } from "@/components/academy/svg/RevenueFlywheel";
+import { SubjectRoleMapSection } from "@/components/founder/classic/shared/SubjectRoleMapSection";
+import type {
+  DayInLife,
+  DomainMeta,
+  SubjectManifest,
+} from "@/types/curriculum";
 
 const LEARNING_PATH = [
-  { icon: BookOpen, title: "Start with Foundations", description: "Understand how enterprise SaaS sales works: buyer problems, value creation, pipeline mechanics, and why the best AEs guide rather than push." },
-  { icon: Map, title: "Study the System", description: "See how prospecting, discovery, demos, forecasting, legal, security, and expansion connect into one revenue engine." },
-  { icon: Layers, title: "Work Through Modules", description: "Progress through structured modules built around the responsibilities, KPIs, and stakeholder management expected of modern AEs." },
-  { icon: Rocket, title: "Practice Like a Rep", description: "Use projects, role-plays, and deal scenarios to build full-cycle skills you can carry into live enterprise and mid-market motions." },
-]
+  {
+    icon: BookOpen,
+    title: "Start with Foundations",
+    description:
+      "Understand how enterprise SaaS sales works: buyer problems, value creation, pipeline mechanics, and why the best AEs guide rather than push.",
+  },
+  {
+    icon: Map,
+    title: "Study the System",
+    description:
+      "See how prospecting, discovery, demos, forecasting, legal, security, and expansion connect into one revenue engine.",
+  },
+  {
+    icon: Layers,
+    title: "Work Through Modules",
+    description:
+      "Progress through structured modules built around the responsibilities, KPIs, and stakeholder management expected of modern AEs.",
+  },
+  {
+    icon: Rocket,
+    title: "Practice Like a Rep",
+    description:
+      "Use projects, role-plays, and deal scenarios to build full-cycle skills you can carry into live enterprise and mid-market motions.",
+  },
+];
 
 const QUICK_START = [
-  { icon: Search, title: "Prospecting", description: "Find and engage the right buyers before your competitors do.", color: "text-editorial-green", bgColor: "bg-editorial-green-soft", href: "/sales/learn/modules" },
-  { icon: Phone, title: "Discovery", description: "Uncover real pain points and build urgency through great questions.", color: "text-[#6d28d9]", bgColor: "bg-[#ede9fe]", href: "/sales/learn/modules" },
-  { icon: Presentation, title: "Demos", description: "Deliver compelling presentations that connect your solution to their problems.", color: "text-editorial-blue", bgColor: "bg-editorial-blue-soft", href: "/sales/learn/modules" },
-  { icon: Handshake, title: "Negotiation", description: "Navigate pricing, terms, and objections to close deals that stick.", color: "text-editorial-amber", bgColor: "bg-editorial-amber-soft", href: "/sales/learn/modules" },
-  { icon: BarChart3, title: "Pipeline", description: "Build and manage a healthy pipeline that delivers predictable revenue.", color: "text-editorial-red", bgColor: "bg-editorial-red-soft", href: "/sales/learn/modules" },
-  { icon: Users, title: "Accounts", description: "Grow existing accounts through cross-sell, upsell, and strategic expansion.", color: "text-[#2563eb]", bgColor: "bg-[#dbeafe]", href: "/sales/learn/modules" },
-]
+  {
+    icon: Search,
+    title: "Prospecting",
+    description: "Find and engage the right buyers before your competitors do.",
+    color: "text-editorial-green",
+    bgColor: "bg-editorial-green-soft",
+    href: "/sales/learn/modules",
+  },
+  {
+    icon: Phone,
+    title: "Discovery",
+    description:
+      "Uncover real pain points and build urgency through great questions.",
+    color: "text-[#6d28d9]",
+    bgColor: "bg-[#ede9fe]",
+    href: "/sales/learn/modules",
+  },
+  {
+    icon: Presentation,
+    title: "Demos",
+    description:
+      "Deliver compelling presentations that connect your solution to their problems.",
+    color: "text-editorial-blue",
+    bgColor: "bg-editorial-blue-soft",
+    href: "/sales/learn/modules",
+  },
+  {
+    icon: Handshake,
+    title: "Negotiation",
+    description:
+      "Navigate pricing, terms, and objections to close deals that stick.",
+    color: "text-editorial-amber",
+    bgColor: "bg-editorial-amber-soft",
+    href: "/sales/learn/modules",
+  },
+  {
+    icon: BarChart3,
+    title: "Pipeline",
+    description:
+      "Build and manage a healthy pipeline that delivers predictable revenue.",
+    color: "text-editorial-red",
+    bgColor: "bg-editorial-red-soft",
+    href: "/sales/learn/modules",
+  },
+  {
+    icon: Users,
+    title: "Accounts",
+    description:
+      "Grow existing accounts through cross-sell, upsell, and strategic expansion.",
+    color: "text-[#2563eb]",
+    bgColor: "bg-[#dbeafe]",
+    href: "/sales/learn/modules",
+  },
+];
 
 const ECOSYSTEM = [
   { step: "Prospect", desc: "Find the right buyers" },
@@ -51,39 +129,53 @@ const ECOSYSTEM = [
   { step: "Negotiate", desc: "Align on terms" },
   { step: "Close", desc: "Win the deal" },
   { step: "Expand", desc: "Grow the account" },
-]
+];
 
 const AE_BLUEPRINT = [
   {
     icon: Briefcase,
     title: "Full-Cycle Ownership",
-    description: "Modern AEs are expected to source pipeline, run discovery, coordinate demos, build business cases, negotiate terms, and protect expansion opportunities.",
+    description:
+      "Modern AEs are expected to source pipeline, run discovery, coordinate demos, build business cases, negotiate terms, and protect expansion opportunities.",
   },
   {
     icon: Target,
     title: "KPIs That Matter",
-    description: "This academy now leans harder into meetings booked, self-sourced pipeline, win rate, forecast accuracy, and closed ARR instead of generic activity alone.",
+    description:
+      "This academy now leans harder into meetings booked, self-sourced pipeline, win rate, forecast accuracy, and closed ARR instead of generic activity alone.",
   },
   {
     icon: Database,
     title: "Technical + Tool Fluency",
-    description: "We are treating CRM discipline, forecast tools, cloud or security context, and credible collaboration with sales engineers as core AE skills.",
+    description:
+      "We are treating CRM discipline, forecast tools, cloud or security context, and credible collaboration with sales engineers as core AE skills.",
   },
   {
     icon: Shield,
     title: "Enterprise Readiness",
-    description: "Expect more emphasis on mutual action plans, procurement, legal and security review, executive selling, and multi-stakeholder deal orchestration.",
+    description:
+      "Expect more emphasis on mutual action plans, procurement, legal and security review, executive selling, and multi-stakeholder deal orchestration.",
   },
-]
+];
 
 const fadeInUp = {
   initial: { opacity: 0, y: 16 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true as const },
   transition: { duration: 0.5 },
+};
+
+interface HomePageClientProps {
+  subject: SubjectManifest;
+  scenarios: DayInLife[];
+  domainMeta: DomainMeta | null;
 }
 
-export function HomePageClient() {
+export function HomePageClient({
+  subject,
+  scenarios,
+  domainMeta,
+}: HomePageClientProps) {
   return (
     <div className="flex flex-col">
       {/* -- Hero -- */}
@@ -153,14 +245,15 @@ export function HomePageClient() {
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-editorial-muted leading-relaxed">
                 <p>
-                  Sales is the process of creating value for buyers by understanding their
-                  problems and connecting them with solutions that genuinely help. It is how
-                  businesses turn conversations into revenue and relationships into growth.
+                  Sales is the process of creating value for buyers by
+                  understanding their problems and connecting them with
+                  solutions that genuinely help. It is how businesses turn
+                  conversations into revenue and relationships into growth.
                 </p>
                 <p>
-                  Great sales answers three questions: Who has a problem we can solve? What
-                  does that problem really cost them? And how do we help them see that our
-                  solution is worth the investment?
+                  Great sales answers three questions: Who has a problem we can
+                  solve? What does that problem really cost them? And how do we
+                  help them see that our solution is worth the investment?
                 </p>
               </div>
             </motion.div>
@@ -183,7 +276,17 @@ export function HomePageClient() {
         </div>
       </section>
 
-      <RoleSignalDashboard />
+      <SubjectRoleMapSection
+        subject={subject}
+        scenarios={scenarios}
+        domainMeta={domainMeta}
+        introOverride={{
+          eyebrow: "Visual Role Map",
+          title:
+            "The same five signals, then the sales-specific pressure layer",
+          body: "This keeps the academy family visually consistent while making the commercial shape of enterprise sales obvious fast.",
+        }}
+      />
 
       {/* -- Ecosystem Flow + Flywheel -- */}
       <section className="py-10 sm:py-14 relative overflow-hidden">
@@ -194,8 +297,8 @@ export function HomePageClient() {
               The Sales Ecosystem
             </h2>
             <p className="text-sm sm:text-base text-editorial-muted max-w-lg mx-auto">
-              Sales is a connected system, not a single skill. Each stage builds on the last
-              and feeds into the next.
+              Sales is a connected system, not a single skill. Each stage builds
+              on the last and feeds into the next.
             </p>
           </motion.div>
 
@@ -210,13 +313,20 @@ export function HomePageClient() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.06 }}
-                  whileHover={{ y: -2, boxShadow: "0 8px 20px rgba(87,73,47,0.1)" }}
+                  whileHover={{
+                    y: -2,
+                    boxShadow: "0 8px 20px rgba(87,73,47,0.1)",
+                  }}
                 >
                   <span className="text-[10px] font-mono text-editorial-muted mb-1">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="font-serif font-semibold text-editorial-ink text-sm">{item.step}</span>
-                  <span className="text-[11px] text-editorial-muted mt-0.5">{item.desc}</span>
+                  <span className="font-serif font-semibold text-editorial-ink text-sm">
+                    {item.step}
+                  </span>
+                  <span className="text-[11px] text-editorial-muted mt-0.5">
+                    {item.desc}
+                  </span>
                 </motion.div>
               ))}
             </div>
@@ -242,20 +352,24 @@ export function HomePageClient() {
       {/* -- Research-Informed Direction -- */}
       <section className="py-10 sm:py-14">
         <div className="container mx-auto px-4">
-          <motion.div className="text-center mb-8 max-w-2xl mx-auto" {...fadeInUp}>
+          <motion.div
+            className="text-center mb-8 max-w-2xl mx-auto"
+            {...fadeInUp}
+          >
             <h2 className="text-2xl sm:text-3xl font-serif font-bold text-editorial-ink mb-2">
               Research-Informed AE Direction
             </h2>
             <p className="text-sm sm:text-base text-editorial-muted leading-relaxed">
-              This academy is being shaped around enterprise SaaS AE expectations:
-              full-cycle ownership, commercial discipline, technical credibility,
-              and the ability to navigate buyers, internal teams, and the forecast.
+              This academy is being shaped around enterprise SaaS AE
+              expectations: full-cycle ownership, commercial discipline,
+              technical credibility, and the ability to navigate buyers,
+              internal teams, and the forecast.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 max-w-6xl mx-auto">
             {AE_BLUEPRINT.map((item, i) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={item.title}
@@ -278,7 +392,7 @@ export function HomePageClient() {
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
 
@@ -311,7 +425,7 @@ export function HomePageClient() {
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-5xl mx-auto">
             {LEARNING_PATH.map((item, i) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={item.title}
@@ -326,16 +440,20 @@ export function HomePageClient() {
                         <div className="flex h-8 w-8 items-center justify-center rounded-[10px] bg-editorial-green-soft">
                           <Icon className="h-4 w-4 text-editorial-green" />
                         </div>
-                        <span className="text-[10px] font-mono text-editorial-muted">Step {i + 1}</span>
+                        <span className="text-[10px] font-mono text-editorial-muted">
+                          Step {i + 1}
+                        </span>
                       </div>
                       <CardTitle className="text-base">{item.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription className="text-xs leading-relaxed">{item.description}</CardDescription>
+                      <CardDescription className="text-xs leading-relaxed">
+                        {item.description}
+                      </CardDescription>
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </div>
@@ -355,7 +473,7 @@ export function HomePageClient() {
           </motion.div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {QUICK_START.map((item, i) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={item.title}
@@ -367,7 +485,9 @@ export function HomePageClient() {
                   <Link href={item.href} className="block group">
                     <Card className="h-full hover:-translate-y-[2px] hover:shadow-editorial-hover transition-all duration-200">
                       <CardContent className="p-4 sm:p-5">
-                        <div className={`flex h-10 w-10 items-center justify-center rounded-[12px] ${item.bgColor} mb-3`}>
+                        <div
+                          className={`flex h-10 w-10 items-center justify-center rounded-[12px] ${item.bgColor} mb-3`}
+                        >
                           <Icon className={`h-5 w-5 ${item.color}`} />
                         </div>
                         <h3 className="font-serif font-semibold text-editorial-ink text-sm group-hover:text-editorial-green transition-colors">
@@ -383,7 +503,7 @@ export function HomePageClient() {
                     </Card>
                   </Link>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </div>
@@ -398,8 +518,8 @@ export function HomePageClient() {
                 Ready to start?
               </h2>
               <p className="text-sm text-editorial-muted max-w-md mx-auto">
-                Begin with Module 1 — &quot;What Sales Actually Is&quot; — and work your
-                way through the entire curriculum at your own pace.
+                Begin with Module 1 — &quot;What Sales Actually Is&quot; — and
+                work your way through the entire curriculum at your own pace.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button asChild size="lg" className="gap-2">
@@ -408,7 +528,9 @@ export function HomePageClient() {
                   </Link>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
-                  <Link href="/sales/ae-blueprint">Explore the AE Blueprint</Link>
+                  <Link href="/sales/ae-blueprint">
+                    Explore the AE Blueprint
+                  </Link>
                 </Button>
               </div>
             </CardContent>
@@ -416,5 +538,5 @@ export function HomePageClient() {
         </div>
       </section>
     </div>
-  )
+  );
 }

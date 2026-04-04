@@ -8,6 +8,7 @@ import {
   getProjects,
   getFrameworks,
   getAllDomainMeta,
+  getDayInLifeScenarios,
   getPromptPacks,
   getTemplates,
 } from "@/lib/content";
@@ -34,6 +35,7 @@ export default async function SubjectPage({
   const projects = getProjects(slug);
   const domainMetaAll = getAllDomainMeta(slug);
   const domainMeta = domainMetaAll.length > 0 ? domainMetaAll[0] : null;
+  const scenarios = getDayInLifeScenarios(slug);
   const frameworks = getFrameworks(slug);
   const prompts = getPromptPacks(slug);
   const templates = getTemplates(slug);
@@ -41,15 +43,33 @@ export default async function SubjectPage({
 
   if (presentation.defaultVariant === "classic") {
     if (slug === "marketing") {
-      return <MarketingClassicHome />;
+      return (
+        <MarketingClassicHome
+          subject={subject}
+          scenarios={scenarios}
+          domainMeta={domainMeta}
+        />
+      );
     }
 
     if (slug === "sales") {
-      return <SalesClassicHome />;
+      return (
+        <SalesClassicHome
+          subject={subject}
+          scenarios={scenarios}
+          domainMeta={domainMeta}
+        />
+      );
     }
 
     if (slug === "ai-engineering") {
-      return <AIClassicHome />;
+      return (
+        <AIClassicHome
+          subject={subject}
+          scenarios={scenarios}
+          domainMeta={domainMeta}
+        />
+      );
     }
 
     return (
@@ -62,6 +82,7 @@ export default async function SubjectPage({
         projects={projects}
         frameworks={frameworks}
         domainMeta={domainMeta}
+        scenarios={scenarios}
       />
     );
   }

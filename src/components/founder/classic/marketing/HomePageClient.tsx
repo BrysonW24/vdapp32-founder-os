@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   BookOpen,
@@ -14,29 +14,105 @@ import {
   Megaphone,
   Mail,
   BarChart3,
-} from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import HeroScene from "@/components/academy/hero/HeroScene"
-import { ZeroToHero } from "@/components/academy/svg/ZeroToHero"
-import { MarketingFunnel } from "@/components/academy/svg/MarketingFunnel"
-import { MarketingFlywheel } from "@/components/academy/svg/MarketingFlywheel"
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
+import HeroScene from "@/components/academy/hero/HeroScene";
+import { ZeroToHero } from "@/components/academy/svg/ZeroToHero";
+import { MarketingFunnel } from "@/components/academy/svg/MarketingFunnel";
+import { MarketingFlywheel } from "@/components/academy/svg/MarketingFlywheel";
+import { SubjectRoleMapSection } from "@/components/founder/classic/shared/SubjectRoleMapSection";
+import type {
+  DayInLife,
+  DomainMeta,
+  SubjectManifest,
+} from "@/types/curriculum";
 
 const LEARNING_PATH = [
-  { icon: BookOpen, title: "Start with Foundations", description: "Understand the core principles that underpin all marketing — what it is, why it matters, and how businesses use it to grow." },
-  { icon: Map, title: "Explore the Map", description: "See how every marketing discipline connects to form a complete system. No part works in isolation." },
-  { icon: Layers, title: "Work Through Modules", description: "Progress through structured modules with clear explanations, frameworks, and real examples." },
-  { icon: Rocket, title: "Practice with Projects", description: "Apply what you learn with hands-on projects that build real marketing skills." },
-]
+  {
+    icon: BookOpen,
+    title: "Start with Foundations",
+    description:
+      "Understand the core principles that underpin all marketing — what it is, why it matters, and how businesses use it to grow.",
+  },
+  {
+    icon: Map,
+    title: "Explore the Map",
+    description:
+      "See how every marketing discipline connects to form a complete system. No part works in isolation.",
+  },
+  {
+    icon: Layers,
+    title: "Work Through Modules",
+    description:
+      "Progress through structured modules with clear explanations, frameworks, and real examples.",
+  },
+  {
+    icon: Rocket,
+    title: "Practice with Projects",
+    description:
+      "Apply what you learn with hands-on projects that build real marketing skills.",
+  },
+];
 
 const QUICK_START = [
-  { icon: Users, title: "Customer", description: "Understand who you are marketing to and what they need.", color: "text-editorial-green", bgColor: "bg-editorial-green-soft", href: "/marketing/learn/modules" },
-  { icon: Palette, title: "Brand", description: "Build a clear identity that people recognise and trust.", color: "text-[#6d28d9]", bgColor: "bg-[#ede9fe]", href: "/marketing/learn/modules" },
-  { icon: FileText, title: "Content", description: "Create valuable material that attracts and educates your audience.", color: "text-editorial-blue", bgColor: "bg-editorial-blue-soft", href: "/marketing/learn/modules" },
-  { icon: Megaphone, title: "Paid", description: "Use advertising to reach the right people at the right time.", color: "text-editorial-amber", bgColor: "bg-editorial-amber-soft", href: "/marketing/learn/modules" },
-  { icon: Mail, title: "Email", description: "Build direct relationships with your audience through their inbox.", color: "text-editorial-red", bgColor: "bg-editorial-red-soft", href: "/marketing/learn/modules" },
-  { icon: BarChart3, title: "Analytics", description: "Measure what works and make smarter decisions with data.", color: "text-[#2563eb]", bgColor: "bg-[#dbeafe]", href: "/marketing/learn/modules" },
-]
+  {
+    icon: Users,
+    title: "Customer",
+    description: "Understand who you are marketing to and what they need.",
+    color: "text-editorial-green",
+    bgColor: "bg-editorial-green-soft",
+    href: "/marketing/learn/modules",
+  },
+  {
+    icon: Palette,
+    title: "Brand",
+    description: "Build a clear identity that people recognise and trust.",
+    color: "text-[#6d28d9]",
+    bgColor: "bg-[#ede9fe]",
+    href: "/marketing/learn/modules",
+  },
+  {
+    icon: FileText,
+    title: "Content",
+    description:
+      "Create valuable material that attracts and educates your audience.",
+    color: "text-editorial-blue",
+    bgColor: "bg-editorial-blue-soft",
+    href: "/marketing/learn/modules",
+  },
+  {
+    icon: Megaphone,
+    title: "Paid",
+    description: "Use advertising to reach the right people at the right time.",
+    color: "text-editorial-amber",
+    bgColor: "bg-editorial-amber-soft",
+    href: "/marketing/learn/modules",
+  },
+  {
+    icon: Mail,
+    title: "Email",
+    description:
+      "Build direct relationships with your audience through their inbox.",
+    color: "text-editorial-red",
+    bgColor: "bg-editorial-red-soft",
+    href: "/marketing/learn/modules",
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics",
+    description: "Measure what works and make smarter decisions with data.",
+    color: "text-[#2563eb]",
+    bgColor: "bg-[#dbeafe]",
+    href: "/marketing/learn/modules",
+  },
+];
 
 const ECOSYSTEM = [
   { step: "Research", desc: "Understand your market" },
@@ -47,16 +123,26 @@ const ECOSYSTEM = [
   { step: "Campaigns", desc: "Execute and launch" },
   { step: "Analytics", desc: "Measure the results" },
   { step: "Retention", desc: "Keep them coming back" },
-]
+];
 
 const fadeInUp = {
   initial: { opacity: 0, y: 16 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true as const },
   transition: { duration: 0.5 },
+};
+
+interface HomePageClientProps {
+  subject: SubjectManifest;
+  scenarios: DayInLife[];
+  domainMeta: DomainMeta | null;
 }
 
-export function HomePageClient() {
+export function HomePageClient({
+  subject,
+  scenarios,
+  domainMeta,
+}: HomePageClientProps) {
   return (
     <div className="flex flex-col">
       {/* ── Hero ── */}
@@ -92,8 +178,8 @@ export function HomePageClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
             >
-              A structured visual academy to understand what marketing is, how the
-              parts connect, and how to start practicing it.
+              A structured visual academy to understand what marketing is, how
+              the parts connect, and how to start practicing it.
             </motion.p>
             <motion.div
               className="mt-6 flex flex-col sm:flex-row gap-3"
@@ -156,13 +242,15 @@ export function HomePageClient() {
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-editorial-muted leading-relaxed">
                 <p>
-                  Marketing is how businesses understand what people need and communicate
-                  the value of what they offer. It is the entire process of connecting a
-                  product with the people who will benefit from it.
+                  Marketing is how businesses understand what people need and
+                  communicate the value of what they offer. It is the entire
+                  process of connecting a product with the people who will
+                  benefit from it.
                 </p>
                 <p>
-                  It answers three questions: Who are we trying to reach? What do they
-                  care about? And how do we show them that what we offer solves their problem?
+                  It answers three questions: Who are we trying to reach? What
+                  do they care about? And how do we show them that what we offer
+                  solves their problem?
                 </p>
               </div>
             </motion.div>
@@ -185,6 +273,12 @@ export function HomePageClient() {
         </div>
       </section>
 
+      <SubjectRoleMapSection
+        subject={subject}
+        scenarios={scenarios}
+        domainMeta={domainMeta}
+      />
+
       {/* ── Ecosystem Flow + Flywheel ── */}
       <section className="py-10 sm:py-14 relative overflow-hidden">
         <div className="absolute inset-0 bg-[rgba(241,236,225,0.4)]" />
@@ -194,7 +288,8 @@ export function HomePageClient() {
               The Marketing Ecosystem
             </h2>
             <p className="text-sm sm:text-base text-editorial-muted max-w-lg mx-auto">
-              Marketing is a connected system, not a single skill. Each part feeds into the next.
+              Marketing is a connected system, not a single skill. Each part
+              feeds into the next.
             </p>
           </motion.div>
 
@@ -209,13 +304,20 @@ export function HomePageClient() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.06 }}
-                  whileHover={{ y: -2, boxShadow: "0 8px 20px rgba(87,73,47,0.1)" }}
+                  whileHover={{
+                    y: -2,
+                    boxShadow: "0 8px 20px rgba(87,73,47,0.1)",
+                  }}
                 >
                   <span className="text-[10px] font-mono text-editorial-muted mb-1">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="font-serif font-semibold text-editorial-ink text-sm">{item.step}</span>
-                  <span className="text-[11px] text-editorial-muted mt-0.5">{item.desc}</span>
+                  <span className="font-serif font-semibold text-editorial-ink text-sm">
+                    {item.step}
+                  </span>
+                  <span className="text-[11px] text-editorial-muted mt-0.5">
+                    {item.desc}
+                  </span>
                 </motion.div>
               ))}
             </div>
@@ -251,7 +353,7 @@ export function HomePageClient() {
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-5xl mx-auto">
             {LEARNING_PATH.map((item, i) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={item.title}
@@ -266,16 +368,20 @@ export function HomePageClient() {
                         <div className="flex h-8 w-8 items-center justify-center rounded-[10px] bg-editorial-green-soft">
                           <Icon className="h-4 w-4 text-editorial-green" />
                         </div>
-                        <span className="text-[10px] font-mono text-editorial-muted">Step {i + 1}</span>
+                        <span className="text-[10px] font-mono text-editorial-muted">
+                          Step {i + 1}
+                        </span>
                       </div>
                       <CardTitle className="text-base">{item.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription className="text-xs leading-relaxed">{item.description}</CardDescription>
+                      <CardDescription className="text-xs leading-relaxed">
+                        {item.description}
+                      </CardDescription>
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </div>
@@ -295,7 +401,7 @@ export function HomePageClient() {
           </motion.div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
             {QUICK_START.map((item, i) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={item.title}
@@ -307,7 +413,9 @@ export function HomePageClient() {
                   <Link href={item.href} className="block group">
                     <Card className="h-full hover:-translate-y-[2px] hover:shadow-editorial-hover transition-all duration-200">
                       <CardContent className="p-4 sm:p-5">
-                        <div className={`flex h-10 w-10 items-center justify-center rounded-[12px] ${item.bgColor} mb-3`}>
+                        <div
+                          className={`flex h-10 w-10 items-center justify-center rounded-[12px] ${item.bgColor} mb-3`}
+                        >
                           <Icon className={`h-5 w-5 ${item.color}`} />
                         </div>
                         <h3 className="font-serif font-semibold text-editorial-ink text-sm group-hover:text-editorial-green transition-colors">
@@ -323,7 +431,7 @@ export function HomePageClient() {
                     </Card>
                   </Link>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </div>
@@ -338,8 +446,9 @@ export function HomePageClient() {
                 Ready to start?
               </h2>
               <p className="text-sm text-editorial-muted max-w-md mx-auto">
-                Begin with Module 1 — &quot;What Marketing Actually Is&quot; — and work your
-                way through the entire curriculum at your own pace.
+                Begin with Module 1 — &quot;What Marketing Actually Is&quot; —
+                and work your way through the entire curriculum at your own
+                pace.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button asChild size="lg" className="gap-2">
@@ -356,5 +465,5 @@ export function HomePageClient() {
         </div>
       </section>
     </div>
-  )
+  );
 }
