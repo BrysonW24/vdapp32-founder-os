@@ -1,0 +1,48 @@
+{
+  "slug": "performance-conversation-prep",
+  "title": "Performance Conversation Prep",
+  "domain": "leadership",
+  "summary": "Performance Conversation Prep helps the team run a practical leadership / people workflow with cleaner signal and clearer follow-through.",
+  "whenToUseIt": "Use performance conversation prep when the team needs a more deliberate way to review work and decide what happens next.",
+  "timeToComplete": "90 minutes",
+  "difficulty": "intermediate",
+  "prerequisites": [],
+  "steps": [
+    {
+      "title": "Define the operating question",
+      "description": "Write down the decision you are trying to make and what would count as a good outcome.",
+      "timeEstimate": "10 minutes"
+    },
+    {
+      "title": "Collect the right signal",
+      "description": "Pull together the data, notes, and stakeholder inputs that make the review real instead of performative.",
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Make the decision",
+      "description": "Choose the next move, what changes, and what stays the same.",
+      "timeEstimate": "15 minutes"
+    },
+    {
+      "title": "Assign follow-through",
+      "description": "Lock owners, dates, and the next review point so the work does not dissolve after the meeting.",
+      "timeEstimate": "10 minutes"
+    }
+  ],
+  "expectedOutcome": "A clearer next move in leadership / people with named owners and a visible review loop.",
+  "commonMistakes": [
+    "Turning the playbook into a status meeting instead of a decision forum.",
+    "Skipping the follow-through details after a good discussion.",
+    "Reviewing too much at once instead of focusing on one real operating question."
+  ],
+  "relatedPlaybooks": [
+    "role-scorecard-draft",
+    "manager-one-on-one-reset"
+  ],
+  "relatedModules": [
+    "conflict-handling-foundations",
+    "conflict-handling-in-practice",
+    "culture-signals-foundations"
+  ],
+  "order": 3
+}

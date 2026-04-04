@@ -28,6 +28,6 @@ gates:
 
 blockers: []
 notes:
-  - Wave 1 content thresholds remain complete, and the current deepening wave adds AI Engineering plus manifest-driven deep dives.
-  - Manual verification includes the new AI Engineering routes and a full manifest-linked deep-dive route pass.
+  - Wave 1 content thresholds remain complete, and the current deepening wave now restores flagship classic fronts while extending baseline content depth across the remaining business-native subjects.
+  - Manual verification includes the restored Marketing, Sales, and AI Engineering alias routes plus representative deep-dive route checks on the local app.
   - No automated test suite is configured yet, so verification currently relies on type-check, lint, build, and route smoke tests.

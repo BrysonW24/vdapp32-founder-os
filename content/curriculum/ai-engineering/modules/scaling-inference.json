@@ -13,7 +13,9 @@
     "Observing throughput, token usage, and failure spikes",
     "Cost-aware fallbacks and graceful degradation"
   ],
-  "lessons": [],
+  "lessons": [
+    "scaling-inference-lesson"
+  ],
   "frameworks": [
     "system-design-template",
     "mlops-maturity"

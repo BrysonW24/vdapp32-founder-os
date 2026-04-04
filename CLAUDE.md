@@ -36,8 +36,8 @@ content/curriculum/
 ├── ai-engineering/      ← deep technical AI builder subject with academy baseline + operator layer
 │   ├── manifest.json
 │   └── ...
-├── capital/             ← founder-only skeleton subject
-├── legal/               ← founder-only skeleton subject
+├── capital/             ← founder-only subject with baseline curriculum + operator layer
+├── legal/               ← founder-only subject with baseline curriculum + operator layer
 └── [9 more subjects]/
 ```
 
@@ -58,7 +58,8 @@ content/curriculum/
 
 ```
 /                                    → Founder Dashboard (all subjects, grouped)
-/{subject}                           → Subject Overview (playbooks, systems, tools, learn)
+/{subject}                           → Default subject front (classic by default, restored for flagship subjects)
+/{subject}/v2                        → Secondary generic Founder OS subject overview
 /{subject}/playbooks                 → Operational playbooks
 /{subject}/playbooks/{slug}          → Playbook detail
 /{subject}/systems                   → Frameworks & business systems
@@ -77,9 +78,9 @@ content/curriculum/
 
 1. **Subject switcher** — dropdown grouped by Go-to-Market / Operations / Growth / Founder
 2. **Subject nav** — Overview | Playbooks | Systems | Tools | Learn | Projects
-3. **More dropdown** — manifest-driven deep dives only (for example Blueprint, Toolkit, Day in Life, Simulation, AI Workflows, Ops)
+3. **More dropdown** — manifest-driven deep dives in the generic shell; classic subjects use the presentation registry for legacy labels and aliases
 
-Navigation reads subjects from `getSubjects()` at build time. Subject-specific deep dive pages come from `manifest.json#deepDivePages`.
+Navigation reads subjects from `getSubjects()` at build time. Subject deep dives come from `manifest.json#deepDivePages` plus the subject presentation registry for classic aliases and hidden legacy routes.
 
 ### Key files
 
@@ -89,7 +90,9 @@ Navigation reads subjects from `getSubjects()` at build time. Subject-specific d
 | `src/lib/content.ts` | Content loader — every function takes `subject` as first param |
 | `src/lib/progress.ts` | Zustand progress store — subject-scoped with backward compat |
 | `src/components/academy/layout/Navigation.tsx` | 3-tier nav with subject switcher |
-| `src/components/founder/SubjectOverview.tsx` | Operator-first subject landing page |
+| `src/components/founder/SubjectOverview.tsx` | Generic Founder OS subject landing page used by `/{subject}/v2` |
+| `src/lib/subject-presentation.ts` | Classic-vs-v2 presentation registry, nav labels, and route aliases |
+| `src/lib/deep-dives.tsx` | Shared and subject-specific deep-dive registry |
 | `src/app/page.tsx` | Founder Dashboard |
 | `src/app/[subject]/` | All subject-scoped routes |
 
@@ -173,13 +176,12 @@ The full architecture plan is at `~/.claude/plans/tranquil-percolating-flask.md`
 - 15 subjects registered with manifests
 - Founder OS is active as a unified multi-subject app
 - Wave 1 thresholds are complete across Marketing, Sales, Strategy, and Finance
-- Current deepening wave focuses on Marketing and Sales parity-plus plus the new AI Engineering subject
-- Marketing and Sales include manifest-driven deep dives under `/{subject}/{deepDiveSlug}`
+- Classic restored fronts now lead Marketing, Sales, and AI Engineering, with the newer Founder OS shell preserved at `/{subject}/v2`
+- Marketing and Sales include source-style deep dives under `/{subject}/{deepDiveSlug}` plus compatibility aliases
 - Marketing: 26 modules, 26 lessons, 3 playbooks, 2 systems, 17 frameworks, 30 tools
 - Sales: 23 modules, 47 lessons, 3 playbooks, 2 systems, 81 frameworks, 30 tools
-- Strategy: 5 modules, 5 lessons, 3 playbooks, 3 systems, 6 frameworks, 5 tools
-- Finance: 5 modules, 5 lessons, 3 playbooks, 2 systems, 4 frameworks, 5 tools
 - AI Engineering: 20 modules, 12 lessons, 3 playbooks, 2 systems, 11 frameworks, 30 tools
-- Remaining subjects are available in the shell but are not current content priorities
+- Founder Performance, Capital, Legal, Accounting, Operations, Product, Leadership, Data & Analytics, Customer Success, AI & Automation, Finance, and Strategy now carry baseline depth at roughly 20 modules, 10 lessons, 10 frameworks, 10 projects, 15 tools, 4 day-in-the-life scenarios, 3 playbooks, and 2 systems each
+- Strategy currently carries 3 systems in the current baseline set
 - Progress is subject-scoped and stored in a single local state container
-- Current verification baseline: `type-check`, `lint`, and `build` pass; build generates 508 static pages
+- Current verification baseline: `type-check`, `lint`, and `build` pass; build generates 1370 static pages

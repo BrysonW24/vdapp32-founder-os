@@ -8,8 +8,71 @@
   "tagline": "Cash flow, runway, margins, pricing, and unit economics",
   "blueprintSlug": "finance-blueprint",
   "deepDivePages": [
-    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
-    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+    {
+      "slug": "toolkit",
+      "label": "Mental Models",
+      "icon": "Lightbulb"
+    },
+    {
+      "slug": "day-in-the-life",
+      "label": "Day in Life",
+      "icon": "Briefcase"
+    },
+    {
+      "slug": "blueprint",
+      "label": "Blueprint",
+      "icon": "Map"
+    },
+    {
+      "slug": "timeline",
+      "label": "Timeline",
+      "icon": "Clock"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation",
+      "icon": "Zap"
+    },
+    {
+      "slug": "resources",
+      "label": "Resources",
+      "icon": "Library"
+    },
+    {
+      "slug": "future",
+      "label": "Future",
+      "icon": "TrendingUp"
+    },
+    {
+      "slug": "cash-planning",
+      "label": "Cash Planning",
+      "icon": "DollarSign"
+    },
+    {
+      "slug": "financial-modeling",
+      "label": "Financial Modeling",
+      "icon": "BarChart3"
+    },
+    {
+      "slug": "scenario-planning",
+      "label": "Scenario Planning",
+      "icon": "Compass"
+    },
+    {
+      "slug": "pricing-architecture",
+      "label": "Pricing Architecture",
+      "icon": "DollarSign"
+    },
+    {
+      "slug": "management-reporting",
+      "label": "Management Reporting",
+      "icon": "MessageSquare"
+    },
+    {
+      "slug": "capital-allocation",
+      "label": "Capital Allocation",
+      "icon": "DollarSign"
+    }
   ],
   "order": 5
 }

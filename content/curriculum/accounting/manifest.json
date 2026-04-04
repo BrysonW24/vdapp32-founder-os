@@ -8,8 +8,71 @@
   "tagline": "P&L, balance sheet, tax basics, and bookkeeping hygiene",
   "blueprintSlug": "accounting-blueprint",
   "deepDivePages": [
-    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
-    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+    {
+      "slug": "toolkit",
+      "label": "Mental Models",
+      "icon": "Lightbulb"
+    },
+    {
+      "slug": "day-in-the-life",
+      "label": "Day in Life",
+      "icon": "Briefcase"
+    },
+    {
+      "slug": "blueprint",
+      "label": "Blueprint",
+      "icon": "Map"
+    },
+    {
+      "slug": "timeline",
+      "label": "Timeline",
+      "icon": "Clock"
+    },
+    {
+      "slug": "resources",
+      "label": "Resources",
+      "icon": "Library"
+    },
+    {
+      "slug": "future",
+      "label": "Future",
+      "icon": "TrendingUp"
+    },
+    {
+      "slug": "financial-statements",
+      "label": "Financial Statements",
+      "icon": "BarChart3"
+    },
+    {
+      "slug": "month-end-close",
+      "label": "Month-end Close",
+      "icon": "Clock"
+    },
+    {
+      "slug": "cash-controls",
+      "label": "Cash Controls",
+      "icon": "Shield"
+    },
+    {
+      "slug": "tax-calendar",
+      "label": "Tax Calendar",
+      "icon": "Calendar"
+    },
+    {
+      "slug": "payroll",
+      "label": "Payroll",
+      "icon": "Users"
+    },
+    {
+      "slug": "revenue-recognition",
+      "label": "Revenue Recognition",
+      "icon": "BarChart3"
+    },
+    {
+      "slug": "management-reporting",
+      "label": "Management Reporting",
+      "icon": "MessageSquare"
+    }
   ],
   "order": 6
 }

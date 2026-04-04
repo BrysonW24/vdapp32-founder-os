@@ -120,7 +120,7 @@ export default function FutureOfSalesPage() {
   const [activeTab, setActiveTab] = useState("now")
 
   return (
-    <div className="container py-10 space-y-8">
+    <div className="container py-6 space-y-8">
       <div className="max-w-3xl">
         <h1 className="text-3xl font-bold">Future of Sales</h1>
         <p className="text-muted-foreground mt-2 text-lg">

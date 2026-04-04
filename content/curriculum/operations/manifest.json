@@ -8,8 +8,71 @@
   "tagline": "Process design, SOPs, delivery systems, and execution rhythm",
   "blueprintSlug": "operations-blueprint",
   "deepDivePages": [
-    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
-    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+    {
+      "slug": "toolkit",
+      "label": "Mental Models",
+      "icon": "Lightbulb"
+    },
+    {
+      "slug": "day-in-the-life",
+      "label": "Day in Life",
+      "icon": "Briefcase"
+    },
+    {
+      "slug": "blueprint",
+      "label": "Blueprint",
+      "icon": "Map"
+    },
+    {
+      "slug": "timeline",
+      "label": "Timeline",
+      "icon": "Clock"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation",
+      "icon": "Zap"
+    },
+    {
+      "slug": "resources",
+      "label": "Resources",
+      "icon": "Library"
+    },
+    {
+      "slug": "future",
+      "label": "Future",
+      "icon": "TrendingUp"
+    },
+    {
+      "slug": "automations",
+      "label": "Automations",
+      "icon": "Workflow"
+    },
+    {
+      "slug": "ai-workflows",
+      "label": "AI Workflows",
+      "icon": "Sparkles"
+    },
+    {
+      "slug": "service-delivery",
+      "label": "Service Delivery",
+      "icon": "Settings"
+    },
+    {
+      "slug": "measurement-architecture",
+      "label": "Measurement",
+      "icon": "BarChart3"
+    },
+    {
+      "slug": "executive-communication",
+      "label": "Executive Comms",
+      "icon": "MessageSquare"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance",
+      "icon": "Shield"
+    }
   ],
   "order": 7
 }

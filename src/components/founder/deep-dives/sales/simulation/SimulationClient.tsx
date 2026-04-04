@@ -948,7 +948,7 @@ export function SimulationClient() {
   const progressPct = (completedStages.size / STAGES.length) * 100
 
   return (
-    <div className="container py-10 space-y-8">
+    <div className="container py-6 space-y-8">
       <div className="max-w-3xl">
         <div className="flex items-center gap-2 mb-2">
           <Badge className="bg-editorial-green-soft text-editorial-green border-transparent text-xs">Interactive Simulation</Badge>

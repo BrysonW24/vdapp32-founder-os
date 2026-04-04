@@ -8,8 +8,71 @@
   "tagline": "Fundraising, capital allocation, investor relations, and financial strategy",
   "blueprintSlug": "capital-blueprint",
   "deepDivePages": [
-    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
-    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+    {
+      "slug": "toolkit",
+      "label": "Mental Models",
+      "icon": "Lightbulb"
+    },
+    {
+      "slug": "day-in-the-life",
+      "label": "Day in Life",
+      "icon": "Briefcase"
+    },
+    {
+      "slug": "blueprint",
+      "label": "Blueprint",
+      "icon": "Map"
+    },
+    {
+      "slug": "timeline",
+      "label": "Timeline",
+      "icon": "Clock"
+    },
+    {
+      "slug": "resources",
+      "label": "Resources",
+      "icon": "Library"
+    },
+    {
+      "slug": "future",
+      "label": "Future",
+      "icon": "TrendingUp"
+    },
+    {
+      "slug": "fundraising",
+      "label": "Fundraising",
+      "icon": "Landmark"
+    },
+    {
+      "slug": "investor-updates",
+      "label": "Investor Updates",
+      "icon": "MessageSquare"
+    },
+    {
+      "slug": "pitch-architecture",
+      "label": "Pitch Architecture",
+      "icon": "Map"
+    },
+    {
+      "slug": "due-diligence",
+      "label": "Due Diligence",
+      "icon": "Search"
+    },
+    {
+      "slug": "term-sheets",
+      "label": "Term Sheets",
+      "icon": "FileText"
+    },
+    {
+      "slug": "cap-table",
+      "label": "Cap Table",
+      "icon": "BarChart3"
+    },
+    {
+      "slug": "capital-allocation",
+      "label": "Capital Allocation",
+      "icon": "DollarSign"
+    }
   ],
   "order": 13
 }

@@ -8,8 +8,61 @@
   "tagline": "Vision, positioning, competitive analysis, and strategic planning",
   "blueprintSlug": "strategy-blueprint",
   "deepDivePages": [
-    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
-    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+    {
+      "slug": "toolkit",
+      "label": "Mental Models",
+      "icon": "Lightbulb"
+    },
+    {
+      "slug": "day-in-the-life",
+      "label": "Day in Life",
+      "icon": "Briefcase"
+    },
+    {
+      "slug": "blueprint",
+      "label": "Blueprint",
+      "icon": "Map"
+    },
+    {
+      "slug": "timeline",
+      "label": "Timeline",
+      "icon": "Clock"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation",
+      "icon": "Zap"
+    },
+    {
+      "slug": "resources",
+      "label": "Resources",
+      "icon": "Library"
+    },
+    {
+      "slug": "future",
+      "label": "Future",
+      "icon": "TrendingUp"
+    },
+    {
+      "slug": "scenario-planning",
+      "label": "Scenario Planning",
+      "icon": "Compass"
+    },
+    {
+      "slug": "research-workflows",
+      "label": "Research Workflows",
+      "icon": "Search"
+    },
+    {
+      "slug": "prioritization",
+      "label": "Prioritization",
+      "icon": "Target"
+    },
+    {
+      "slug": "executive-communication",
+      "label": "Executive Comms",
+      "icon": "MessageSquare"
+    }
   ],
   "order": 1
 }

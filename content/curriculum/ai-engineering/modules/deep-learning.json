@@ -13,7 +13,9 @@
     "Transfer learning and adaptation strategies",
     "Where deep learning foundations still show up in frontier roles"
   ],
-  "lessons": [],
+  "lessons": [
+    "deep-learning-lesson"
+  ],
   "frameworks": [
     "ml-lifecycle"
   ],

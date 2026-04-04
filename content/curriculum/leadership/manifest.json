@@ -8,8 +8,76 @@
   "tagline": "Hiring, delegation, culture, management, and communication",
   "blueprintSlug": "leadership-blueprint",
   "deepDivePages": [
-    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
-    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+    {
+      "slug": "toolkit",
+      "label": "Mental Models",
+      "icon": "Lightbulb"
+    },
+    {
+      "slug": "day-in-the-life",
+      "label": "Day in Life",
+      "icon": "Briefcase"
+    },
+    {
+      "slug": "blueprint",
+      "label": "Blueprint",
+      "icon": "Map"
+    },
+    {
+      "slug": "timeline",
+      "label": "Timeline",
+      "icon": "Clock"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation",
+      "icon": "Zap"
+    },
+    {
+      "slug": "resources",
+      "label": "Resources",
+      "icon": "Library"
+    },
+    {
+      "slug": "future",
+      "label": "Future",
+      "icon": "TrendingUp"
+    },
+    {
+      "slug": "hiring",
+      "label": "Hiring",
+      "icon": "Users"
+    },
+    {
+      "slug": "delegation",
+      "label": "Delegation",
+      "icon": "ArrowRight"
+    },
+    {
+      "slug": "one-on-ones",
+      "label": "One-on-Ones",
+      "icon": "MessageSquare"
+    },
+    {
+      "slug": "feedback",
+      "label": "Feedback",
+      "icon": "MessageSquare"
+    },
+    {
+      "slug": "org-design",
+      "label": "Org Design",
+      "icon": "Users"
+    },
+    {
+      "slug": "executive-communication",
+      "label": "Executive Comms",
+      "icon": "MessageSquare"
+    },
+    {
+      "slug": "performance-management",
+      "label": "Performance Management",
+      "icon": "Target"
+    }
   ],
   "order": 12
 }

@@ -12,12 +12,12 @@ risks:
     owner: unassigned
 
   - id: R2
-    title: Operator surfaces can still feel uneven outside the parity and AI Engineering subjects
+    title: Content quality can still feel uneven even though structural depth now exists across all subjects
     severity: medium
     likelihood: low
     area: product
     status: mitigated
-    mitigation: Marketing, Sales, Strategy, Finance, and AI Engineering now have the strongest depth; continue to review unevenness only as new subjects enter future waves.
+    mitigation: All 15 subjects now carry a baseline content layer; focus future passes on editorial refinement and bespoke page quality rather than missing structure.
     owner: unassigned
 
   - id: R3
@@ -30,4 +30,4 @@ risks:
     owner: unassigned
 
 notes:
-  - Source academies remain unarchived until archive gates are fully met.
+  - Legacy source academies are archived; Founder OS is the active surface.

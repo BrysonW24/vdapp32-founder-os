@@ -13,7 +13,9 @@
     "Retraining triggers and release discipline",
     "Where classical MLOps overlaps with frontier AI platform work"
   ],
-  "lessons": [],
+  "lessons": [
+    "production-mlops-trained-models-lesson"
+  ],
   "frameworks": [
     "mlops-maturity",
     "ml-lifecycle"

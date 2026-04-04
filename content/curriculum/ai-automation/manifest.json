@@ -8,8 +8,81 @@
   "tagline": "Workflow automation, copilots, agentic systems, and leverage through tooling",
   "blueprintSlug": "ai-automation-blueprint",
   "deepDivePages": [
-    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
-    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+    {
+      "slug": "toolkit",
+      "label": "Mental Models",
+      "icon": "Lightbulb"
+    },
+    {
+      "slug": "day-in-the-life",
+      "label": "Day in Life",
+      "icon": "Briefcase"
+    },
+    {
+      "slug": "blueprint",
+      "label": "Blueprint",
+      "icon": "Map"
+    },
+    {
+      "slug": "timeline",
+      "label": "Timeline",
+      "icon": "Clock"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation",
+      "icon": "Zap"
+    },
+    {
+      "slug": "resources",
+      "label": "Resources",
+      "icon": "Library"
+    },
+    {
+      "slug": "future",
+      "label": "Future",
+      "icon": "TrendingUp"
+    },
+    {
+      "slug": "automations",
+      "label": "Automations",
+      "icon": "Workflow"
+    },
+    {
+      "slug": "ai-workflows",
+      "label": "AI Workflows",
+      "icon": "Sparkles"
+    },
+    {
+      "slug": "copilots",
+      "label": "Copilots",
+      "icon": "Bot"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents",
+      "icon": "Bot"
+    },
+    {
+      "slug": "approvals",
+      "label": "Approvals",
+      "icon": "Shield"
+    },
+    {
+      "slug": "measurement-architecture",
+      "label": "Measurement",
+      "icon": "BarChart3"
+    },
+    {
+      "slug": "privacy-ethics",
+      "label": "Privacy & Ethics",
+      "icon": "Shield"
+    },
+    {
+      "slug": "operations",
+      "label": "Operations",
+      "icon": "Settings"
+    }
   ],
   "order": 10
 }

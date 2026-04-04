@@ -13,7 +13,9 @@
     "Portfolio packaging for robotics-facing roles",
     "Turning prototypes into defensible engineering stories"
   ],
-  "lessons": [],
+  "lessons": [
+    "autonomy-systems-capstone-lesson"
+  ],
   "frameworks": [
     "system-design-template"
   ],

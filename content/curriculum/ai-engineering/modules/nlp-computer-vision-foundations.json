@@ -13,7 +13,9 @@
     "Transfer learning and embeddings across domains",
     "How these foundations feed frontier multimodal systems"
   ],
-  "lessons": [],
+  "lessons": [
+    "nlp-computer-vision-foundations-lesson"
+  ],
   "frameworks": [
     "feature-engineering-playbook"
   ],

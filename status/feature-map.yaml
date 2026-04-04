@@ -10,7 +10,12 @@ surfaces:
   - route: /[subject]
     feature: Subject overview
     status: live
-    notes: Operator-first landing page showing domain meta, playbooks, systems, frameworks, tools, and learn entry points.
+    notes: Classic subject front by default, with restored academy-style experiences for Marketing, Sales, and AI Engineering and a shared classic presentation for the remaining subjects.
+
+  - route: /[subject]/v2
+    feature: Secondary generic subject overview
+    status: live
+    notes: Preserves the newer Founder OS operator-first shell without replacing the restored classic subject fronts.
 
   - route: /[subject]/playbooks
     feature: Playbook library
@@ -53,12 +58,12 @@ supporting_capabilities:
 
   - name: Manifest-driven deep-dive registry
     status: live
-    notes: Navigation and route generation are both driven by manifest.json deepDivePages with a shared renderer registry.
+    notes: Navigation and route generation use manifest deepDivePages plus the subject presentation registry so classic aliases like learning-map, timeline, and blueprint variants resolve cleanly.
 
   - name: Operator content model
-    status: partial
-    notes: Playbooks, systems, templates, prompts, and domain meta exist across the shell; depth is strongest in Marketing, Sales, Strategy, Finance, and AI Engineering.
+    status: live
+    notes: Playbooks, systems, templates, prompts, and domain meta now exist across all 15 subjects, with the most bespoke depth still concentrated in Marketing, Sales, and AI Engineering.
 
   - name: Wave 1 content depth
     status: live
-    notes: Wave 1 thresholds are complete across Marketing, Sales, Strategy, and Finance; current deepening work extends parity-plus for Marketing and Sales and adds AI Engineering.
+    notes: Wave 1 thresholds remain complete across Marketing, Sales, Strategy, and Finance; the deepening wave now extends structured baseline depth across the rest of the business-native subjects and restores flagship classic fronts.

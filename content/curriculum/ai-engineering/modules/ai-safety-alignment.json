@@ -13,7 +13,9 @@
     "Release checklists for public-facing AI features",
     "Balancing helpfulness, refusal quality, and user trust"
   ],
-  "lessons": [],
+  "lessons": [
+    "ai-safety-alignment-lesson"
+  ],
   "frameworks": [
     "responsible-ai-framework",
     "model-evaluation-framework"

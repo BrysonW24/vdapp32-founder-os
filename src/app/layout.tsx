@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
-import { Navigation } from "@/components/academy/layout/Navigation"
-import { Footer } from "@/components/academy/layout/Footer"
+import { AppChrome } from "@/components/founder/presentation/AppChrome"
 import { getSubjects } from "@/lib/content"
 import "@/styles/globals.css"
 
@@ -23,10 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col relative z-[1]">
-        <Navigation subjects={subjects} />
-        <div className="h-[60px] sm:h-[80px]" aria-hidden="true" />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <AppChrome subjects={subjects}>{children}</AppChrome>
       </body>
     </html>
   )

@@ -8,8 +8,61 @@
   "tagline": "Decision-making, time allocation, energy management, and resilience",
   "blueprintSlug": "founder-performance-blueprint",
   "deepDivePages": [
-    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
-    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+    {
+      "slug": "toolkit",
+      "label": "Mental Models",
+      "icon": "Lightbulb"
+    },
+    {
+      "slug": "day-in-the-life",
+      "label": "Day in Life",
+      "icon": "Briefcase"
+    },
+    {
+      "slug": "blueprint",
+      "label": "Blueprint",
+      "icon": "Map"
+    },
+    {
+      "slug": "timeline",
+      "label": "Timeline",
+      "icon": "Clock"
+    },
+    {
+      "slug": "resources",
+      "label": "Resources",
+      "icon": "Library"
+    },
+    {
+      "slug": "future",
+      "label": "Future",
+      "icon": "TrendingUp"
+    },
+    {
+      "slug": "decision-quality",
+      "label": "Decision Quality",
+      "icon": "Brain"
+    },
+    {
+      "slug": "energy-management",
+      "label": "Energy Management",
+      "icon": "Zap"
+    },
+    {
+      "slug": "time-design",
+      "label": "Time Design",
+      "icon": "Clock"
+    },
+    {
+      "slug": "resilience",
+      "label": "Resilience",
+      "icon": "Shield"
+    },
+    {
+      "slug": "relationships",
+      "label": "Relationships",
+      "icon": "Users"
+    }
   ],
   "order": 15
 }

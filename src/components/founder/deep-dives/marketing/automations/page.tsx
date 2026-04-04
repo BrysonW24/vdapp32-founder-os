@@ -318,7 +318,7 @@ export default function AutomationsPage() {
   const [activeTab, setActiveTab] = useState<TabId>("what")
 
   return (
-    <div className="container py-10 space-y-8">
+    <div className="container py-6 space-y-8">
       {/* Header */}
       <div className="max-w-3xl">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-editorial-muted mb-3">

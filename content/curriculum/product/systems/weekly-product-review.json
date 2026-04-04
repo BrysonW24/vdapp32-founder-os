@@ -1,0 +1,67 @@
+{
+  "slug": "weekly-product-review",
+  "title": "Weekly Product Review",
+  "domain": "product",
+  "summary": "Weekly Product Review is the repeatable product cadence that keeps signal, ownership, and execution aligned.",
+  "frequency": "weekly",
+  "owner": "hire",
+  "inputs": [
+    "Current metrics",
+    "Work-in-progress summary",
+    "Key risks",
+    "Open decisions"
+  ],
+  "outputs": [
+    "Action list",
+    "Updated owners",
+    "Escalations",
+    "Review notes"
+  ],
+  "steps": [
+    {
+      "title": "Prepare the review",
+      "description": "Collect the minimal signal needed to make the conversation useful.",
+      "responsible": "hire",
+      "tool": "Linear",
+      "automated": false
+    },
+    {
+      "title": "Run the cadence",
+      "description": "Review what changed, what matters now, and what needs intervention.",
+      "responsible": "hire",
+      "tool": "Jira",
+      "automated": false
+    },
+    {
+      "title": "Capture decisions",
+      "description": "Document the decisions, owners, and deadlines immediately.",
+      "responsible": "hire",
+      "tool": "Productboard",
+      "automated": true
+    },
+    {
+      "title": "Close the loop",
+      "description": "Check completion before the next cycle and adjust the system if it is drifting.",
+      "responsible": "hire",
+      "tool": "Figma",
+      "automated": false
+    }
+  ],
+  "kpis": [
+    {
+      "metric": "Product review completion",
+      "target": "100% of planned reviews happen on time"
+    },
+    {
+      "metric": "Action closure rate",
+      "target": ">85% before next review"
+    }
+  ],
+  "whenToImplement": "Install weekly product review as soon as product work spans multiple priorities or owners.",
+  "delegationNotes": "This system becomes easier to delegate once the review format and escalation rules are explicit.",
+  "automationNotes": "Automate the preparation and capture steps first; keep the core decision conversation human.",
+  "relatedSystems": [
+    "monthly-priority-recalibration"
+  ],
+  "order": 1
+}

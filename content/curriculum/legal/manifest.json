@@ -8,8 +8,71 @@
   "tagline": "Contracts, IP, privacy, liabilities, and regulatory awareness",
   "blueprintSlug": "legal-blueprint",
   "deepDivePages": [
-    { "slug": "toolkit", "label": "Mental Models", "icon": "Lightbulb" },
-    { "slug": "blueprint", "label": "Blueprint", "icon": "Map" }
+    {
+      "slug": "toolkit",
+      "label": "Mental Models",
+      "icon": "Lightbulb"
+    },
+    {
+      "slug": "day-in-the-life",
+      "label": "Day in Life",
+      "icon": "Briefcase"
+    },
+    {
+      "slug": "blueprint",
+      "label": "Blueprint",
+      "icon": "Map"
+    },
+    {
+      "slug": "timeline",
+      "label": "Timeline",
+      "icon": "Clock"
+    },
+    {
+      "slug": "resources",
+      "label": "Resources",
+      "icon": "Library"
+    },
+    {
+      "slug": "future",
+      "label": "Future",
+      "icon": "TrendingUp"
+    },
+    {
+      "slug": "contracts",
+      "label": "Contracts",
+      "icon": "Shield"
+    },
+    {
+      "slug": "ip",
+      "label": "IP",
+      "icon": "Shield"
+    },
+    {
+      "slug": "privacy-compliance",
+      "label": "Privacy Compliance",
+      "icon": "Shield"
+    },
+    {
+      "slug": "employment-risk",
+      "label": "Employment Risk",
+      "icon": "Users"
+    },
+    {
+      "slug": "vendor-risk",
+      "label": "Vendor Risk",
+      "icon": "Shield"
+    },
+    {
+      "slug": "fundraising-legal",
+      "label": "Fundraising Legal",
+      "icon": "MessageSquare"
+    },
+    {
+      "slug": "disputes",
+      "label": "Disputes",
+      "icon": "MessageSquare"
+    }
   ],
   "order": 14
 }

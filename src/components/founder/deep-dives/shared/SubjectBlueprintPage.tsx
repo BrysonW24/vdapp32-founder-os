@@ -70,7 +70,7 @@ export function SubjectBlueprintPage({ subject }: SubjectBlueprintPageProps) {
   )
 
   return (
-    <div className="container py-10 space-y-10">
+    <div className="container py-6 space-y-10">
       <div className="max-w-3xl space-y-4">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-editorial-muted">
           Subject Blueprint

@@ -11,7 +11,14 @@ import {
   getPromptPacks,
   getTemplates,
 } from "@/lib/content"
+import { getSubjectPresentation } from "@/lib/subject-presentation"
 import { SubjectOverview } from "@/components/founder/SubjectOverview"
+import {
+  ClassicSubjectHome,
+} from "@/components/founder/classic/shared/ClassicSubjectHome"
+import { HomePageClient as MarketingClassicHome } from "@/components/founder/classic/marketing/HomePageClient"
+import { HomePageClient as SalesClassicHome } from "@/components/founder/classic/sales/HomePageClient"
+import { HomePageClient as AIClassicHome } from "@/components/founder/classic/ai-engineering/HomePageClient"
 
 export default async function SubjectPage({
   params,
@@ -32,6 +39,36 @@ export default async function SubjectPage({
   const frameworks = getFrameworks(slug)
   const prompts = getPromptPacks(slug)
   const templates = getTemplates(slug)
+  const presentation = getSubjectPresentation(subject)
+
+  if (presentation.defaultVariant === "classic") {
+    if (slug === "marketing") {
+      return <MarketingClassicHome />
+    }
+
+    if (slug === "sales") {
+      return <SalesClassicHome />
+    }
+
+    if (slug === "ai-engineering") {
+      return <AIClassicHome />
+    }
+
+    return (
+      <ClassicSubjectHome
+        subject={subject}
+        modules={modules}
+        playbooks={playbooks}
+        systems={systems}
+        tools={tools}
+        projects={projects}
+        frameworks={frameworks}
+        domainMeta={domainMeta}
+        prompts={prompts}
+        templates={templates}
+      />
+    )
+  }
 
   return (
     <SubjectOverview

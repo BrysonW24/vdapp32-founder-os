@@ -13,7 +13,9 @@
     "Profiling latency on constrained devices",
     "Tradeoffs between accuracy, speed, and power draw"
   ],
-  "lessons": [],
+  "lessons": [
+    "edge-inference-hardware-acceleration-lesson"
+  ],
   "frameworks": [
     "system-design-template"
   ],

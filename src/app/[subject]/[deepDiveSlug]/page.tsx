@@ -2,17 +2,18 @@ import { notFound } from "next/navigation"
 import { getSubject, getSubjects } from "@/lib/content"
 import {
   getDeepDiveMetadata,
-  isDeepDiveRegistered,
   renderDeepDive,
 } from "@/lib/deep-dives"
+import {
+  getAllPresentationDeepDiveSlugs,
+  getCanonicalDeepDiveSlug,
+} from "@/lib/subject-presentation"
 
 export async function generateStaticParams() {
   return getSubjects().flatMap((subject) =>
-    subject.deepDivePages
-      .filter((page) => isDeepDiveRegistered(subject.slug, page.slug))
-      .map((page) => ({
+    getAllPresentationDeepDiveSlugs(subject).map((deepDiveSlug) => ({
         subject: subject.slug,
-        deepDiveSlug: page.slug,
+        deepDiveSlug,
       }))
   )
 }
@@ -24,12 +25,23 @@ export async function generateMetadata({
 }) {
   const { subject: subjectSlug, deepDiveSlug } = await params
   const subject = getSubject(subjectSlug)
+  const canonicalSlug = subject
+    ? getCanonicalDeepDiveSlug(subject, deepDiveSlug)
+    : deepDiveSlug
 
-  if (!subject || !isDeepDiveRegistered(subjectSlug, deepDiveSlug)) {
+  if (!subject) {
     return { title: "Not Found" }
   }
 
-  return getDeepDiveMetadata(subject, deepDiveSlug)
+  const isWhitelisted = getAllPresentationDeepDiveSlugs(subject).includes(
+    deepDiveSlug
+  )
+
+  if (!isWhitelisted) {
+    return { title: "Not Found" }
+  }
+
+  return getDeepDiveMetadata(subject, canonicalSlug)
 }
 
 export default async function SubjectDeepDivePage({
@@ -42,15 +54,16 @@ export default async function SubjectDeepDivePage({
 
   if (!subject) notFound()
 
-  const isWhitelisted = subject.deepDivePages.some(
-    (page) => page.slug === deepDiveSlug
+  const canonicalSlug = getCanonicalDeepDiveSlug(subject, deepDiveSlug)
+  const isWhitelisted = getAllPresentationDeepDiveSlugs(subject).includes(
+    deepDiveSlug
   )
 
-  if (!isWhitelisted || !isDeepDiveRegistered(subjectSlug, deepDiveSlug)) {
+  if (!isWhitelisted) {
     notFound()
   }
 
-  const content = renderDeepDive(subject, deepDiveSlug)
+  const content = renderDeepDive(subject, canonicalSlug)
   if (!content) notFound()
 
   return content

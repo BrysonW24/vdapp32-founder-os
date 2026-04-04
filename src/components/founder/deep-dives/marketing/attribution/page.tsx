@@ -83,7 +83,7 @@ const INCREMENTALITY_TESTS = [
 
 export default function AttributionPage() {
   return (
-    <div className="container py-10 space-y-8">
+    <div className="container py-6 space-y-8">
       <div className="max-w-3xl">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-editorial-muted mb-3">Foundation Layer</p>
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-editorial-ink leading-[0.95] tracking-tight">

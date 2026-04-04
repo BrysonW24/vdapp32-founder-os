@@ -13,7 +13,9 @@
     "Testing and validation in safety-critical loops",
     "What changes when models leave the data center"
   ],
-  "lessons": [],
+  "lessons": [
+    "real-time-embedded-ai-lesson"
+  ],
   "frameworks": [
     "system-design-template"
   ],

@@ -13,7 +13,9 @@
     "Latency and compute constraints on physical systems",
     "Benchmarking perception beyond offline accuracy"
   ],
-  "lessons": [],
+  "lessons": [
+    "perception-sensor-systems-lesson"
+  ],
   "frameworks": [
     "system-design-template"
   ],
