@@ -237,7 +237,7 @@ const SUBJECT_HOME_DEFINITIONS: Record<DomainSlug, SubjectHomeDefinition> = {
         icon: Search,
         title: "Research Workflows",
         description:
-          "Create a better input system for founders, teams, and decision forums.",
+          "Create a better input system for owners, teams, and decision forums.",
         href: "/strategy/research-workflows",
       },
       {
@@ -1631,7 +1631,7 @@ const SUBJECT_HOME_DEFINITIONS: Record<DomainSlug, SubjectHomeDefinition> = {
           "Shape the team structure so decisions move at the right altitude.",
       },
     ],
-    directionTitle: "Leadership direction for founder-led companies",
+    directionTitle: "Leadership direction for small businesses",
     directionBody:
       "This academy treats people leadership as a leverage system: clearer hiring, delegation, structure, and performance standards.",
     directionCards: [
@@ -1764,7 +1764,7 @@ const SUBJECT_HOME_DEFINITIONS: Record<DomainSlug, SubjectHomeDefinition> = {
           "Use the capital in ways that increase strategic leverage.",
       },
     ],
-    directionTitle: "Capital direction for founder-led companies",
+    directionTitle: "Capital direction for small businesses",
     directionBody:
       "The academy keeps capital practical: better fundraising process, sharper term understanding, and stronger post-raise discipline.",
     directionCards: [

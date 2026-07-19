@@ -2,7 +2,7 @@
   "slug": "pipeline-tracker",
   "title": "Pipeline Tracker Spreadsheet",
   "domain": "sales",
-  "description": "A simple pipeline tracker for founders who do not have a CRM yet. Track deals, stages, values, and next actions.",
+  "description": "A simple pipeline tracker for owners who do not have a CRM yet. Track deals, stages, values, and next actions.",
   "format": "spreadsheet",
   "sections": [
     {
