@@ -165,12 +165,21 @@ Buttons: primary `bg-editorial-green text-white`, secondary glass panel with bor
 - Don't add a database, auth, or backend — this is a static content site
 - Don't change the editorial warm theme
 - Don't hardcode content in page components — use JSON files + loaders
-- Don't add Three.js/react-three — peer dep conflicts with React 19
 - Don't break the mobile experience — test at 375px width
 
-## Canonical architecture document
+> **Corrected 2026-07-19.** This list used to say "Don't add Three.js/react-three — peer dep
+> conflicts with React 19". That rule is stale and was contradicting the shipped app: `three`,
+> `@react-three/fiber` and `@react-three/drei` are all real dependencies in `package.json`,
+> `next.config.js` sets `transpilePackages: ['three']`, and
+> `src/components/academy/progress/ConstellationMap.tsx` imports them. The conflict was resolved
+> by the versions now pinned. Adding 3D is allowed; keep it behind a `hidden md:block` so phones
+> never pay for it.
 
-The full architecture plan is at `~/.claude/plans/tranquil-percolating-flask.md`. This is the source of truth for taxonomy, migration strategy, and rollout phases.
+## Architecture
+
+The taxonomy, content contracts, and route surface are documented in this file and in
+[`README.md`](README.md); the per-subject shape is defined by each `content/curriculum/{slug}/manifest.json`
+and enforced by the Zod schemas in `src/types/curriculum.ts`. Those are the source of truth.
 
 ## Current state (2026-04-03)
 
